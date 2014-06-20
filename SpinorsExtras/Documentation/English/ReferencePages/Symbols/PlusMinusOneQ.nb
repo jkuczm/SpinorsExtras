@@ -1,0 +1,542 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->2020170389],
+
+Cell["SpinorsExtras`Utilities`", "Categorization",
+ CellLabel->"Context",
+ CellID->1933488198],
+
+Cell["SpinorsExtras/ref/PlusMinusOneQ", "Categorization",
+ CellLabel->"URI",
+ CellID->758459546]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["PlusMinusOneQ", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"PlusMinusOneQ", "[", 
+   StyleBox["x", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " if ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " represents ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell["\<\
+It is used internally to check whether something represents possible sign of \
+spin projection.\
+\>", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["UndeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpM",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PossiblePolQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PossiblePolQ"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1885553097],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", "1", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->953531023],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[2]=",
+ CellID->997610931]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", 
+  RowBox[{"-", "1"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1683092968],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1870839467]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", 
+  RowBox[{"\[PlusMinus]", "1"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1022704241],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1004507330]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", 
+  RowBox[{"\[MinusPlus]", "1"}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->148433222],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->355219736]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", "0", "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1702965505],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1240714442]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->120168365],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->844642498]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[TextData[{
+ Cell[BoxData["PlusMinusOneQ"], "InlineFormula"],
+ " is used to test whether massive spinor label (",
+ Cell[BoxData[
+  ButtonBox["SpM",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineFormula"],
+ ") for given mass sign labels  LVector:"
+}], "ExampleText",
+ CellID->381398715],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[16]:=",
+ CellID->844337244],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[17]:=",
+ CellID->208906894],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[17]:=",
+ CellID->1440613530]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", 
+  RowBox[{"+", "1"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"SpM", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[22]:=",
+ CellID->549586100],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[22]=",
+ CellID->1805991965],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[23]=",
+ CellID->1077125472]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"SpM", "[", 
+   RowBox[{"P", ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[24]:=",
+ CellID->600457308],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[24]=",
+ CellID->279539272],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[25]=",
+ CellID->77382698]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->570141092],
+
+Cell[TextData[{
+ Cell[BoxData["PlusMinusOneQ"], "InlineFormula"],
+ " is used to test whether polarization vector (",
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ ") for given polarization represents massles Spinor:"
+}], "ExampleText",
+ CellID->815878429],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[26]:=",
+ CellID->1936578051],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[27]:=",
+ CellID->1519153197],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[27]:=",
+ CellID->785766083]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", 
+  RowBox[{"+", "1"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[28]:=",
+ CellID->883424213],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[28]=",
+ CellID->724717218],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[29]=",
+ CellID->2085545702]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[30]:=",
+ CellID->111416267],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[30]=",
+ CellID->1589909130],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[31]=",
+ CellID->482818833]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{708, 770},
+WindowMargins->{{Automatic, 238}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

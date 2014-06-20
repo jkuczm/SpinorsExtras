@@ -1,0 +1,33 @@
+TestSuite[{
+	"Dot.mt"
+	,
+	"DeclareSpinorMomentum.mt"
+	,
+	"s.mt"
+	,
+	"SpOpen.mt"
+	,
+	"Num4V.mt"
+	,
+	"BSpinorReplace.mt"
+	,
+	"ASpinorReplace.mt"
+	(*,
+	"SpinorShift.mt"*)
+	,
+	"ShiftBA.mt"
+	,
+	"SmBA/Spaa.mt"
+	,
+	"SmBA/Spbb.mt"
+	,
+	"SmBA/Spab.mt"
+	,
+	"SmBA/Spba.mt"
+	,
+	"Proportionality/Spxy_LVector.mt"
+	,
+	"Proportionality/Spxy_BSpinor.mt"
+	,
+	"Proportionality/Spxy_ASpinor.mt"
+}]

@@ -1,0 +1,535 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1604721379],
+
+Cell["SpinorsExtras`Numerics`", "Categorization",
+ CellLabel->"Context",
+ CellID->1762381541],
+
+Cell["SpinorsExtras/ref/GenComplexMomenta", "Categorization",
+ CellLabel->"URI",
+ CellID->385813471]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["GenComplexMomenta", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"GenComplexMomenta", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox[
+      StyleBox["s", "TI"], 
+      StyleBox["1", "TR"]], ",", " ", 
+     SubscriptBox[
+      StyleBox["s", "TI"], 
+      StyleBox["2", "TR"]], ",", " ", 
+     SubscriptBox[
+      StyleBox["s", "TI"], 
+      StyleBox["3", "TR"]]}], "}"}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]generates random complex four momenta for the spinors ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["s", "TI"], 
+   StyleBox["1", "TR"]]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["s", "TI"], 
+   StyleBox["2", "TR"]]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["s", "TI"], 
+   StyleBox["3", "TR"]]], "InlineFormula"],
+ " so that they sum to zero."
+}], "Usage"],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo"], "\"\<Range\>\"", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", " ", "+", " ", "I"}], ",", " ", 
+      RowBox[{
+       RowBox[{"-", "1"}], " ", "-", " ", "I"}]}], "}"}], Cell[
+    "range in which components of generated spinors will be", "TableText"]}
+  }]], "3ColumnTableMod"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell["XXXX", "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->124731110],
+
+Cell["Random momenta for given spinors are generated:", "ExampleText",
+ CellID->1375086100],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GenComplexMomenta", "[", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "2", ",", "3"}], "}"}], "]"}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->227937708],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"0.12517465588701834`", "\[VeryThinSpace]", "-", 
+      RowBox[{"0.6114835707070913`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"0.04914544480987798`", "\[VeryThinSpace]", "-", 
+      RowBox[{"0.6036567582543853`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "0.24744330457514468`"}], "-", 
+      RowBox[{"0.12061971362075713`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"0.24124807763738929`", "\[VeryThinSpace]", "-", 
+      RowBox[{"0.3180203835550143`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[1], " set to ", {
+    Complex[0.12517465588701834`, -0.6114835707070913], 
+    Complex[0.04914544480987798, -0.6036567582543853], 
+    Complex[-0.24744330457514468`, -0.12061971362075713`], 
+    Complex[0.24124807763738929`, -0.3180203835550143]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->391021064],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "0.15397247208089535`"}], "+", 
+      RowBox[{"0.3841758952240729`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "0.12972487886684975`"}], "+", 
+      RowBox[{"0.042333569741574956`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "0.2196286290532767`"}], "+", 
+      RowBox[{"0.22808870262683745`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "0.009697259460621027`"}], "+", 
+      RowBox[{"0.3677313212895311`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[2], " set to ", {
+    Complex[-0.15397247208089535`, 0.3841758952240729], 
+    Complex[-0.12972487886684975`, 0.042333569741574956`], 
+    Complex[-0.2196286290532767, 0.22808870262683745`], 
+    Complex[-0.009697259460621027, 0.3677313212895311]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->1155631913],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"0.028797816193877`", "\[VeryThinSpace]", "+", 
+      RowBox[{"0.22730767548301833`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"0.08057943405697177`", "\[VeryThinSpace]", "+", 
+      RowBox[{"0.5613231885128103`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"0.46707193362842137`", "\[VeryThinSpace]", "-", 
+      RowBox[{"0.10746898900608032`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "0.23155081817676826`"}], "-", 
+      RowBox[{"0.04971093773451685`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[3], " set to ", {
+    Complex[0.028797816193877, 0.22730767548301833`], 
+    Complex[0.08057943405697177, 0.5613231885128103], 
+    Complex[0.46707193362842137`, -0.10746898900608032`], 
+    Complex[-0.23155081817676826`, -0.04971093773451685]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->1607864758]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Generated momenta sum to zero:", "ExampleText",
+ CellID->966670754],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"Num4V", "[", "1", "]"}], "+", 
+   RowBox[{"Num4V", "[", "2", "]"}], "+", 
+   RowBox[{"Num4V", "[", "3", "]"}]}], "//", "Chop"}]], "Input",
+ CellLabel->"In[11]:=",
+ CellID->1596580337],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1851590904]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Range", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[TextData[{
+ "\"Range\" option accepts ",
+ Cell[BoxData[
+  ButtonBox["List",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " containing two ",
+ Cell[BoxData[
+  ButtonBox["Complex",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " numbers, they are corners of rectangle in which components of generated \
+spinors will be:"
+}], "ExampleText",
+ CellID->1645388246],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1296436261],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GenComplexMomenta", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}], ",", 
+   RowBox[{"\"\<Range\>\"", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "10"}], "I"}], ",", 
+      RowBox[{"5", "+", 
+       RowBox[{"10", "I"}]}]}], "}"}]}]}], "]"}]], "Input",
+ CellLabel->"In[23]:=",
+ CellID->1594892699],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"9.929350140217942`", "\[VeryThinSpace]", "+", 
+      RowBox[{"40.33627496960669`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "19.309401135688084`"}], "-", 
+      RowBox[{"24.037543245416323`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"10.988122751361749`", "\[VeryThinSpace]", "+", 
+      RowBox[{"71.99770665299576`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"62.654399586369145`", "\[VeryThinSpace]", "-", 
+      RowBox[{"13.642413166185207`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[1], " set to ", {
+    Complex[9.929350140217942, 40.33627496960669], 
+    Complex[-19.309401135688084`, -24.037543245416323`], 
+    Complex[10.988122751361749`, 71.99770665299576], 
+    Complex[62.654399586369145`, -13.642413166185207`]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[23]:=",
+ CellID->1582194775],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "2", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "58.44317524479809`"}], "+", 
+      RowBox[{"4.776252806626079`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "85.308514440517`"}], "+", 
+      RowBox[{"16.509149462801762`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "6.68939215557732`"}], "+", 
+      RowBox[{"9.653560200519934`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "19.051124832826254`"}], "-", 
+      RowBox[{"62.66339105493222`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[2], " set to ", {
+    Complex[-58.44317524479809, 4.776252806626079], 
+    Complex[-85.308514440517, 16.509149462801762`], 
+    Complex[-6.68939215557732, 9.653560200519934], 
+    Complex[-19.051124832826254`, -62.66339105493222]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[23]:=",
+ CellID->1643222380],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Momentum for spinor \"\>", "\[InvisibleSpace]", "3", 
+   "\[InvisibleSpace]", "\<\" set to \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"48.51382510458015`", "\[VeryThinSpace]", "-", 
+      RowBox[{"45.11252777623277`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{"104.61791557620509`", "\[VeryThinSpace]", "+", 
+      RowBox[{"7.528393782614561`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "4.298730595784429`"}], "-", 
+      RowBox[{"81.6512668535157`", " ", "\[ImaginaryI]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "43.60327475354289`"}], "+", 
+      RowBox[{"76.30580422111743`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\".\"\>"}],
+  SequenceForm["Momentum for spinor ", 
+   Spinors`Sp[3], " set to ", {
+    Complex[48.51382510458015, -45.11252777623277], 
+    Complex[104.61791557620509`, 7.528393782614561], 
+    Complex[-4.298730595784429, -81.6512668535157], 
+    Complex[-43.60327475354289, 76.30580422111743]}, "."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[23]:=",
+ CellID->351808363]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

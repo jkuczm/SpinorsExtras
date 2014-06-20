@@ -1,0 +1,633 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1463886725],
+
+Cell["SpinorsExtras`Pol`", "Categorization",
+ CellLabel->"Context",
+ CellID->1711992386],
+
+Cell["SpinorsExtras/ref/DeclarePossiblePol", "Categorization",
+ CellLabel->"URI",
+ CellID->1198513868]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["DeclarePossiblePol", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"DeclarePossiblePol", "[", 
+   StyleBox["x", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]declares ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " as symbolic representation of posible vector boson polarizations. \n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"DeclarePossiblePol", "[", 
+   RowBox[{
+    StyleBox["x", "TI"], ",", " ", 
+    StyleBox["y", "TI"], ",", "  ", 
+    StyleBox["\[Ellipsis]", "TR"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]declares ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  StyleBox["y", "TI"]], "InlineFormula"],
+ ", ... as symbolic representations of posible vector boson polarizations."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["UndeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePossiblePol"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PossiblePolQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PossiblePolQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["\<\
+Set a symbol to be treated as posible vector boson polarization:\
+\>", "ExampleText",
+ CellID->1433605585],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1944434619],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PossiblePolQ", "[", "x", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->2109503315],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->28592016]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", "x", "]"}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1222171504],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "x", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`x}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->1056731052]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PossiblePolQ", "[", "x", "]"}]], "Input",
+ CellLabel->"In[11]:=",
+ CellID->281484712],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[11]=",
+ CellID->742922739]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell["\<\
+Set many symbols to be treated as posible vector boson polarizations:\
+\>", "ExampleText",
+ CellID->1593738283],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->885553258],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->637909957],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[2]=",
+ CellID->1481564968],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->841386241],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->503712985]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1258191910],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[5]:=",
+ CellID->1885126968]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[6]:=",
+ CellID->554292327],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->113009868],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1567353718],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1494446815]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1728709829],
+
+Cell["\<\
+Set all expressions matching given pattern to be treated as posible vector \
+boson polarizations:\
+\>", "ExampleText",
+ CellID->2083149880],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[10]:=",
+ CellID->2051215862],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", 
+  RowBox[{"pm", "[", "x", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", 
+  RowBox[{"pm", "[", "y", "]"}], "]"}]}], "Input",
+ CellLabel->"In[11]:=",
+ CellID->2145911464],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1357243254],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->1809961855]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", "_pm", "]"}]], "Input",
+ CellLabel->"In[13]:=",
+ CellID->1360490415],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "_pm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{
+    Blank[$CellContext`pm]}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[13]:=",
+ CellID->953702519]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", 
+  RowBox[{"pm", "[", "x", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", 
+  RowBox[{"pm", "[", "y", "]"}], "]"}]}], "Input",
+ CellLabel->"In[14]:=",
+ CellID->1595353859],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[14]=",
+ CellID->1092747637],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[15]=",
+ CellID->1611494525]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell["\<\
+Keep polarization of polarization vector symbolic let it be treated as \
+LVector label:\
+\>", "ExampleText",
+ CellID->1216475192],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->767193878],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1444285693],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->468254507]
+}, Open  ]],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["PolVec",
+    BaseStyle->"Link",
+    ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ " is not treated as LVector label:"
+}], "ExampleText",
+ CellID->1458680615],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "pol"}], "]"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1108780007],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1884968263]
+}, Open  ]],
+
+Cell[TextData[{
+ "Declare ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " symbol to be treated as ",
+ "posible vector boson polarization",
+ ":"
+}], "ExampleText",
+ CellID->1926370437],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", "pol", "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->2083879906],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "pol", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`pol}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->2041268461]
+}, Open  ]],
+
+Cell[TextData[{
+ "After setting ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " to represent posible vector boson polarization ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " knows that  ",
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["PolVec",
+    BaseStyle->"Link",
+    ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ " represents LVector label:"
+}], "ExampleText",
+ CellID->87781149],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "pol"}], "]"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1002408761],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->447759460]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

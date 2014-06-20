@@ -1,0 +1,5670 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1613310823],
+
+Cell["SpinorsExtras`RefUtilities`", "Categorization",
+ CellLabel->"Context",
+ CellID->1690633825],
+
+Cell["SpinorsExtras/ref/RefSimplify", "Categorization",
+ CellLabel->"URI",
+ CellID->1871701927]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["RefSimplify", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["ref", "TI"], "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       StyleBox["a", "TI"], ",", 
+       StyleBox["b", "TI"], ",", " ", 
+       StyleBox["\[Ellipsis]", "TR"]}], "}"}]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns simplest expression from list of results of \
+replacing, in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", spinor ",
+ Cell[BoxData[
+  StyleBox["ref", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " with ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ",
+ Cell[BoxData[
+  StyleBox["b", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ...\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["ref", "TI"], "\[Rule]", 
+     StyleBox["patt", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]uses, for replacement, spinors found in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["refPatt", "TI"], "\[Rule]", 
+     StyleBox["...", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]replaces all occurences of labels that match ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["refPatt", "TI"], "\[RuleDelayed]", 
+     StyleBox["...", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]replaces all occurences of labels that match ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ". ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " can contain named subpatterns that can be used on RHS of \[RuleDelayed].\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    StyleBox["ref", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]uses all spinors found in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " except ",
+ Cell[BoxData[
+  StyleBox["ref", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ". \n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    StyleBox["refPatt", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]replaces all occurences of labels that match ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ". For replacement uses all spinors found in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " except those that match ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox[
+       StyleBox["ref", "TI"], 
+       StyleBox["1", "TR"]], ",", 
+      RowBox[{
+       SubscriptBox[
+        StyleBox["ref", "TI"], 
+        StyleBox["2", "TR"]], "\[Rule]", 
+       SubscriptBox[
+        StyleBox["patt", "TI"], 
+        StyleBox["2", "TR"]]}], ",", 
+      RowBox[{
+       SubscriptBox[
+        StyleBox["refPatt", "TI"], 
+        StyleBox["3", "TR"]], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["a", "TI"], 
+          StyleBox["3", "TR"]], ",", 
+         SubscriptBox[
+          StyleBox["b", "TI"], 
+          StyleBox["3", "TR"]], ",", 
+         StyleBox["\[Ellipsis]", "TR"]}], "}"}]}], ",", 
+      StyleBox["\[Ellipsis]", "TR"]}], " ", "}"}]}], "]"}]], 
+  "InlineFormula"],
+ "\[LineSeparator]simplifies ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " with respect to reference vectors matching: ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["ref", "TI"], "1"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["ref", "TI"], "2"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ",
+ Cell[BoxData[
+  SubscriptBox[
+   StyleBox["refPatt", "TI"], "3"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ... \n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        SubscriptBox[
+         StyleBox["ref", "TI"], 
+         StyleBox["11", "TR"]], ",", 
+        RowBox[{
+         SubscriptBox[
+          StyleBox["ref", "TI"], 
+          StyleBox["12", "TR"]], "\[Rule]", 
+         SubscriptBox[
+          StyleBox["patt", "TI"], 
+          StyleBox["12", "TR"]]}], ",", 
+        StyleBox["\[Ellipsis]", "TR"]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox[
+          StyleBox["refPatt", "TI"], 
+          StyleBox["21", "TR"]], "\[Rule]", 
+         RowBox[{"{", 
+          RowBox[{
+           SubscriptBox[
+            StyleBox["a", "TI"], 
+            StyleBox["21", "TR"]], ",", 
+           SubscriptBox[
+            StyleBox["b", "TI"], 
+            StyleBox["21", "TR"]], ",", 
+           StyleBox["\[Ellipsis]", "TR"]}], "}"}]}], ",", 
+        StyleBox["\[Ellipsis]", "TR"]}], 
+       StyleBox["}", "TR"]}], ",", 
+      StyleBox["\[Ellipsis]", "TR"]}], " ", "}"}]}], "]"}]], 
+  "InlineFormula"],
+ "\[LineSeparator]returns a ",
+ Cell[BoxData[
+  ButtonBox["List",
+   BaseStyle->"Link"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", each element of this list is a result of simplification of ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " using subsequent list of patterns and rules.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"RefSimplify", "[", 
+   StyleBox["expr", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]simplifies ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " with respect to all explicit reference vectors found in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ "."
+}], "Usage"],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo"], "\"\<PostReplace\>\"", 
+    ButtonBox["Simplify",
+     BaseStyle->"Link"], Cell["\<\
+function used to postprocess result of reference vectors replacement\
+\>", "TableText"]},
+   {Cell["   ", "ModInfo"], "\"\<SimplicityMeasure\>\"", 
+    ButtonBox["LeafCount",
+     BaseStyle->"Link"], Cell["\<\
+function used to measure \"simplicity\" of results for different reference \
+vectors, result with smallest value is considered simplest\
+\>", "TableText"]},
+   {Cell["   ", "ModInfo"], "\"\<IndependentSpinors\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+whether composite vectors, constructed by treating replacement labels as \
+independent B and A spinors, should be used\
+\>", "TableText"]},
+   {Cell["   ", "ModInfo"], "\"\<ReplacementPattern\>\"", 
+    RowBox[{"_", "?", "SpinorQ"}], Cell["\<\
+pattern used to extract, from given expression, spinors for replacement\
+\>", "TableText"]},
+   {Cell["   ", "ModInfo"], "\"\<ExcludeReplacedRef\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+whether replaced reference vectors should be excluded from list of spinors \
+extracted from expression\
+\>", "TableText"]},
+   {Cell["   ", "ModInfo"], "\"\<ExcludeInfinities\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+whether indeterminate and infinite results should be excluded from results\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<QuietInfinityWarnings\>\"", 
+    ButtonBox["True",
+     BaseStyle->"Link"], Cell["\<\
+whether messages informing about infinities and indeterminate results should \
+be quieted\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<Verbose\>\"", 
+    ButtonBox["False",
+     BaseStyle->"Link"], Cell["\<\
+whether subsequent results and warrnings about reference vectors not present \
+in expression should be printed\
+\>", "TableText"]},
+   {Cell["      ", "ModInfo"], "\"\<PrintFunction\>\"", 
+    RowBox[{"Function", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"rule", ",", "simplicity", ",", "result", ",", "accepted"}], 
+       "}"}], ",", 
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"rejected", "=", 
+          RowBox[{"If", "[", 
+           RowBox[{"accepted", ",", "\"\<\>\"", "\[IndentingNewLine]", 
+            RowBox[{"(*", "else", "*)"}], ",", "\"\<Rejected: \>\""}], 
+           "]"}]}], "}"}], ",", 
+        RowBox[{"Print", "[", 
+         RowBox[{
+         "rejected", ",", "simplicity", ",", "\"\<: \>\"", ",", "rule", ",", 
+          "\"\<: \>\"", ",", "result"}], "]"}]}], "]"}]}], "]"}], Cell["\<\
+function used to print result if \"Verbose\" option is set to true. This \
+function should accept 4 arguments: replacement rules used for obtaining \
+poarticular result, simplicity of result, result itself, boolean informing \
+whether result was accepted\
+\>", "TableText"]}
+  }]], "3ColumnTableMod",
+ CellID->1788950044]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell["XXXX", "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1460825651],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1182160748],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`c, \
+$CellContext`d}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->334995846]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"Spaa", "[", 
+    RowBox[{"d", ",", 
+     RowBox[{"SpRef", "[", "x", "]"}]}], "]"}]], 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["m", "2"], 
+     FractionBox[
+      RowBox[{"Spab", "[", 
+       RowBox[{
+        RowBox[{"SpRef", "[", "x", "]"}], ",", "a", ",", "d"}], "]"}], 
+      RowBox[{"Spab", "[", 
+       RowBox[{"c", ",", "a", ",", "b"}], "]"}]]}], "-", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"Spaa", "[", 
+        RowBox[{"b", ",", 
+         RowBox[{"SpRef", "[", "x", "]"}]}], "]"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          FractionBox[
+           SuperscriptBox["m", "2"], "2"], 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "4"}], "+", 
+            FractionBox[
+             RowBox[{"MP", "[", 
+              RowBox[{"a", ",", "b"}], "]"}], 
+             RowBox[{"MP", "[", 
+              RowBox[{"a", ",", "c"}], "]"}]], "+", 
+            RowBox[{"2", 
+             FractionBox[
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "c"}], "]"}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}]]}]}], ")"}]}], "+", 
+         RowBox[{"MP", "[", 
+          RowBox[{"b", ",", "c"}], "]"}]}], ")"}], 
+       FractionBox[
+        RowBox[{
+         RowBox[{"Spaa", "[", 
+          RowBox[{"a", ",", 
+           RowBox[{"SpRef", "[", "x", "]"}]}], "]"}], 
+         RowBox[{"Spbb", "[", 
+          RowBox[{"d", ",", "c"}], "]"}]}], 
+        RowBox[{"Spab", "[", 
+         RowBox[{"a", ",", "c", ",", "b"}], "]"}]]}]}], ")"}]}], "\n", 
+   ")"}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1053511461],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "b", "|", 
+     SubscriptBox["q", "x"], "\[RightAngleBracket]"}],
+    TraditionalForm], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["m", "2"], " ", 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       SubscriptBox["q", "x"], "|", "a", "|", "d", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+     TraditionalForm]], "-", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        FractionBox["1", "2"], " ", 
+        SuperscriptBox["m", "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "4"}], "+", 
+          FractionBox[
+           RowBox[{"MP", "[", 
+            RowBox[{"a", ",", "b"}], "]"}], 
+           RowBox[{"MP", "[", 
+            RowBox[{"a", ",", "c"}], "]"}]], "+", 
+          FractionBox[
+           RowBox[{"2", " ", 
+            RowBox[{"MP", "[", 
+             RowBox[{"a", ",", "c"}], "]"}]}], 
+           RowBox[{"MP", "[", 
+            RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+       RowBox[{"MP", "[", 
+        RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "a", "|", 
+       SubscriptBox["q", "x"], "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "d", "|", "c", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+     TraditionalForm]]}], 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "d", "|", 
+    SubscriptBox["q", "x"], "\[RightAngleBracket]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->256861707],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", "d"}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`d}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1378579591],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "68", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", "b"}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "b", "|", "a", "|", "d", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+        TraditionalForm]], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox["1", "2"], " ", 
+           SuperscriptBox["m", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             FractionBox[
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "c"}], "]"}]], "+", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+          RowBox[{"MP", "[", 
+           RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+        FormBox[
+         RowBox[{
+         "\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+         TraditionalForm], " ", 
+        FormBox[
+         RowBox[{"[", "d", "|", "c", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+        TraditionalForm]]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "b", "|", "d", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm[
+  "", 68, ": ", {SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`b}, 
+   ": ", -Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
+     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`b] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->795696694],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "71", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", "c"}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    RowBox[{
+     FractionBox["1", 
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "c", "|", "d", "\[RightAngleBracket]"}],
+       
+       TraditionalForm]], 
+     RowBox[{"(", 
+      RowBox[{
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "b", "|", "c", "\[RightAngleBracket]"}],
+        TraditionalForm], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["m", "2"], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "d", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+         TraditionalForm]], "-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            SuperscriptBox["m", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "4"}], "+", 
+              FractionBox[
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]], "+", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"MP", "[", 
+                 RowBox[{"a", ",", "c"}], "]"}]}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+           RowBox[{"MP", "[", 
+            RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+         FormBox[
+          RowBox[{
+          "\[LeftAngleBracket]", "a", "|", "c", "\[RightAngleBracket]"}],
+          TraditionalForm], " ", 
+         FormBox[
+          RowBox[{"[", "d", "|", "c", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+         TraditionalForm]]}], ")"}]}]}]}],
+  SequenceForm[
+  "", 71, ": ", {SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`c}, 
+   ": ", -Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`c] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1835280749],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "9", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", "a"}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   FractionBox[
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+     TraditionalForm], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "d", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 9, ": ", {SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`a}, 
+   ": ", Spinors`Spaa[$CellContext`a, $CellContext`b]/
+   Spinors`Spaa[$CellContext`a, $CellContext`d]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1952129016],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "68", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","d","b"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "b", "|", "a", "|", "d", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+        TraditionalForm]], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox["1", "2"], " ", 
+           SuperscriptBox["m", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             FractionBox[
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "c"}], "]"}]], "+", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+          RowBox[{"MP", "[", 
+           RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+        FormBox[
+         RowBox[{
+         "\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+         TraditionalForm], " ", 
+        FormBox[
+         RowBox[{"[", "d", "|", "c", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+        TraditionalForm]]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "b", "|", "d", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm[
+  "", 68, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`b]}, ": ", -
+   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
+     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`b] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->535057681],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "71", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","d","c"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    RowBox[{
+     FractionBox["1", 
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "c", "|", "d", "\[RightAngleBracket]"}],
+       
+       TraditionalForm]], 
+     RowBox[{"(", 
+      RowBox[{
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "b", "|", "c", "\[RightAngleBracket]"}],
+        TraditionalForm], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["m", "2"], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "d", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+         TraditionalForm]], "-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            SuperscriptBox["m", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "4"}], "+", 
+              FractionBox[
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]], "+", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"MP", "[", 
+                 RowBox[{"a", ",", "c"}], "]"}]}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+           RowBox[{"MP", "[", 
+            RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+         FormBox[
+          RowBox[{
+          "\[LeftAngleBracket]", "a", "|", "c", "\[RightAngleBracket]"}],
+          TraditionalForm], " ", 
+         FormBox[
+          RowBox[{"[", "d", "|", "c", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+         TraditionalForm]]}], ")"}]}]}]}],
+  SequenceForm[
+  "", 71, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`c]}, ": ", -
+   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`c] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1531622488],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "9", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","d","a"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+     TraditionalForm], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "d", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 9, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`a]}, ": ", 
+   Spinors`Spaa[$CellContext`a, $CellContext`b]/
+   Spinors`Spaa[$CellContext`a, $CellContext`d]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1850111884],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","b","d"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`b, $CellContext`d]}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->28349035],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "71", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","b","c"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    RowBox[{
+     FractionBox["1", 
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "c", "|", "d", "\[RightAngleBracket]"}],
+       
+       TraditionalForm]], 
+     RowBox[{"(", 
+      RowBox[{
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "b", "|", "c", "\[RightAngleBracket]"}],
+        TraditionalForm], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["m", "2"], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "d", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+         TraditionalForm]], "-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            SuperscriptBox["m", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "4"}], "+", 
+              FractionBox[
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]], "+", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"MP", "[", 
+                 RowBox[{"a", ",", "c"}], "]"}]}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+           RowBox[{"MP", "[", 
+            RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+         FormBox[
+          RowBox[{
+          "\[LeftAngleBracket]", "a", "|", "c", "\[RightAngleBracket]"}],
+          TraditionalForm], " ", 
+         FormBox[
+          RowBox[{"[", "d", "|", "c", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+         TraditionalForm]]}], ")"}]}]}]}],
+  SequenceForm[
+  "", 71, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`b, $CellContext`c]}, ": ", -
+   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`c] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1246291911],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "9", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","b","a"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+     TraditionalForm], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "d", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 9, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`b, $CellContext`a]}, ": ", 
+   Spinors`Spaa[$CellContext`a, $CellContext`b]/
+   Spinors`Spaa[$CellContext`a, $CellContext`d]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->613203368],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","c","d"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`c, $CellContext`d]}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->2021648039],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "68", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","c","b"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "b", "|", "a", "|", "d", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+        TraditionalForm]], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox["1", "2"], " ", 
+           SuperscriptBox["m", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             FractionBox[
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "c"}], "]"}]], "+", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+          RowBox[{"MP", "[", 
+           RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+        FormBox[
+         RowBox[{
+         "\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+         TraditionalForm], " ", 
+        FormBox[
+         RowBox[{"[", "d", "|", "c", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+        TraditionalForm]]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "b", "|", "d", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm[
+  "", 68, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`c, $CellContext`b]}, ": ", -
+   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
+     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`b] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->314890284],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "9", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","c","a"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+     TraditionalForm], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "d", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 9, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`c, $CellContext`a]}, ": ", 
+   Spinors`Spaa[$CellContext`a, $CellContext`b]/
+   Spinors`Spaa[$CellContext`a, $CellContext`d]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->693119174],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","a","d"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`d]}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->2027688339],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "68", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","a","b"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SuperscriptBox["m", "2"], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "b", "|", "a", "|", "d", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+        TraditionalForm]], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           FractionBox["1", "2"], " ", 
+           SuperscriptBox["m", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "4"}], "+", 
+             FractionBox[
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "c"}], "]"}]], "+", 
+             FractionBox[
+              RowBox[{"2", " ", 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]}], 
+              RowBox[{"MP", "[", 
+               RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+          RowBox[{"MP", "[", 
+           RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+        FormBox[
+         RowBox[{
+         "\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+         TraditionalForm], " ", 
+        FormBox[
+         RowBox[{"[", "d", "|", "c", "]"}],
+         TraditionalForm]}], 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+        TraditionalForm]]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "b", "|", "d", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm[
+  "", 68, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`b]}, ": ", -
+   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
+     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`b] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->355457506],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "71", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["q", "x"], "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","a","c"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"-", 
+    RowBox[{
+     FractionBox["1", 
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "c", "|", "d", "\[RightAngleBracket]"}],
+       
+       TraditionalForm]], 
+     RowBox[{"(", 
+      RowBox[{
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "b", "|", "c", "\[RightAngleBracket]"}],
+        TraditionalForm], "+", 
+       FractionBox[
+        RowBox[{
+         SuperscriptBox["m", "2"], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "d", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
+         TraditionalForm]], "-", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            FractionBox["1", "2"], " ", 
+            SuperscriptBox["m", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "4"}], "+", 
+              FractionBox[
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "c"}], "]"}]], "+", 
+              FractionBox[
+               RowBox[{"2", " ", 
+                RowBox[{"MP", "[", 
+                 RowBox[{"a", ",", "c"}], "]"}]}], 
+               RowBox[{"MP", "[", 
+                RowBox[{"a", ",", "b"}], "]"}]]}], ")"}]}], "+", 
+           RowBox[{"MP", "[", 
+            RowBox[{"b", ",", "c"}], "]"}]}], ")"}], " ", 
+         FormBox[
+          RowBox[{
+          "\[LeftAngleBracket]", "a", "|", "c", "\[RightAngleBracket]"}],
+          TraditionalForm], " ", 
+         FormBox[
+          RowBox[{"[", "d", "|", "c", "]"}],
+          TraditionalForm]}], 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+         TraditionalForm]]}], ")"}]}]}]}],
+  SequenceForm[
+  "", 71, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
+    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`c]}, ": ", -
+   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
+     Rational[1, 2] $CellContext`m^2 (-4 + 
+       Spinors`MP[$CellContext`a, $CellContext`b]/
+        Spinors`MP[$CellContext`a, $CellContext`c] + 
+       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
+        Spinors`MP[$CellContext`a, $CellContext`c]) + 
+     Spinors`MP[$CellContext`b, $CellContext`c]) 
+    Spinors`Spaa[$CellContext`a, $CellContext`c] 
+    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    Spinors`Spbb[$CellContext`d, $CellContext`c])],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->620651531]
+}, Open  ]],
+
+Cell[BoxData[
+ FractionBox[
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}],
+   TraditionalForm], 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "a", "|", "d", "\[RightAngleBracket]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->2081754157]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["PostReplace", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["SimplicityMeasure", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["IndependentSpinors", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[TextData[{
+ "With \"IndependentSpinors\" set to ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " (default value) composite vectors formed from all pairs of replacement \
+spinors are checked:"
+}], "ExampleText",
+ CellID->1715838032],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->788674970],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->209091145],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->229403261]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Spaa", "[", 
+    RowBox[{"1", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "3"}], "]"}], "/", 
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "2"}], "]"}]}]}], "+", 
+  RowBox[{
+   RowBox[{"Spbb", "[", 
+    RowBox[{"3", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spaa", "[", 
+     RowBox[{"1", ",", "q"}], "]"}], "/", 
+    RowBox[{"Spaa", "[", 
+     RowBox[{"2", ",", "q"}], "]"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "True"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->538996797],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "q", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", "2", "|", "q", "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", "1", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "q", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->924352858],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1604905016],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "3"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "2", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[3]] Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->32896661],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "37", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","3"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+       
+       TraditionalForm], " ", 
+      FormBox[
+       RowBox[{"[", "3", "|", "1", "]"}],
+       TraditionalForm]}], 
+     FormBox[
+      RowBox[{"[", "2", "|", "1", "]"}],
+      TraditionalForm]], "+", 
+    FractionBox[
+     RowBox[{
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+       
+       TraditionalForm], " ", 
+      FormBox[
+       RowBox[{"[", "3", "|", "2", "]"}],
+       TraditionalForm]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm["", 37, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]}, ": ", Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]] Spinors`Spbb[
+       Spinors`Sp[2], 
+       Spinors`Sp[1]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3], 
+      Spinors`Sp[1]] + Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]] Spinors`Spaa[
+       Spinors`Sp[2], 
+       Spinors`Sp[3]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3], 
+      Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1936656365],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","3","1"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "0"}],
+  SequenceForm["", 1, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[3], 
+      Spinors`Sp[1]]}, ": ", 0],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1344623533]
+}, Open  ]],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->841747816]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1022994496],
+
+Cell[TextData[{
+ "With \"IndependentSpinors\" set to ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " composite vectors are not formed automatically:"
+}], "ExampleText",
+ CellID->630913047],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->616061577],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->213189788],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1428489178]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"tmp", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Spaa", "[", 
+     RowBox[{"1", ",", "2"}], "]"}], " ", 
+    RowBox[{
+     RowBox[{"Spbb", "[", 
+      RowBox[{"q", ",", "3"}], "]"}], "/", 
+     RowBox[{"Spbb", "[", 
+      RowBox[{"q", ",", "2"}], "]"}]}]}], "+", 
+   RowBox[{
+    RowBox[{"Spbb", "[", 
+     RowBox[{"3", ",", "2"}], "]"}], " ", 
+    RowBox[{
+     RowBox[{"Spaa", "[", 
+      RowBox[{"1", ",", "q"}], "]"}], "/", 
+     RowBox[{"Spaa", "[", 
+      RowBox[{"2", ",", "q"}], "]"}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"tmp", ",", 
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3"}], "}"}]}], ",", 
+   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "False"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->861451901],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "q", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", "2", "|", "q", "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", "1", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "q", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->315744070],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->799339900],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "3"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "2", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[3]] Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1538962909]
+}, Open  ]],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm], " ", 
+   FormBox[
+    RowBox[{"[", "3", "|", "1", "]"}],
+    TraditionalForm]}], 
+  FormBox[
+   RowBox[{"[", "2", "|", "1", "]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1475443455]
+}, Open  ]],
+
+Cell["Composite vectors can still be passed explicitly:", "ExampleText",
+ CellID->437902514],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"tmp", ",", 
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "3", ",", 
+      RowBox[{"LvBA", "[", 
+       RowBox[{"3", ",", "1"}], "]"}]}], "}"}]}], ",", 
+   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "False"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1230159687],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[5]:=",
+ CellID->2077699786],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "3"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "2", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[3]] Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[5]:=",
+ CellID->1115612531],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","3","1"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "0"}],
+  SequenceForm["", 1, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[3], 
+      Spinors`Sp[1]]}, ": ", 0],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[5]:=",
+ CellID->1151534556]
+}, Open  ]],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1503087076]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ReplacementPattern", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ExcludeReplacedRef", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[BoxData[
+ InterpretationBox[Cell["ExcludeInfinities", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1234654741],
+
+Cell[BoxData[
+ InterpretationBox[Cell["QuietInfinityWarnings", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->906345268],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Verbose", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->702560581],
+
+Cell[TextData[{
+ "With \"Verbose\" set to ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " (default value) only result is returned:"
+}], "ExampleText",
+ CellID->2144204413],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1069088014],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->773480111],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->766196219]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Spaa", "[", 
+    RowBox[{"1", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "3"}], "]"}], "/", 
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "2"}], "]"}]}]}], "+", 
+  RowBox[{
+   RowBox[{"Spbb", "[", 
+    RowBox[{"3", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spaa", "[", 
+     RowBox[{"1", ",", "q"}], "]"}], "/", 
+    RowBox[{"Spaa", "[", 
+     RowBox[{"2", ",", "q"}], "]"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"q", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}]}], ",", 
+     RowBox[{"p", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "2"}], "}"}]}]}], "}"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "False"}]}], "]"}]}], "Input",
+ CellLabel->"In[11]:=",
+ CellID->671760568],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "q", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", "2", "|", "q", "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", "1", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "q", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1815190443],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->530021843]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1826223502],
+
+Cell[TextData[{
+ "With \"Verbose\" set to ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " subsequent results are printed together with their simplicity. When some \
+of reference vectors are not present in expression warnings are printed:"
+}], "ExampleText",
+ CellID->475989729],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1686259649],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->384798654],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1824237123]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"Spaa", "[", 
+    RowBox[{"1", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "3"}], "]"}], "/", 
+    RowBox[{"Spbb", "[", 
+     RowBox[{"q", ",", "2"}], "]"}]}]}], "+", 
+  RowBox[{
+   RowBox[{"Spbb", "[", 
+    RowBox[{"3", ",", "2"}], "]"}], " ", 
+   RowBox[{
+    RowBox[{"Spaa", "[", 
+     RowBox[{"1", ",", "q"}], "]"}], "/", 
+    RowBox[{"Spaa", "[", 
+     RowBox[{"2", ",", "q"}], "]"}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"q", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3"}], "}"}]}], ",", 
+     RowBox[{"p", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "2"}], "}"}]}]}], "}"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->432661358],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "q", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", "2", "|", "q", "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", "1", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "q", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->2141177934],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "p", "}"}], 
+   "\[InvisibleSpace]", "\<\" not found in given expression.\"\>"}],
+  SequenceForm[{$CellContext`p}, " not found in given expression."],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1828459381],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1651650155],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "3"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "2", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[3]] Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->578517602],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "37", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","3"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+       
+       TraditionalForm], " ", 
+      FormBox[
+       RowBox[{"[", "3", "|", "1", "]"}],
+       TraditionalForm]}], 
+     FormBox[
+      RowBox[{"[", "2", "|", "1", "]"}],
+      TraditionalForm]], "+", 
+    FractionBox[
+     RowBox[{
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}],
+       
+       TraditionalForm], " ", 
+      FormBox[
+       RowBox[{"[", "3", "|", "2", "]"}],
+       TraditionalForm]}], 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
+      TraditionalForm]]}]}],
+  SequenceForm["", 37, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]}, ": ", Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]] Spinors`Spbb[
+       Spinors`Sp[2], 
+       Spinors`Sp[1]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3], 
+      Spinors`Sp[1]] + Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]] Spinors`Spaa[
+       Spinors`Sp[2], 
+       Spinors`Sp[3]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3], 
+      Spinors`Sp[2]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1308826927],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","3","1"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "0"}],
+  SequenceForm["", 1, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[3], 
+      Spinors`Sp[1]]}, ": ", 0],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->630209751]
+}, Open  ]],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->751095216]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["PrintFunction", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->104735616],
+
+Cell[TextData[{
+ "With \"Verbose\" set to ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula"],
+ ", value of \"",
+ "PrintFunction",
+ "\" option is usd to print results:"
+}], "ExampleText",
+ CellID->470043336],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1688645140],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1502467936],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->884967387]
+}, Open  ]],
+
+Cell["\<\
+by default it prints: info about result rejection, results simplicity, \
+replacement rules used to get this result, th result itself:\
+\>", "ExampleText",
+ CellID->1320013911],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"tmp", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Spaa", "[", 
+     RowBox[{"1", ",", "2"}], "]"}], " ", 
+    RowBox[{
+     RowBox[{"Spbb", "[", 
+      RowBox[{"q", ",", "3"}], "]"}], "/", 
+     RowBox[{"Spbb", "[", 
+      RowBox[{"q", ",", "2"}], "]"}]}]}], "+", 
+   RowBox[{
+    RowBox[{"Spbb", "[", 
+     RowBox[{"3", ",", "2"}], "]"}], " ", 
+    RowBox[{
+     RowBox[{"Spaa", "[", 
+      RowBox[{"1", ",", "q"}], "]"}], "/", 
+     RowBox[{"Spaa", "[", 
+      RowBox[{"2", ",", "q"}], "]"}]}]}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{"tmp", ",", 
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2"}], "}"}]}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1684714566],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "q", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", "2", "|", "q", "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", "1", "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", "3", "|", "2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "q", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1288676524],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "18", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->9262721],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "2"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "Indeterminate"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {$CellContext`q -> Spinors`Sp[2]}, ": ", 
+   Indeterminate],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1292363827],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1388182449],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Rejected: \"\>", "\[InvisibleSpace]", "1", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", "ComplexInfinity"}],
+  SequenceForm[
+  "Rejected: ", 1, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", 
+   DirectedInfinity[]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->260797921]
+}, Open  ]],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm], " ", 
+   FormBox[
+    RowBox[{"[", "3", "|", "1", "]"}],
+    TraditionalForm]}], 
+  FormBox[
+   RowBox[{"[", "2", "|", "1", "]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->518234934]
+}, Open  ]],
+
+Cell["it can be changed to any function accepting 4 arguments:", "ExampleText",
+ CellID->1740521735],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"RefSimplify", "[", "\[IndentingNewLine]", 
+  RowBox[{"tmp", ",", "\[IndentingNewLine]", 
+   RowBox[{"q", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2"}], "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"\"\<PrintFunction\>\"", "\[Rule]", "\[IndentingNewLine]", 
+    RowBox[{"Function", "[", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"rule", ",", "simplicity", ",", "result", ",", "accepted"}], 
+       "}"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{"accepted", ",", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"rule", ",", "\"\<: \>\"", ",", "result"}], "]"}], 
+        "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+        RowBox[{"Print", "[", 
+         RowBox[{"rule", ",", "\"\<: result was rejected\>\""}], "]"}]}], 
+       "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1424000364],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "1"}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   FractionBox[
+    RowBox[{
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+      TraditionalForm], " ", 
+     FormBox[
+      RowBox[{"[", "3", "|", "1", "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"[", "2", "|", "1", "]"}],
+     TraditionalForm]]}],
+  SequenceForm[{$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]] Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+     Spinors`Sp[3], 
+     Spinors`Sp[1]]],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->845126144],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", "2"}], "}"}], 
+   "\[InvisibleSpace]", "\<\": result was rejected\"\>"}],
+  SequenceForm[{$CellContext`q -> Spinors`Sp[2]}, ": result was rejected"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1629654592],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": result was rejected\"\>"}],
+  SequenceForm[{$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": result was rejected"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1090886633],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q", "\[Rule]", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": result was rejected\"\>"}],
+  SequenceForm[{$CellContext`q -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": result was rejected"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1927576731]
+}, Open  ]],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm], " ", 
+   FormBox[
+    RowBox[{"[", "3", "|", "1", "]"}],
+    TraditionalForm]}], 
+  FormBox[
+   RowBox[{"[", "2", "|", "1", "]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1154718168]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[TextData[{
+ Cell[BoxData["RefSimplify"], "InlineFormula",
+  ShowStringCharacters->False],
+ " uses \"brute force\" and checks all possibilities to find simplest one, so \
+can be slow on large expressions. For expression with ",
+ Cell[BoxData[
+  StyleBox["n", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " reference vectors and ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"m", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " other spinors ",
+ Cell[BoxData["RefSimplify"], "InlineFormula",
+  ShowStringCharacters->False],
+ " will, by default, check ",
+ Cell[BoxData[
+  SuperscriptBox[
+   StyleBox[
+    RowBox[{"m", " "}], "TI"], 
+   RowBox[{"2", "n"}]]], "InlineFormula",
+  ShowStringCharacters->False],
+ " possibilities."
+}], "ExampleText",
+ CellID->427585760],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->273081682],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"i", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"printFunction", "=", 
+   RowBox[{"OptionValue", "[", 
+    RowBox[{"RefSimplify", ",", "\"\<PrintFunction\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"RefSimplify", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"SpRef", "[", "x", "]"}], ",", 
+     RowBox[{"SpRef", "[", "y", "]"}], ",", 
+     RowBox[{"SpRef", "[", "z", "]"}], ",", 
+     RowBox[{"Sp", "[", "1", "]"}], ",", 
+     RowBox[{"Sp", "[", "2", "]"}]}], "}"}], ",", 
+   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}], ",", 
+   RowBox[{"\"\<PrintFunction\>\"", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"i", "++"}], ";", 
+        RowBox[{"printFunction", "[", "##", "]"}]}], ")"}], "&"}], ")"}]}]}], 
+  "]"}], "\[IndentingNewLine]", "i"}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->42296270],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1472999743],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1737132297],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1814311778],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1292070522],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1836263345],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->96985102],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1403982760],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->82868055],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2119269023],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->768288569],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1718146447],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1014087123],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2075918944],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->427153223],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1440312032],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1416784107],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1502851127],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->484940759],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1248942475],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[1], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->958666205],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2", ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1321326239],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "11", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2", ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 11, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1309860873],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->254737439],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`z] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2002422949],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->968285136],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1445808302],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1460535595],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1022703730],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->171812579],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2035266373],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1846015726],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> Spinors`Sp[2], 
+    SpinorsExtras`Ref`SpRef[$CellContext`y] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->653383690],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->128051429],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1855642474],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->552548559],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1278834787],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1753640516],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "2", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->16249620],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1024259677],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2091476349],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1195283509],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->570463778],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->132025791],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2000119761],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1080975],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->115349351],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1398177638],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->701434548],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2134695885],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2095801087],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1511750051],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "1"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[1], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->247639126],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[1]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2084663289],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "14", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "2", ",", "1", ",", "2"}], 
+    "}"}]}],
+  SequenceForm[
+  "", 14, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> Spinors`Sp[2]}, 
+   ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->782348198],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1176484548],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", "2"}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    Spinors`Sp[2], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2024085834],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1315772177],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1568223033],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2124513499],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->53411111],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "1"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[1]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1957231669],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "17", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", "2"}]}], "}"}], 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "2", ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 17, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    Spinors`Sp[2]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[2], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->567109489],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","1","2"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","1","2"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[1], 
+     Spinors`Sp[2]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1069359786],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"\"\>", "\[InvisibleSpace]", "20", 
+   "\[InvisibleSpace]", "\<\": \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["q", "x"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "y"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}], ",", 
+     RowBox[{
+      SubscriptBox["q", "z"], "\[Rule]", 
+      SubscriptBox["\[Eta]", 
+       TemplateBox[{",","\",\"","2","1"},
+        "RowWithSeparators"]]}]}], "}"}], "\[InvisibleSpace]", "\<\": \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", 
+     SubscriptBox["\[Eta]", 
+      TemplateBox[{",","\",\"","2","1"},
+       "RowWithSeparators"]], ",", "1", ",", "2"}], "}"}]}],
+  SequenceForm[
+  "", 20, ": ", {
+   SpinorsExtras`Ref`SpRef[$CellContext`x] -> SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`y] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]], SpinorsExtras`Ref`SpRef[$CellContext`z] -> 
+    SpinorsExtras`Composite`LvBA[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]}, ": ", {
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    SpinorsExtras`Composite`LvBA[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]], 
+    Spinors`Sp[1], 
+    Spinors`Sp[2]}],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->671127752]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "1", ",", "1", ",", "1", ",", "2"}], "}"}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1085791867],
+
+Cell[BoxData["64"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1464393293]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

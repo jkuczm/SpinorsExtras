@@ -1,0 +1,9 @@
+TestSuite[{
+	"LvBA.mt"
+	,
+	"Simplifications.mt"
+	,
+	"DeclareLVectorMomentum.mt"
+	,
+	"DeclareSpinorMomentum.mt"
+}]

@@ -1,0 +1,824 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["SpinorsExtras`Package`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["SpinorsExtras/ref/ScalarQ", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ScalarQ", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ScalarQ", "[", 
+   StyleBox["x", "TI"], "]"}]], "InlineFormula"],
+ " \[LineSeparator]returns ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " if ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " contain bare Spinor, LVector or SMatrix label i.e. label that is not \
+inside some scalar quantity: ",
+ Cell[BoxData["Spxy"], "InlineFormula"],
+ ", ",
+ Cell[BoxData["MP"], "InlineFormula"],
+ ", ",
+ Cell[BoxData["MP2"], "InlineFormula"],
+ ", ",
+ Cell[BoxData["s"], "InlineFormula"],
+ "."
+}], "Usage",
+ CellID->982511436],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["LVectorInterpretableQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LVectorInterpretableQ"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpinorInterpretableQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpinorInterpretableQ"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["MassiveLVectorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/MassiveLVectorQ"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ScaledLVectorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ScaledLVectorQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ScaledSpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ScaledSpinorQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["GetScalarCoefficient",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/GetScalarCoefficient"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["\<\
+Numbers and symbols without special interpretation are treated as scalars:\
+\>", "ExampleText",
+ CellID->2034808702],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->1155063516],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScalarQ", "[", "1", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", "x", "]"}]}], "Input",
+ CellLabel->"In[11]:=",
+ CellID->1326598051],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1498136567],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->650666097]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1923079559],
+
+Cell["Labels of Spinors, LVectors and SMatrices are not scalars:", \
+"ExampleText",
+ CellID->1325888551],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->320591367],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSMatrix", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[13]:=",
+ CellID->1007608110],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[13]:=",
+ CellID->501664756],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[13]:=",
+ CellID->2060393180],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[13]:=",
+ CellID->1974609654]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Sp", "[", "1", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[16]:=",
+ CellID->2036297387],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[16]=",
+ CellID->1847388096],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[17]=",
+ CellID->1548366868],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[18]=",
+ CellID->666293082],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[19]=",
+ CellID->98338072]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1541221495],
+
+Cell["Spinor and scalar products are treated as scalars:", "ExampleText",
+ CellID->243674001],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[20]:=",
+ CellID->30500217],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSMatrix", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[21]:=",
+ CellID->1192338520],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->987741661],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->499676783],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->2033255349]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Spaa", "[", 
+   RowBox[{"a", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Spbb", "[", 
+   RowBox[{"a", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Spab", "[", 
+   RowBox[{"a", ",", "sm", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Spba", "[", 
+   RowBox[{"a", ",", "sm", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"s", "[", 
+   RowBox[{"a", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"MP", "[", 
+   RowBox[{"a", ",", "P"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"MP2", "[", "P", "]"}], "]"}]}], "Input",
+ CellLabel->"In[24]:=",
+ CellID->177125264],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[24]=",
+ CellID->1478923388],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[25]=",
+ CellID->1233020385],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[26]=",
+ CellID->691828072],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[27]=",
+ CellID->1444070849],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[28]=",
+ CellID->1887624193],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[29]=",
+ CellID->579336325],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[30]=",
+ CellID->1535928365]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->57648719],
+
+Cell["\<\
+Other functions of Spinors, LVectors and SMatrices are not treated as scalars:\
+\>", "ExampleText",
+ CellID->758012876],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[31]:=",
+ CellID->1261224454],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSMatrix", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[32]:=",
+ CellID->143376477],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[32]:=",
+ CellID->200073156],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[32]:=",
+ CellID->367553582],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[32]:=",
+ CellID->1829011068]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"x", "+", "sm"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"x", " ", "P"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"Sin", "[", "a", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{"SpAssoc", "[", "P", "]"}], "]"}]}], "Input",
+ CellLabel->"In[44]:=",
+ CellID->1826708836],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[44]=",
+ CellID->1774617749],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[45]=",
+ CellID->2084735732],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[46]=",
+ CellID->1599108233],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[47]=",
+ CellID->287003155],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[49]:=",
+ CellID->1764367109],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[49]:=",
+ CellID->1474885022],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[49]:=",
+ CellID->720172457]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1465783607],
+
+Cell["Any function of only scalars is treated as scalar:", "ExampleText",
+ CellID->1791456170],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[53]:=",
+ CellID->1658197113],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSMatrix", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[54]:=",
+ CellID->125022420],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[54]:=",
+ CellID->957128907],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[54]:=",
+ CellID->1947495101],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[54]:=",
+ CellID->583689297]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{
+   RowBox[{"Spba", "[", 
+    RowBox[{"a", ",", "sm", ",", "P"}], "]"}], "+", 
+   RowBox[{
+    RowBox[{"MP2", "[", "P", "]"}], "/", 
+    RowBox[{"s", "[", 
+     RowBox[{"a", ",", "P"}], "]"}]}]}], "]"}]], "Input",
+ CellLabel->"In[57]:=",
+ CellID->1853415837],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[57]=",
+ CellID->694799088]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->174446771],
+
+Cell["\<\
+Any occurence of Spinor, LVector or SMatrix outside of scalar or spinor \
+product makes expression a nonscalar:\
+\>", "ExampleText",
+ CellID->861954371],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[59]:=",
+ CellID->135460688],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", "a", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSMatrix", "[", "sm", "]"}]}], "Input",
+ CellLabel->"In[60]:=",
+ CellID->2132457307],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "a", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[60]:=",
+ CellID->1748918148],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[60]:=",
+ CellID->1265293278],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "sm", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of slashed matrices\"\>"}],
+  SequenceForm[{$CellContext`sm}, " added to the list of slashed matrices"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[60]:=",
+ CellID->332552825]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ScalarQ", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Spba", "[", 
+     RowBox[{"a", ",", "sm", ",", "P"}], "]"}], " ", "P"}], "+", 
+   RowBox[{
+    RowBox[{"MP2", "[", "P", "]"}], "/", 
+    RowBox[{"s", "[", 
+     RowBox[{"a", ",", "P"}], "]"}]}]}], "]"}]], "Input",
+ CellLabel->"In[63]:=",
+ CellID->1976333057],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[63]=",
+ CellID->238602789]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 261}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

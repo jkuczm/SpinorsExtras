@@ -1,0 +1,9 @@
+TestSuite[{
+	"ExpandMPToSpinors.mt"
+	,
+	"ExpandSToMPs.mt"
+	,
+	"ExpandSToSpinors.mt"
+	,
+	"LightConeDecompose.mt"
+}]

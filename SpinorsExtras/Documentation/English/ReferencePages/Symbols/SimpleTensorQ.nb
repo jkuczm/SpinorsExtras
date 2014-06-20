@@ -1,0 +1,396 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1607298861],
+
+Cell["SpinorsExtras`SimpleTensor`", "Categorization",
+ CellLabel->"Context",
+ CellID->764920763],
+
+Cell["SpinorsExtras/ref/SimpleTensorQ", "Categorization",
+ CellLabel->"URI",
+ CellID->1174671318]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["SimpleTensorQ", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"SimpleTensorQ", "[", 
+   StyleBox["expr", "TI"], "]"}]], "InlineFormula",
+  ShowStringCharacters->False],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " if ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " represents simple tensor e.g. |a>[b|. Returns ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " otherwise."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SimpleTensorGetALabel",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SimpleTensorGetALabel"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SimpleTensorGetBLabel",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SimpleTensorGetBLabel"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2080413236],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->198246673],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`c}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->369371333]
+}, Open  ]],
+
+Cell["Simple tensor examples:", "ExampleText",
+ CellID->1943097442],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{"Sm", "[", "a", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{"SmBA", "[", 
+   RowBox[{"b", ",", "a"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"Sm", "[", "a", "]"}]}], "+", " ", 
+   RowBox[{"y", " ", 
+    RowBox[{"SmBA", "[", 
+     RowBox[{"b", ",", "a"}], "]"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{
+   RowBox[{"x", " ", 
+    RowBox[{"SmBA", "[", 
+     RowBox[{"b", ",", "a"}], "]"}]}], "+", 
+   RowBox[{"y", " ", 
+    RowBox[{"SmBA", "[", 
+     RowBox[{"b", ",", "c"}], "]"}]}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1262893836],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1619868828],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1128735820],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1498242928],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1496638875]
+}, Open  ]],
+
+Cell["Non-simple tensor examples:", "ExampleText",
+ CellID->1095607742],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{
+   RowBox[{"Sm", "[", "a", "]"}], "+", 
+   RowBox[{"Sm", "[", "b", "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{
+   RowBox[{"Sm", "[", "a", "]"}], "+", " ", 
+   RowBox[{"SmBA", "[", 
+    RowBox[{"b", ",", "c"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SimpleTensorQ", "[", 
+  RowBox[{
+   RowBox[{"SmBA", "[", 
+    RowBox[{"a", ",", "b"}], "]"}], "+", " ", 
+   RowBox[{"SmBA", "[", 
+    RowBox[{"b", ",", "c"}], "]"}]}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->918813119],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1928651136],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1589222368],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->905067973]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

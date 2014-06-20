@@ -1,0 +1,1510 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->935008375],
+
+Cell["SpinorsExtras`Utilities`", "Categorization",
+ CellLabel->"Context",
+ CellID->299609608],
+
+Cell["SpinorsExtras/ref/ReplaceASpinor", "Categorization",
+ CellLabel->"URI",
+ CellID->324398970]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ReplaceASpinor", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["x", "TI"], "\[Rule]", 
+     StyleBox["r", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with massless or masive A spinors, labeled by ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ ", replaced by ",
+ Cell[BoxData[
+  StyleBox["r", "TI"]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  StyleBox["r", "TI"]], "InlineFormula"],
+ " can be linear combination of massless or masive spinors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["x", "TI"], "\[Rule]", 
+     RowBox[{"{", 
+      StyleBox[
+       RowBox[{"a", ",", "b"}], "TI"], "}"}]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]replaces massless or masive A spinor ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " at beginning of spinor chain with difference of A spinor ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"b", " "}], "TI"]], "InlineFormula"],
+ ". A spinor ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " at end of spinor chain will be replaced by sum of A spinor ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"b", " "}], "TI"]], "InlineFormula"],
+ ". ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"b", " "}], "TI"]], "InlineFormula"],
+ " can be linear combinations of labels they will be interpreted as linear \
+combinations of B spinors, analogously ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula"],
+ " can be linear combinations of labels and they will be interpreted as \
+linear combinations of A spinors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["patt", "TI"], "\[Rule]", 
+     StyleBox["r", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with all massless or masive A spinors that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ " replaced by ",
+ Cell[BoxData[
+  StyleBox["r", "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["patt", "TI"], "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       StyleBox["a", "TI"], ",", 
+       StyleBox["b", "TI"]}], "}"}]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with all massless or masive A spinors, at beginning of spinor chain, that \
+match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ " replaced by difference of A spinor ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"b", " "}], "TI"]], "InlineFormula"],
+ ". A spinors at end of spinor chain, that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ", will be replaced by sum of A spinor ",
+ Cell[BoxData[
+  StyleBox["a", "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"b", " "}], "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["patt", "TI"], "\[RuleDelayed]", 
+     StyleBox["replacement", "TI"]}]}], 
+   StyleBox[" ", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with all massless or masive A spinors that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ " replaced by ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacement", " "}], "TI"]], "InlineFormula"],
+ ". ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ " can have named patterns inside and ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacement", " "}], "TI"]], "InlineFormula"],
+ " can use variables matched by those named patterns.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["patt", "TI"], "\[RuleDelayed]", 
+     RowBox[{"{", 
+      RowBox[{
+       StyleBox["replacementA", "TI"], 
+       StyleBox[" ", "TI"], ",", 
+       StyleBox["replacementB", "TI"]}], 
+      StyleBox[" ", "TI"], "}"}]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]replaces A spinors, that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ", with difference of A spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementA", " "}], "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementB", "  "}], "TI"]], "InlineFormula"],
+ ". A spinors at end of spinor chain, that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ", will be replaced by sum of A spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementA", " "}], "TI"]], "InlineFormula"],
+ " and B spinor ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementB", "  "}], "TI"]], "InlineFormula"],
+ ". ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementB", "  "}], "TI"]], "InlineFormula"],
+ " and ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacementA", " "}], "TI"]], "InlineFormula"],
+ " can use variables matched by named patterns in ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ReplaceASpinor", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       StyleBox["x", "TI"], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{
+         StyleBox["a", "TI"], ",", 
+         StyleBox["b", "TI"]}], "}"}]}], ",", 
+      RowBox[{
+       StyleBox["patt", "TI"], "\[RuleDelayed]", 
+       StyleBox["replacement", "TI"]}], 
+      StyleBox[" ", "TI"], ",", "\[Ellipsis]"}], "}"}]}], "]"}]], 
+  "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with replacement using all given rules.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{"ReplaceASpinor", "[", 
+    RowBox[{
+     StyleBox["expr", "TI"], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox[
+           StyleBox["x", "TI"], 
+           StyleBox["1", "TR"]], "\[Rule]", 
+          SubscriptBox[
+           StyleBox["r", "TI"], 
+           StyleBox["1", "TR"]]}], ",", 
+         StyleBox["\[Ellipsis]", "TR"]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox[
+           StyleBox["x", "TI"], 
+           StyleBox["2", "TR"]], "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            SubscriptBox[
+             StyleBox["a", "TI"], 
+             StyleBox["2", "TR"]], ",", 
+            SubscriptBox[
+             StyleBox["b", "TI"], 
+             StyleBox["2", "TR"]]}], "}"}]}], ",", 
+         StyleBox["\[Ellipsis]", "TR"]}], "}"}], ",", 
+       StyleBox["\[Ellipsis]", "TR"]}]}]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns a ",
+ Cell[BoxData[
+  ButtonBox["List",
+   BaseStyle->"Link"]], "InlineFormula"],
+ ", each element of this list is a result of replacement using subsequent \
+list of rules."
+}], "Usage"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ReplaceASpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceASpinor"]], "InlineFormula"],
+ " behaves as builtin ",
+ Cell[BoxData[
+  ButtonBox["ReplaceAll",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " function but replaces only expressions that are found in places where they \
+can be interpreted as massless or massive A spinors."
+}], "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ReplaceLVector",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceLVector"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ReplaceBSpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceBSpinor"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["A spinors are replaced:", "ExampleText",
+ CellID->255613305],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1473893814],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"1", ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"1", "\[Rule]", "3"}]}], "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->609025611],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->134641416],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", "3", "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1383661757]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SmBA", "[", 
+  RowBox[{"2", ",", "1"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"1", "\[Rule]", "3"}]}], "]"}]}], "Input",
+ CellLabel->"In[6]:=",
+ CellID->47422107],
+
+Cell[BoxData[
+ RowBox[{"SmBA", "[", 
+  RowBox[{"2", ",", "1"}], "]"}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1909465290],
+
+Cell[BoxData[
+ RowBox[{"SmBA", "[", 
+  RowBox[{"2", ",", "3"}], "]"}]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->917684046]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1718961174],
+
+Cell["B spinors are not replaced:", "ExampleText",
+ CellID->103006950],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[12]:=",
+ CellID->485335172],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spbb", "[", 
+  RowBox[{"2", ",", "1"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"1", "\[Rule]", "3"}]}], "]"}]}], "Input",
+ CellLabel->"In[13]:=",
+ CellID->1317136587],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", "2", "|", "1", "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[13]=",
+ CellID->28083156],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", "2", "|", "1", "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[14]=",
+ CellID->171403286]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SmBA", "[", 
+  RowBox[{"1", ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"1", "\[Rule]", "3"}]}], "]"}]}], "Input",
+ CellLabel->"In[15]:=",
+ CellID->633974453],
+
+Cell[BoxData[
+ RowBox[{"SmBA", "[", 
+  RowBox[{"1", ",", "2"}], "]"}]], "Output",
+ CellLabel->"Out[15]=",
+ CellID->1486235704],
+
+Cell[BoxData[
+ RowBox[{"SmBA", "[", 
+  RowBox[{"1", ",", "2"}], "]"}]], "Output",
+ CellLabel->"Out[16]=",
+ CellID->780856519]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->527741998],
+
+Cell["\<\
+Occurences of replaced label that don't scale as square root of four-vector \
+are not changed:\
+\>", "ExampleText",
+ CellID->409975463],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[17]:=",
+ CellID->1539828447],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spab", "[", 
+  RowBox[{"1", ",", "2", ",", "3"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"2", "\[Rule]", "4"}]}], "]"}]}], "Input",
+ CellLabel->"In[18]:=",
+ CellID->1102074149],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "|", "3", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[18]=",
+ CellID->1340404589],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "|", "3", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[19]=",
+ CellID->505892586]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->446616572],
+
+Cell["\<\
+Massive A spinors can be replaced by linear combination of B and A spinors:\
+\>", "ExampleText",
+ CellID->116235080],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->186576270],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->286615802],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1790703753],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->849291870]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"P", ",", 
+      RowBox[{"+", "1"}]}], "]"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "b"}], "}"}]}]}], "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->206820029],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], "P"}], "|", 
+   RowBox[{
+    SubscriptBox["", "+"], "Q"}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->561451592],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "a", "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "Q"}], "\[RightAngleBracket]"}],
+   TraditionalForm], "-", 
+  FormBox[
+   RowBox[{"[", "b", "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "Q"}], "\[RightAngleBracket]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->719525142]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"Q", ",", 
+      RowBox[{"+", "1"}]}], "]"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"a", ",", "b"}], "}"}]}]}], "]"}]}], "Input",
+ CellLabel->"In[6]:=",
+ CellID->160201456],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], "P"}], "|", 
+   RowBox[{
+    SubscriptBox["", "+"], "Q"}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->763323636],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "|", "a", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "|", "b", "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1736298190]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Rule",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " with patterns can be used:"
+}], "ExampleText",
+ CellID->890521524],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->654699718],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "r"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->2039354501],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "r"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`r}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->62695901]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Spaa", "[", 
+   RowBox[{"1", ",", "2"}], "]"}], "+", 
+  RowBox[{"Spaa", "[", 
+   RowBox[{"3", ",", "4"}], "]"}], "+", 
+  RowBox[{"Spaa", "[", 
+   RowBox[{"5", ",", "6"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{
+    RowBox[{"Sp", "[", 
+     RowBox[{"_", "?", "OddQ"}], "]"}], "\[Rule]", "r"}]}], "]"}]}], "Input",
+ CellLabel->"In[11]:=",
+ CellID->1817397899],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "1", "|", "2", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "3", "|", "4", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "5", "|", "6", "\[RightAngleBracket]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1082916140],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "r", "|", "2", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "r", "|", "4", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "r", "|", "6", "\[RightAngleBracket]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[12]=",
+ CellID->12224049]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->557928810],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["RuleDelayed",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " with named patterns can be used:"
+}], "ExampleText",
+ CellID->305713516],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->182488126],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q", ",", "L"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1130438402],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q", ",", "L"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q, $CellContext`L}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->522724010]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"tmp", "=", 
+  RowBox[{
+   RowBox[{"Spab", "[", 
+    RowBox[{
+     RowBox[{"SpM", "[", 
+      RowBox[{"P", ",", 
+       RowBox[{"+", "1"}]}], "]"}], ",", "Q", ",", 
+     RowBox[{"SpM", "[", 
+      RowBox[{"L", ",", 
+       RowBox[{"-", "1"}]}], "]"}]}], "]"}], "+", 
+   RowBox[{"Spab", "[", 
+    RowBox[{
+     RowBox[{"SpM", "[", 
+      RowBox[{"Q", ",", 
+       RowBox[{"-", "1"}]}], "]"}], ",", "L", ",", 
+     RowBox[{"SpM", "[", 
+      RowBox[{"P", ",", 
+       RowBox[{"+", "1"}]}], "]"}]}], "]"}]}]}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->621831919],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "|", "Q", "|", 
+    RowBox[{
+     SubscriptBox["", "-"], "L"}], "]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "-"], "Q"}], "|", "L", "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1384167633]
+}, Open  ]],
+
+Cell["Change u A spinors to v A spinors and vice versa:", "ExampleText",
+ CellID->560461286],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"tmp", ",", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"x_", ",", "t_"}], "]"}], "\[RuleDelayed]", 
+    RowBox[{"SpM", "[", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "t"}]}], "]"}]}]}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1411052761],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "-"], "P"}], "|", "Q", "|", 
+    RowBox[{
+     SubscriptBox["", "-"], "L"}], "]"}],
+   TraditionalForm], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "Q"}], "|", "L", "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->471608936]
+}, Open  ]],
+
+Cell["\<\
+Change all massive A spinors to linear combination of A and B spinors with \
+coefficients depending on replaced spinor properties:\
+\>", "ExampleText",
+ CellID->246400544],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1538968348],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1350329767]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"tmp", ",", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"x_", ",", "t_", ",", "___"}], "]"}], "\[RuleDelayed]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"MP", "[", 
+        RowBox[{"x", ",", "2"}], "]"}], "a"}], ",", 
+      RowBox[{"t", " ", "b"}]}], "}"}]}]}], "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->1846741050],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"MP", "[", 
+    RowBox[{"Q", ",", "2"}], "]"}], " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "a", "|", "L", "|", 
+     RowBox[{
+      SubscriptBox["", "+"], "P"}], "]"}],
+    TraditionalForm]}], "+", 
+  RowBox[{
+   RowBox[{"MP", "[", 
+    RowBox[{"P", ",", "2"}], "]"}], " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "a", "|", "Q", "|", 
+     RowBox[{
+      SubscriptBox["", "-"], "L"}], "]"}],
+    TraditionalForm]}], "+", 
+  FormBox[
+   RowBox[{"[", "b", "|", "L", "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "]"}],
+   TraditionalForm], "-", 
+  FormBox[
+   RowBox[{"[", "b", "|", "Q", "|", 
+    RowBox[{
+     SubscriptBox["", "-"], "L"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1843079277]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->828134022],
+
+Cell["List of rules can be used:", "ExampleText",
+ CellID->201122541],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1064992176],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "r"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}]}], "Input",
+ CellLabel->"In[9]:=",
+ CellID->564972812],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "r"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`r}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[9]:=",
+ CellID->2089910352],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[9]:=",
+ CellID->1828189554]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Spab", "[", 
+   RowBox[{"2", ",", "P", ",", "1"}], "]"}], 
+  RowBox[{"Spab", "[", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"P", ",", 
+      RowBox[{"+", "1"}]}], "]"}], ",", "2", ",", 
+    RowBox[{"SpM", "[", 
+     RowBox[{"Q", ",", 
+      RowBox[{"\[PlusMinus]", "1"}]}], "]"}]}], "]"}], 
+  RowBox[{"Spab", "[", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"Q", ",", 
+      RowBox[{"\[MinusPlus]", "1"}]}], "]"}], ",", "1", ",", 
+    RowBox[{"SpM", "[", 
+     RowBox[{"P", ",", 
+      RowBox[{"-", "1"}], ",", "2"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"2", "\[Rule]", "r"}], ",", 
+     RowBox[{
+      RowBox[{"SpM", "[", 
+       RowBox[{"P", ",", "___"}], "]"}], "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"a", ",", "b"}], "}"}]}]}], "}"}]}], "]"}]}], "Input",
+ CellLabel->"In[11]:=",
+ CellID->93228186],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "2", "|", "P", "|", "1", "]"}],
+   TraditionalForm], " ", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "|", "2", "|", 
+    RowBox[{
+     SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+   TraditionalForm], " ", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "\[MinusPlus]"], "Q"}], "|", "1", "|", 
+    RowBox[{
+     SubsuperscriptBox["", "-", "2"], "P"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1674174141],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "r", "|", "P", "|", "1", "]"}],
+   TraditionalForm], " ", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "\[MinusPlus]"], "Q"}], "|", "1", "|", 
+    RowBox[{
+     SubsuperscriptBox["", "-", "2"], "P"}], "]"}],
+   TraditionalForm], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "a", "|", "2", "|", 
+      RowBox[{
+       SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+     TraditionalForm], "-", 
+    FormBox[
+     RowBox[{"[", "b", "|", "2", "|", 
+      RowBox[{
+       SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+     TraditionalForm]}], ")"}]}]], "Output",
+ CellLabel->"Out[12]=",
+ CellID->17905096]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->506862189],
+
+Cell[TextData[{
+ "List of lists of rules can be used, ",
+ Cell[BoxData["ReplaceASpinor"], "InlineFormula"],
+ " will return list or results:"
+}], "ExampleText",
+ CellID->1916300259],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[13]:=",
+ CellID->416371927],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "r"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}]}], "Input",
+ CellLabel->"In[14]:=",
+ CellID->1159102138],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "r"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`r}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[14]:=",
+ CellID->1752333074],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[14]:=",
+ CellID->809058526]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Spab", "[", 
+   RowBox[{"2", ",", "P", ",", "1"}], "]"}], 
+  RowBox[{"Spab", "[", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"P", ",", 
+      RowBox[{"+", "1"}]}], "]"}], ",", "2", ",", 
+    RowBox[{"SpM", "[", 
+     RowBox[{"Q", ",", 
+      RowBox[{"\[PlusMinus]", "1"}]}], "]"}]}], "]"}], 
+  RowBox[{"Spab", "[", 
+   RowBox[{
+    RowBox[{"SpM", "[", 
+     RowBox[{"Q", ",", 
+      RowBox[{"\[MinusPlus]", "1"}]}], "]"}], ",", "1", ",", 
+    RowBox[{"SpM", "[", 
+     RowBox[{"P", ",", 
+      RowBox[{"-", "1"}], ",", "2"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"2", "\[Rule]", "r"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"SpM", "[", 
+        RowBox[{"P", ",", "___"}], "]"}], "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"a", ",", "b"}], "}"}]}], "}"}]}], "}"}]}], "]"}]}], "Input",
+ CellLabel->"In[16]:=",
+ CellID->1073908681],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "2", "|", "P", "|", "1", "]"}],
+   TraditionalForm], " ", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "+"], "P"}], "|", "2", "|", 
+    RowBox[{
+     SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+   TraditionalForm], " ", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "\[MinusPlus]"], "Q"}], "|", "1", "|", 
+    RowBox[{
+     SubsuperscriptBox["", "-", "2"], "P"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[16]=",
+ CellID->1162839730],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "r", "|", "P", "|", "1", "]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "+"], "P"}], "|", "2", "|", 
+      RowBox[{
+       SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "\[MinusPlus]"], "Q"}], "|", "1", "|", 
+      RowBox[{
+       SubsuperscriptBox["", "-", "2"], "P"}], "]"}],
+     TraditionalForm]}], ",", 
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", "P", "|", "1", "]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "\[MinusPlus]"], "Q"}], "|", "1", "|", 
+      RowBox[{
+       SubsuperscriptBox["", "-", "2"], "P"}], "]"}],
+     TraditionalForm], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", "a", "|", "2", "|", 
+        RowBox[{
+         SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+       TraditionalForm], "-", 
+      FormBox[
+       RowBox[{"[", "b", "|", "2", "|", 
+        RowBox[{
+         SubscriptBox["", "\[PlusMinus]"], "Q"}], "]"}],
+       TraditionalForm]}], ")"}]}]}], "}"}]], "Output",
+ CellLabel->"Out[17]=",
+ CellID->1907997773]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1827247986],
+
+Cell["\<\
+Any expression can be replaced by any other expression only requirement is \
+that expression is inside symbol in which it can be interpreted as massless \
+or massive A spinor:\
+\>", "ExampleText",
+ CellID->1604873341],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[18]:=",
+ CellID->1775071775],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"w", ",", 
+   RowBox[{"x", " ", "y"}]}], " ", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ReplaceASpinor", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{
+    RowBox[{"x", " ", "y"}], "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"w", " ", 
+        RowBox[{"Sp", "[", "1", "]"}]}], "+", 
+       RowBox[{"x", " ", 
+        RowBox[{"Sp", "[", "2", "]"}]}]}], ",", 
+      RowBox[{
+       RowBox[{"y", " ", 
+        RowBox[{"Sp", "[", "3", "]"}]}], "+", 
+       RowBox[{"z", " ", 
+        RowBox[{"Sp", "[", "4", "]"}]}]}]}], "}"}]}]}], "]"}]}], "Input",
+ CellLabel->"In[19]:=",
+ CellID->363482266],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "w", "|", 
+   RowBox[{"x", " ", "y"}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[19]=",
+ CellID->211932370],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"w", " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "w", "|", "1", "\[RightAngleBracket]"}],
+    TraditionalForm]}], "+", 
+  RowBox[{"x", " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "w", "|", "2", "\[RightAngleBracket]"}],
+    TraditionalForm]}], "+", 
+  RowBox[{"y", " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "w", "|", "3", "]"}],
+    TraditionalForm]}], "+", 
+  RowBox[{"z", " ", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "w", "|", "4", "]"}],
+    TraditionalForm]}]}]], "Output",
+ CellLabel->"Out[20]=",
+ CellID->364521387]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

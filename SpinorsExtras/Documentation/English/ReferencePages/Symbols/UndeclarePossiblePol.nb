@@ -1,0 +1,498 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->558356212],
+
+Cell["SpinorsExtras`Pol`", "Categorization",
+ CellLabel->"Context",
+ CellID->1261796025],
+
+Cell["SpinorsExtras/ref/UndeclarePossiblePol", "Categorization",
+ CellLabel->"URI",
+ CellID->2049756440]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["UndeclarePossiblePol", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"UndeclarePossiblePol", "[", 
+   StyleBox["x", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]removes ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " from list of symbolic representations of posible vector boson \
+polarizations.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"UndeclarePossiblePol", "[", 
+   RowBox[{
+    StyleBox["x", "TI"], ",", " ", 
+    StyleBox["y", "TI"], ",", "  ", 
+    StyleBox["\[Ellipsis]", "TR"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]removes ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  StyleBox["y", "TI"]], "InlineFormula"],
+ ", ... from list of symbolic representations of posible vector boson \
+polarizations."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePossiblePol"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PossiblePolQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PossiblePolQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["UndeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePlusMinusOne"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["\<\
+Remove one symbol from list of posible vector boson polarizations:\
+\>", "ExampleText",
+ CellID->1433605585],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->1944434619],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[16]:=",
+ CellID->1993778067],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[16]:=",
+ CellID->957959219]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[17]:=",
+ CellID->2109503315],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[17]=",
+ CellID->1051245805],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[18]=",
+ CellID->1830104572],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[19]=",
+ CellID->332852690]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UndeclarePossiblePol", "[", "y", "]"}]], "Input",
+ CellLabel->"In[20]:=",
+ CellID->1222171504],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" removed from the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " removed from the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->858266226]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[21]:=",
+ CellID->9804828],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[21]=",
+ CellID->1078001547],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[22]=",
+ CellID->729813014],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[23]=",
+ CellID->1891529060]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell["\<\
+Remove many symbols from list of posible vector boson polarizations:\
+\>", "ExampleText",
+ CellID->1799807896],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[24]:=",
+ CellID->1226703305],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[25]:=",
+ CellID->69175621],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[25]:=",
+ CellID->1335148247]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[26]:=",
+ CellID->934067719],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[26]=",
+ CellID->968423576],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[27]=",
+ CellID->906760030],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[28]=",
+ CellID->1304188669]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UndeclarePossiblePol", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[29]:=",
+ CellID->408302185],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" removed from the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " removed from the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[29]:=",
+ CellID->47095088]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[30]:=",
+ CellID->2130665425],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[30]=",
+ CellID->527128798],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[31]=",
+ CellID->1757090328],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[32]=",
+ CellID->195316317]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

@@ -1,0 +1,1722 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1103420853],
+
+Cell["SpinorsExtras`Pol`", "Categorization",
+ CellLabel->"Context",
+ CellID->2104471885],
+
+Cell["SpinorsExtras/ref/PolVec", "Categorization",
+ CellLabel->"URI",
+ CellID->757107021]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["PolVec", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", " ", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents polarization vector of vector boson with \
+momentum ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ ", polarization ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " and implicit reference vector. \n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", " ", 
+    StyleBox["pol", "TI"], ",", " ", 
+    StyleBox["ref", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents polarization vector of vector boson with \
+momentum ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ ", polarization ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " and reference vector ",
+ Cell[BoxData[
+  StyleBox["ref", "TI"]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell[TextData[{
+ "Transverse polarization vectors are lightlike four-vectors, so ",
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", " ", 
+    RowBox[{"\[PlusMinus]", "1"}], ",", " ", "..."}], "]"}]], "InlineFormula"],
+ " can be interpreted as massless spinor."
+}], "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExpandPolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandPolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["DeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePossiblePol"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["UndeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePossiblePol"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PossiblePolQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PossiblePolQ"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Notation", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2034196178],
+
+Cell[TextData[{
+ "With activated notation ",
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", " ", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector and ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " interpretable as possible polarization, is denoted by",
+ Cell[BoxData[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "pol"], 
+   RowBox[{"(", "P", ")"}]}]], "InlineFormula"],
+ " :"
+}], "ExampleText",
+ CellID->1250971477],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1677056277],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->798072144],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1804346174]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"+", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[PlusMinus]", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[MinusPlus]", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "0"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "\"\<S\>\""}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->852495210],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "+"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 1]]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->183098698],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "-"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, -1]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1866070867],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\[PlusMinus]"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 
+   PlusMinus[1]]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1800922859],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\[MinusPlus]"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 
+   MinusPlus[1]]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1080150769],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "0"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 0]]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->564204803],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\<\"S\"\>"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, "S"]]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1282903043]
+}, Open  ]],
+
+Cell[TextData[{
+ "When first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector or second is not interpretable as ",
+ "possible polarization",
+ " notation is not changed:"
+}], "ExampleText",
+ CellID->1323017349],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolVec", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "x"}], "]"}]}], "Input",
+ CellLabel->"In[9]:=",
+ CellID->987329385],
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}]}], "]"}]], "Output",
+ CellLabel->"Out[9]=",
+ CellID->919984573],
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "x"}], "]"}]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->1375198965]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1665125691],
+
+Cell[TextData[{
+ "With activated notation ",
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    StyleBox["pol", "TI"], ",", 
+    StyleBox["q", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector, ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " interpretable as possible polarization",
+ " and ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " being massless Spinor, is denoted by ",
+ Cell[BoxData[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "pol"], 
+   RowBox[{"(", 
+    RowBox[{"P", ",", "q"}], ")"}]}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1595957069],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->42393444],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->166075545],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->572304184],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1198811982]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"+", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[PlusMinus]", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[MinusPlus]", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "0", ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "\"\<S\>\"", ",", "q"}], "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1635340903],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "+"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 1, $CellContext`q]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->366366724],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "-"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, -1, $CellContext`q]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1604442430],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\[PlusMinus]"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 
+   PlusMinus[1], $CellContext`q]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->60430475],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\[MinusPlus]"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 
+   MinusPlus[1], $CellContext`q]]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1657154283],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "0"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, 0, $CellContext`q]]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1617231719],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "\<\"S\"\>"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, "S", $CellContext`q]]], "Output",
+ CellLabel->"Out[9]=",
+ CellID->57368003]
+}, Open  ]],
+
+Cell[TextData[{
+ "When first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector, second is not interpretable as possible polarization or \
+third is not massles Spinor notation is not changed:"
+}], "ExampleText",
+ CellID->574967913],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolVec", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "x", ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "x"}], "]"}]}], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1433349059],
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->350854633],
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "x", ",", "q"}], "]"}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->580072080],
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "x"}], "]"}]], "Output",
+ CellLabel->"Out[12]=",
+ CellID->773645049]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->244626948],
+
+Cell[TextData[{
+ "To keep symbolic second argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " but still use special notation, a symbol can be set to be interpreted as \
+possible polarization using ",
+ Cell[BoxData[
+  ButtonBox["DeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePossiblePol"]], 
+  "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->823689037],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1878679328],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->972599496],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->258118003],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->742709884]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", "y", "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1921593776],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->641020848]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "y"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PolVec", "[", 
+  RowBox[{"P", ",", "y", ",", "q"}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1692310075],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "y"], 
+   RowBox[{"(", "P", ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, $CellContext`y]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->418170774],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "y"], 
+   RowBox[{"(", 
+    TemplateBox[{",","\",\"","P","q"},
+     "RowWithSeparators"], ")"}]}],
+  SpinorsExtras`Pol`PolVec[$CellContext`P, $CellContext`y, $CellContext`q]]], \
+"Output",
+ CellLabel->"Out[6]=",
+ CellID->1929208863]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["LVector interpretation", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1087942709],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", " ", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector and ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " interpretable as possible polarization, is interpreted as LVector:"
+}], "ExampleText",
+ CellID->529855805],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->675163668],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->993999087],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1755389782]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"-", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[PlusMinus]", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[MinusPlus]", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "0"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "\"\<S\>\""}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1835046455],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->88604501],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1013044317],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1876471797],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->833387310],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->974390230],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1722257951]
+}, Open  ]],
+
+Cell[TextData[{
+ "If first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector or second is not interpretable as ",
+ "possible polarization",
+ ", then ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not interpreted as LVector:"
+}], "ExampleText",
+ CellID->317463178],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[9]:=",
+ CellID->2035745354],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->1146070914],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[10]=",
+ CellID->1503310826]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1653769037],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    StyleBox["pol", "TI"], ",", 
+    StyleBox["q", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector,",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ " interpretable as possible polarization",
+ " and ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " being massless Spinor, is interpreted as LVector:"
+}], "ExampleText",
+ CellID->27330892],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->388194211],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->432909847],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->838598799],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1633522131]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"-", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[PlusMinus]", "1"}], ",", "q"}], "]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[MinusPlus]", "1"}], ",", "q"}], "]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "0", ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "\"\<S\>\"", ",", "q"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1499106446],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->556599421],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->661441933],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->2031391561],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->194319733],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1541707210],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->40101477]
+}, Open  ]],
+
+Cell[TextData[{
+ "If first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector, second is not interpretable as ",
+ "possible polarization",
+ " or third is not massles Spinor, then ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not interpreted as LVector:"
+}], "ExampleText",
+ CellID->1559873741],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"+", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "x", ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}], ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[10]:=",
+ CellID->311908890],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[10]=",
+ CellID->937754604],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1995969109],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->1235831527]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1113716567],
+
+Cell[TextData[{
+ "To keep symbolic second argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " but still make it interpretable as LVector,",
+ "a symbol can be set to be interpreted as possible polarization using ",
+ Cell[BoxData[
+  ButtonBox["DeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePossiblePol"]], 
+  "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1128661457],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->259912330],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1031555122],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->141145298],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1899779342]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePossiblePol", "[", "y", "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1604470607],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+polarizations\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " added to the list of posible vector boson polarizations"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->923077413]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "y"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "y", ",", "q"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->628292793],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->936514098],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1312752246]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Spinor interpretation", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->757426455],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{"\[PlusMinus]", "1"}]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector, is interpreted as massless Spinor:"
+}], "ExampleText",
+ CellID->1184113083],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1350091403],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1845061486],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1368138694]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"-", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[PlusMinus]", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[MinusPlus]", "1"}]}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1120899999],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->355464076],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->393103565],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1507429591],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1107157776]
+}, Open  ]],
+
+Cell[TextData[{
+ "If first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector or second is not interpretable as ",
+ Cell[BoxData[
+  RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
+ ", then ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not interpreted as ",
+ "massless Spinor",
+ ":"
+}], "ExampleText",
+ CellID->887473094],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->1338724009],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->244846316],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1670667889]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->565631654],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{"PolVec", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{"\[PlusMinus]", "1"}], ",", 
+    StyleBox["q", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector and ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " being massless Spinor, is interpreted as ",
+ "massless Spinor",
+ ":"
+}], "ExampleText",
+ CellID->113450558],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->1592868189],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1749573708],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->511772017],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[10]:=",
+ CellID->1818646344]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"-", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[PlusMinus]", "1"}], ",", "q"}], "]"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"\[MinusPlus]", "1"}], ",", "q"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[12]:=",
+ CellID->1606288142],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[12]=",
+ CellID->74043589],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[13]=",
+ CellID->1210318063],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[14]=",
+ CellID->1443163345],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[15]=",
+ CellID->1412081180]
+}, Open  ]],
+
+Cell[TextData[{
+ "If first argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not LVector, second is not interpretable as ",
+ Cell[BoxData[
+  RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
+ " or third is not massles Spinor, then ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " is not interpreted as ",
+ "massless Spinor",
+ ":"
+}], "ExampleText",
+ CellID->855304791],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"x", ",", 
+    RowBox[{"+", "1"}], ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "x", ",", "q"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", 
+    RowBox[{"+", "1"}], ",", "x"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[16]:=",
+ CellID->582522588],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[16]=",
+ CellID->2126258356],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[17]=",
+ CellID->52283171],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[18]=",
+ CellID->114492685]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->492981477],
+
+Cell[TextData[{
+ "To keep symbolic second argument of ",
+ Cell[BoxData["PolVec"], "InlineFormula"],
+ " but still make it interpretable as massless Spinor, a symbol can be set to \
+be interpreted as ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ " using ",
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1620229631],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[19]:=",
+ CellID->1397030002],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[20]:=",
+ CellID->645010041],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->962744255],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->1754275091]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePlusMinusOne", "[", "y", "]"}]], "Input",
+ CellLabel->"In[22]:=",
+ CellID->1662175769],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of symbolic representations \
+of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " added to the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[22]:=",
+ CellID->756006303]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "y"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpinorQ", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"P", ",", "y", ",", "q"}], "]"}], "]"}]}], "Input",
+ CellLabel->"In[23]:=",
+ CellID->1119038285],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[23]=",
+ CellID->369364899],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[24]=",
+ CellID->867927902]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell["\<\
+For massless particles longitudinal and scalar polarizations are not allowed:\
+\
+\>", "ExampleText",
+ CellID->288354576],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1162894113],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "q"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1240850679],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`q}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->168187129]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"a", ",", "0"}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->292280451],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \
+\\(\\((a)\\)\\)\\), PolVec[a, 0]]\\)\[NoBreak] first argument \
+\[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \[NoBreak]\\!\\(0\\)\[NoBreak] \
+polarization does not exist.\"\>"}]], "Message", "MSG",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1891205479],
+
+Cell[BoxData["$Failed"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->219161246]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"a", ",", "0", ",", "q"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1778828326],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \
+\\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"a\\\", \
+\\\"q\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), PolVec[a, 0, q]]\\)\
+\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \
+\[NoBreak]\\!\\(0\\)\[NoBreak] polarization does not exist.\"\>"}]], \
+"Message", "MSG",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->1510363805],
+
+Cell[BoxData["$Failed"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1811389032]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"a", ",", "\"\<S\>\""}], "]"}]], "Input",
+ CellLabel->"In[5]:=",
+ CellID->658998135],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\
+\"S\\\" \\(\\((a)\\)\\)\\), PolVec[a, \\\"S\\\"]]\\)\[NoBreak] first argument \
+\[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \[NoBreak]\\!\\(\\\"S\\\"\\)\
+\[NoBreak] polarization does not exist.\"\>"}]], "Message", "MSG",
+ CellLabel->"During evaluation of In[5]:=",
+ CellID->116673274],
+
+Cell[BoxData["$Failed"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1788857209]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolVec", "[", 
+  RowBox[{"a", ",", "\"\<S\>\"", ",", "q"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1095870769],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\
+\"S\\\" \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \
+\\\"a\\\", \\\"q\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), PolVec[a, \
+\\\"S\\\", q]]\\)\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is \
+massles so \[NoBreak]\\!\\(\\\"S\\\"\\)\[NoBreak] polarization does not \
+exist.\"\>"}]], "Message", "MSG",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->406353928],
+
+Cell[BoxData["$Failed"], "Output",
+ CellLabel->"Out[6]=",
+ CellID->364751480]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

@@ -1,0 +1,777 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->24093455],
+
+Cell["SpinorsExtras`Massive`", "Categorization",
+ CellLabel->"Context",
+ CellID->1008897750],
+
+Cell["SpinorsExtras/ref/SpM", "Categorization",
+ CellLabel->"URI",
+ CellID->1520268676]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["u spinor", "Keywords",
+ CellID->1164421360],
+
+Cell["v spinor", "Keywords",
+ CellID->1426797663],
+
+Cell["massive spinor", "Keywords",
+ CellID->108782895]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["SpM", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    RowBox[{"+", "1"}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents u spinor associated with non-lightlike \
+four-vector ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " and default reference spinor.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    RowBox[{"-", "1"}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents v spinor associated with non-lightlike \
+four-vector ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " and default reference spinor.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    RowBox[{"+", "1"}], ",", 
+    StyleBox["ref", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents u spinor associated with non-lightlike \
+four-vector ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " and reference spinor ",
+ Cell[BoxData[
+  StyleBox["ref", "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], ",", 
+    RowBox[{"-", "1"}], ",", 
+    StyleBox["ref", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]represents v spinor associated with non-lightlike \
+four-vector ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " and reference spinor ",
+ Cell[BoxData[
+  StyleBox["ref", "TI"]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpRef",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpRef"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpAssoc",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpAssoc"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["LightConeDecompose",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LightConeDecompose"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PlusMinusOneQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PlusMinusOneQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["MassiveSpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/MassiveSpinorQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["AnySpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/AnySpinorQ"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Notation", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->2034196178],
+
+Cell[TextData[{
+ "With activated notation ",
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{"\[PlusMinus]", "1"}]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector, is denoted by",
+ Cell[BoxData[
+  RowBox[{
+   SubscriptBox["", "\[PlusMinus]"], 
+   ButtonBox["P",
+    BaseStyle->"Link"]}]], "InlineFormula"],
+ " :"
+}], "ExampleText",
+ CellID->1250971477],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1677056277],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", "P", "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->798072144],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->665352312]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"+", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[PlusMinus]", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[MinusPlus]", "1"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->852495210],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubscriptBox["", "+"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 1]]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->2145492730],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubscriptBox["", "-"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, -1]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1821922511],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubscriptBox["", "\[PlusMinus]"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 
+   PlusMinus[1]]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->2021697230],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubscriptBox["", "\[MinusPlus]"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 
+   MinusPlus[1]]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1703907936]
+}, Open  ]],
+
+Cell[TextData[{
+ "When first argument of ",
+ Cell[BoxData["SpM"], "InlineFormula"],
+ " is not LVector or second is not interpretable as ",
+ Cell[BoxData[
+  RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
+ " notation is not changed:"
+}], "ExampleText",
+ CellID->1323017349],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpM", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "x"}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->987329385],
+
+Cell[BoxData[
+ RowBox[{"SpM", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}]}], "]"}]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->126899844],
+
+Cell[BoxData[
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "x"}], "]"}]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1855431781]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1665125691],
+
+Cell[TextData[{
+ "With activated notation ",
+ Cell[BoxData[
+  RowBox[{"SpM", "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{"\[PlusMinus]", "1"}], ",", 
+    StyleBox["q", "TI"]}], "]"}]], "InlineFormula"],
+ ", with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " being LVector and ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " being massless Spinor, is denoted by ",
+ Cell[BoxData[
+  RowBox[{
+   SubsuperscriptBox["", "\[PlusMinus]", "q"], "P"}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1595957069],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->42393444],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->166075545],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->614218636],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1307888194]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"+", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[PlusMinus]", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"\[MinusPlus]", "1"}], ",", "q"}], "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1635340903],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubsuperscriptBox["", "+", "q"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 1, $CellContext`q]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1765851288],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubsuperscriptBox["", "-", "q"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, -1, $CellContext`q]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->99268835],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubsuperscriptBox["", "\[PlusMinus]", "q"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 
+   PlusMinus[1], $CellContext`q]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->919533029],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubsuperscriptBox["", "\[MinusPlus]", "q"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, 
+   MinusPlus[1], $CellContext`q]]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1089730194]
+}, Open  ]],
+
+Cell[TextData[{
+ "When first argument of ",
+ Cell[BoxData["SpM"], "InlineFormula"],
+ " is not LVector, second is not interpretable as ",
+ Cell[BoxData[
+  RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
+ " or third is not massles Spinor notation is not changed:"
+}], "ExampleText",
+ CellID->574967913],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpM", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "x", ",", "q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "x"}], "]"}]}], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1433349059],
+
+Cell[BoxData[
+ RowBox[{"SpM", "[", 
+  RowBox[{"x", ",", 
+   RowBox[{"-", "1"}], ",", "q"}], "]"}]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1026013491],
+
+Cell[BoxData[
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "x", ",", "q"}], "]"}]], "Output",
+ CellLabel->"Out[9]=",
+ CellID->858960930],
+
+Cell[BoxData[
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", 
+   RowBox[{"-", "1"}], ",", "x"}], "]"}]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->2046066412]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->244626948],
+
+Cell[TextData[{
+ "To keep symbolic second argument of ",
+ Cell[BoxData["SpM"], "InlineFormula"],
+ " but still use special notation, symbol deciding whether it's u or v spinor \
+can be set to be interpreted as ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ " using ",
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->823689037],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1878679328],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->972599496],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "P", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1859985065],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1449833336]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePlusMinusOne", "[", "y", "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1921593776],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of symbolic representations \
+of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " added to the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->1404547858]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "y"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"SpM", "[", 
+  RowBox[{"P", ",", "y", ",", "q"}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1692310075],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubscriptBox["", "y"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, $CellContext`y]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1541300525],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   SubsuperscriptBox["", "y", "q"], "P"}],
+  SpinorsExtras`Massive`SpM[$CellContext`P, $CellContext`y, \
+$CellContext`q]]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->328824699]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{427, Automatic}, {Automatic, 13}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

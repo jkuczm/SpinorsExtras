@@ -1,0 +1,882 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1274690476],
+
+Cell["SpinorsExtras`Pol`", "Categorization",
+ CellLabel->"Context",
+ CellID->1533118863],
+
+Cell["SpinorsExtras/ref/ExpandPolVec", "Categorization",
+ CellLabel->"URI",
+ CellID->191925867]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ExpandPolVec", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ExpandPolVec", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{
+     ButtonBox["PolVec",
+      BaseStyle->"Link",
+      ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+     RowBox[{
+      StyleBox["P", "TI"], 
+      StyleBox[" ", "TI"], ",", 
+      StyleBox["pol", "TI"]}], "]"}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " with occurences of polarization vectors ",
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["PolVec",
+    BaseStyle->"Link",
+    ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[" ", "TI"], ",", 
+    StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
+ " replaced by proper, for given polarization ",
+ Cell[BoxData[
+  StyleBox["pol", "TI"]], "InlineFormula"],
+ ", combinations of four-vectors, slashed matrices and spinors associated \
+with momentum ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ " and default reference vector.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ExpandPolVec", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], 
+    StyleBox[",", "TI"], 
+    RowBox[{
+     ButtonBox["PolVec",
+      BaseStyle->"Link",
+      ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+     RowBox[{
+      StyleBox["P", "TI"], 
+      StyleBox[" ", "TI"], ",", 
+      StyleBox["pol", "TI"], 
+      StyleBox[",", "TI"], 
+      StyleBox["q", "TI"]}], "]"}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]decomposes occurences of ",
+ Cell[BoxData[
+  RowBox[{
+   ButtonBox["PolVec",
+    BaseStyle->"Link",
+    ButtonData->"paclet:SpinorsExtras/ref/PolVec"], "[", 
+   RowBox[{
+    StyleBox["P", "TI"], 
+    StyleBox[" ", "TI"], ",", 
+    StyleBox["pol", "TI"], 
+    StyleBox[",", "TI"], 
+    StyleBox["q", "TI"]}], "]"}]], "InlineFormula"],
+ ", in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ ", using reference vector ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ExpandPolVec", "[", 
+   StyleBox[
+    RowBox[{"expr", ",", "patt"}], "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]decomposes those occurences of polarization vectors, in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ ", which match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ExpandPolVec", "[", 
+   StyleBox["expr", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]decomposes all polarization vectors in given expression ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo"], "PhaseConvention", 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell[TextData[{
+     "name of convention that will be passed as first argument of ",
+     Cell[BoxData[
+      ButtonBox["Phase",
+       BaseStyle->"Link",
+       ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+     " of expanded polarization vectors"
+    }], "TableText"]}
+  }]], "3ColumnTableMod"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["Expand only given polarization vector:", "ExampleText",
+ CellID->18660621],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1502531598],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->556268004],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->155149889]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"MP", "[", 
+  RowBox[{
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ExpandPolVec", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1450549939],
+
+Cell[BoxData[
+ RowBox[{"MP", "[", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "+"], 
+    RowBox[{"(", "P", ")"}]}], ",", 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "-"], 
+    RowBox[{"(", "Q", ")"}]}]}], "]"}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1884949669],
+
+Cell[BoxData[
+ FractionBox[
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox["P", "\[Flat]"], "|", 
+    RowBox[{
+     SuperscriptBox["\[Epsilon]", "-"], 
+     RowBox[{"(", "Q", ")"}]}], "|", 
+    SubscriptBox["q", "P"], "]"}],
+   TraditionalForm], 
+  RowBox[{
+   SqrtBox["2"], " ", 
+   FormBox[
+    RowBox[{"[", 
+     SubscriptBox["q", "P"], "|", 
+     SuperscriptBox["P", "\[Flat]"], "]"}],
+    TraditionalForm]}]]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1300958203]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->522866511],
+
+Cell["Expand polarization vectors matching given pattern:", "ExampleText",
+ CellID->1264287711],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1505565916],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}]], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1731137827],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[4]:=",
+ CellID->976867250]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"s", "[", 
+  RowBox[{
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", "0", ",", "1"}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"Q", ",", "0", ",", "1"}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}], ",", "2"}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"-", "1"}], ",", "3"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ExpandPolVec", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", "_", ",", 
+     RowBox[{"Sp", "[", 
+      RowBox[{"_", "?", "OddQ"}], "]"}]}], "]"}]}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->1342423610],
+
+Cell[BoxData[
+ SubscriptBox["s", 
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "-"], 
+    RowBox[{"(", 
+     RowBox[{"P", ",", "3"}], ")"}]}], 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "0"], 
+    RowBox[{"(", 
+     RowBox[{"P", ",", "1"}], ")"}]}], 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "+"], 
+    RowBox[{"(", 
+     RowBox[{"P", ",", "2"}], ")"}]}], 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "0"], 
+    RowBox[{"(", 
+     RowBox[{"Q", ",", "1"}], ")"}]}]}]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->6460104],
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["s", 
+   RowBox[{
+    FractionBox["P", 
+     SqrtBox[
+      RowBox[{"Abs", "[", 
+       RowBox[{"MP", "[", 
+        RowBox[{"P", ",", "P"}], "]"}], "]"}]]], 
+    RowBox[{
+     SuperscriptBox["\[Epsilon]", "+"], 
+     RowBox[{"(", 
+      RowBox[{"P", ",", "2"}], ")"}]}], 
+    RowBox[{
+     SuperscriptBox["\[Epsilon]", "0"], 
+     RowBox[{"(", 
+      RowBox[{"Q", ",", "1"}], ")"}]}], 
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{
+       RowBox[{"MP", "[", 
+        RowBox[{"P", ",", "P"}], "]"}], " ", "1"}], 
+      RowBox[{
+       SqrtBox[
+        RowBox[{"Abs", "[", 
+         RowBox[{"MP", "[", 
+          RowBox[{"P", ",", "P"}], "]"}], "]"}]], " ", 
+       RowBox[{"MP", "[", 
+        RowBox[{"P", ",", "1"}], "]"}]}]]}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox["2"], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "3", "|", 
+      RowBox[{
+       SuperscriptBox["\[Epsilon]", "+"], 
+       RowBox[{"(", 
+        RowBox[{"P", ",", "2"}], ")"}]}], "|", 
+      SuperscriptBox["P", "3"], "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "3", "|", 
+     SuperscriptBox["P", "3"], "\[RightAngleBracket]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox["2"], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "3", "|", 
+      RowBox[{
+       SuperscriptBox["\[Epsilon]", "0"], 
+       RowBox[{"(", 
+        RowBox[{"Q", ",", "1"}], ")"}]}], "|", 
+      SuperscriptBox["P", "3"], "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "3", "|", 
+     SuperscriptBox["P", "3"], "\[RightAngleBracket]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox["2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox[
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "3", "|", "P", "|", 
+         SuperscriptBox["P", "3"], "]"}],
+        TraditionalForm], 
+       SqrtBox[
+        RowBox[{"Abs", "[", 
+         RowBox[{"MP", "[", 
+          RowBox[{"P", ",", "P"}], "]"}], "]"}]]], "-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"MP", "[", 
+         RowBox[{"P", ",", "P"}], "]"}], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", "3", "|", "1", "|", 
+          SuperscriptBox["P", "3"], "]"}],
+         TraditionalForm]}], 
+       RowBox[{
+        SqrtBox[
+         RowBox[{"Abs", "[", 
+          RowBox[{"MP", "[", 
+           RowBox[{"P", ",", "P"}], "]"}], "]"}]], " ", 
+        RowBox[{"MP", "[", 
+         RowBox[{"P", ",", "1"}], "]"}]}]]}], ")"}]}], 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "3", "|", 
+     SuperscriptBox["P", "3"], "\[RightAngleBracket]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1890593822]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1748014383],
+
+Cell["Expand all polarization vectors:", "ExampleText",
+ CellID->1712807926],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1837640060],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q", ",", "R"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->588509405],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q", ",", "R"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q, $CellContext`R}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->139826645],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->94613213]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spab", "[", 
+  RowBox[{
+   RowBox[{"PolVec", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"Q", ",", "0", ",", "a"}], "]"}], ",", 
+   RowBox[{"PolVec", "[", 
+    RowBox[{"R", ",", 
+     RowBox[{"-", "1"}], ",", "b"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ExpandPolVec", "[", "%", "]"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->1309281939],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "+"], 
+    RowBox[{"(", "P", ")"}]}], "|", 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "0"], 
+    RowBox[{"(", 
+     RowBox[{"Q", ",", "a"}], ")"}]}], "|", 
+   RowBox[{
+    SuperscriptBox["\[Epsilon]", "-"], 
+    RowBox[{"(", 
+     RowBox[{"R", ",", "b"}], ")"}]}], "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->468120875],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{
+        RowBox[{"MP", "[", 
+         RowBox[{"Q", ",", "Q"}], "]"}], " ", 
+        FormBox[
+         RowBox[{"\[LeftAngleBracket]", 
+          SuperscriptBox["P", "\[Flat]"], "|", "a", "|", 
+          SuperscriptBox["R", "b"], "]"}],
+         TraditionalForm]}], 
+       RowBox[{
+        SqrtBox[
+         RowBox[{"Abs", "[", 
+          RowBox[{"MP", "[", 
+           RowBox[{"Q", ",", "Q"}], "]"}], "]"}]], " ", 
+        RowBox[{"MP", "[", 
+         RowBox[{"a", ",", "Q"}], "]"}]}]]}], "+", 
+     FractionBox[
+      FormBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        SuperscriptBox["P", "\[Flat]"], "|", "Q", "|", 
+        SuperscriptBox["R", "b"], "]"}],
+       TraditionalForm], 
+      SqrtBox[
+       RowBox[{"Abs", "[", 
+        RowBox[{"MP", "[", 
+         RowBox[{"Q", ",", "Q"}], "]"}], "]"}]]]}], ")"}]}], 
+  RowBox[{
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", "b", "|", 
+     SuperscriptBox["R", "b"], "\[RightAngleBracket]"}],
+    TraditionalForm], " ", 
+   FormBox[
+    RowBox[{"[", 
+     SubscriptBox["q", "P"], "|", 
+     SuperscriptBox["P", "\[Flat]"], "]"}],
+    TraditionalForm]}]]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->190119617]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["PhaseConvention", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[TextData[{
+ "With \"PhaseConvention\" set to ",
+ Cell[BoxData[
+  ButtonBox["Automatic",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " (default value) no additional phase factors are added to expanded \
+polarization vectors:"
+}], "ExampleText",
+ CellID->1715838032],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->788674970],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Sm", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"1", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ExpandPolVec", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"\"\<PhaseConvention\>\"", "\[Rule]", "Automatic"}]}], 
+  "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->2035914951],
+
+Cell[BoxData[
+ RowBox[{"Sm", "[", 
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "+"], 
+   RowBox[{"(", "1", ")"}]}], "]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->914266024],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SqrtBox["2"], " ", 
+   RowBox[{"SmBA", "[", 
+    RowBox[{
+     SubscriptBox["q", "1"], ",", "1"}], "]"}]}], 
+  FormBox[
+   RowBox[{"[", 
+    SubscriptBox["q", "1"], "|", "1", "]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->651880328]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1506267403],
+
+Cell[TextData[{
+ "With \"PhaseConvention\" set to anything else than ",
+ Cell[BoxData[
+  ButtonBox["Automatic",
+   BaseStyle->"Link"]], "InlineFormula"],
+ ", each expanded polarization vetor is multiplied with ",
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+ " for given convention:"
+}], "ExampleText",
+ CellID->1026934843],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1675902777],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Sm", "[", 
+  RowBox[{"PolVec", "[", 
+   RowBox[{"1", ",", 
+    RowBox[{"+", "1"}]}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ExpandPolVec", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{
+   "\"\<PhaseConvention\>\"", "\[Rule]", "\"\<MyPhaseConvention\>\""}]}], 
+  "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1197379257],
+
+Cell[BoxData[
+ RowBox[{"Sm", "[", 
+  RowBox[{
+   SuperscriptBox["\[Epsilon]", "+"], 
+   RowBox[{"(", "1", ")"}]}], "]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->1505462116],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   SqrtBox["2"], " ", 
+   RowBox[{"Phase", "[", 
+    RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+     RowBox[{
+      SuperscriptBox["\[Epsilon]", "+"], 
+      RowBox[{"(", "1", ")"}]}]}], "]"}], " ", 
+   RowBox[{"SmBA", "[", 
+    RowBox[{
+     SubscriptBox["q", "1"], ",", "1"}], "]"}]}], 
+  FormBox[
+   RowBox[{"[", 
+    SubscriptBox["q", "1"], "|", "1", "]"}],
+   TraditionalForm]]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1426374528]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

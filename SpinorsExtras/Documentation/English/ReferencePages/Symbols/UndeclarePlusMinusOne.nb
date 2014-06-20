@@ -1,0 +1,525 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->1884704884],
+
+Cell["SpinorsExtras`Utilities`", "Categorization",
+ CellLabel->"Context",
+ CellID->45190395],
+
+Cell["SpinorsExtras/ref/UndeclarePlusMinusOne", "Categorization",
+ CellLabel->"URI",
+ CellID->501269766]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["UndeclarePlusMinusOne", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"UndeclarePlusMinusOne", "[", 
+   StyleBox["x", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]removes ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " from list of symbolic representations of ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ ".\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"UndeclarePlusMinusOne", "[", 
+   RowBox[{
+    StyleBox["x", "TI"], ",", " ", 
+    StyleBox["y", "TI"], ",", "  ", 
+    StyleBox["\[Ellipsis]", "TR"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]removes ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ ", ",
+ Cell[BoxData[
+  StyleBox["y", "TI"]], "InlineFormula"],
+ ", ... from list of symbolic representations of ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PlusMinusOneQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PlusMinusOneQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpM",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["UndeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePossiblePol"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[TextData[{
+ "Remove one symbol from list of symbolic representations of ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1433605585],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->1944434619],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePlusMinusOne", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1993778067],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of symbolic representations \
+of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " added to the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[8]:=",
+ CellID->996583005]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[9]:=",
+ CellID->2109503315],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->1618400420],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[10]=",
+ CellID->698672144],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1560989491]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UndeclarePlusMinusOne", "[", "y", "]"}]], "Input",
+ CellLabel->"In[12]:=",
+ CellID->1222171504],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "y", "}"}], 
+   "\[InvisibleSpace]", "\<\" removed from the list of symbolic \
+representations of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`y}, 
+   " removed from the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[12]:=",
+ CellID->231297098]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[13]:=",
+ CellID->9804828],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[13]=",
+ CellID->2119022694],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[14]=",
+ CellID->359097483],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[15]=",
+ CellID->331224595]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[TextData[{
+ "Remove many symbols from list of symbolic representations of ",
+ Cell[BoxData[
+  RowBox[{"+", "1"}]], "InlineFormula"],
+ " or ",
+ Cell[BoxData[
+  RowBox[{"-", "1"}]], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->1799807896],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[16]:=",
+ CellID->1226703305],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclarePlusMinusOne", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[17]:=",
+ CellID->69175621],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of symbolic representations \
+of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " added to the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[17]:=",
+ CellID->205412674]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[18]:=",
+ CellID->934067719],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[18]=",
+ CellID->303848823],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[19]=",
+ CellID->1680926288],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[20]=",
+ CellID->778559020]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UndeclarePlusMinusOne", "[", 
+  RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
+ CellLabel->"In[21]:=",
+ CellID->408302185],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" removed from the list of symbolic \
+representations of +1 or -1\"\>"}],
+  SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
+   " removed from the list of symbolic representations of +1 or -1"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[21]:=",
+ CellID->979291335]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"PlusMinusOneQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "y", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"PlusMinusOneQ", "[", "z", "]"}]}], "Input",
+ CellLabel->"In[22]:=",
+ CellID->2130665425],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[22]=",
+ CellID->1152334950],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[23]=",
+ CellID->286887937],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[24]=",
+ CellID->2117756093]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{Automatic, 246}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

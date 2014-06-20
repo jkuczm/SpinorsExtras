@@ -1,0 +1,716 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->696303975],
+
+Cell["SpinorsExtras`Proportional`", "Categorization",
+ CellLabel->"Context",
+ CellID->1730245197],
+
+Cell["SpinorsExtras/ref/DeclareLVectorProportional", "Categorization",
+ CellLabel->"URI",
+ CellID->1028767842]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["DeclareLVectorProportional", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"DeclareLVectorProportional", "[", 
+   RowBox[{
+    StyleBox["x", "TI"], ",", 
+    StyleBox["y", "TI"], ",", 
+    StyleBox["\[Ellipsis]", "TR"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]sets B and A spinors labeled by ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ",
+ Cell[BoxData[
+  StyleBox["y", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ ", ... to be treated as proportional, which means that corresponding \
+four-vectors are proportional."
+}], "Usage"],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclareASpinorProportional",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareASpinorProportional"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["DeclareBSpinorProportional",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareBSpinorProportional"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["BSpinorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/BSpinorProportionalQ"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ASpinorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ASpinorProportionalQ"]], 
+  "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["LVectorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LVectorProportionalQ"]], 
+  "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["\<\
+Declare two null four-vectors as proportional:\
+\>", "ExampleText",
+ CellID->1678934517],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1105221950],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1563944587],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1782561996]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"BSpinorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ASpinorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->1344138963],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1248571299],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1708083555],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1364987305]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVectorProportional", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->345019280],
+
+Cell[BoxData["\<\"LVectors: {a, b} are now considered proportional.\"\>"], \
+"Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1444444535]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"BSpinorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ASpinorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->801268524],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1465353402],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1487361011],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->1407986977]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1578295243],
+
+Cell["\<\
+Declare more than two null four-vectors as proportional:\
+\>", "ExampleText",
+ CellID->1278927567],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->509597431],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1748469346],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`c, \
+$CellContext`d}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->912417713]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->2068640996],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1353608733],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1685980357],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[5]=",
+ CellID->468167550]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVectorProportional", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->199894700],
+
+Cell[BoxData["\<\"LVectors: {a, b, c, d} are now considered \
+proportional.\"\>"], "Print",
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1219738446]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LVectorProportionalQ", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->1239241749],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->251405963],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->2147089015],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->1097742308]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell["\<\
+Spinor product of proportional spinors is zero:\
+\>", "ExampleText",
+ CellID->510104002],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->269121602],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1746700545],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b", ",", "c"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`a, $CellContext`b, $CellContext`c}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->969402663]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spab", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spab", "[", 
+  RowBox[{"c", ",", "b", ",", "a"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"c", ",", "a", ",", "b", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"c", ",", "a", ",", "b", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"c", ",", "d", ",", "a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"c", ",", "d", ",", "a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->116938306],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->412183260],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FormBox[
+   RowBox[{"[", "b", "|", "a", "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->358301144],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "a", "|", "b", "|", "c", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->132315326],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "c", "|", "b", "|", "a", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1563348740],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+  "\[LeftAngleBracket]", "a", "|", "b", "|", "c", "|", "d", 
+   "\[RightAngleBracket]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->347682600],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", "a", "|", "b", "|", "c", "|", "d", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->1186900460],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+  "\[LeftAngleBracket]", "c", "|", "a", "|", "b", "|", "d", 
+   "\[RightAngleBracket]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[9]=",
+ CellID->1848240427],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", "c", "|", "a", "|", "b", "|", "d", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->153276162],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+  "\[LeftAngleBracket]", "c", "|", "d", "|", "a", "|", "b", 
+   "\[RightAngleBracket]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1423524350],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", "c", "|", "d", "|", "a", "|", "b", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[12]=",
+ CellID->282674400]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVectorProportional", "[", 
+  RowBox[{"a", ",", "b"}], "]"}]], "Input",
+ CellLabel->"In[13]:=",
+ CellID->1459119070],
+
+Cell[BoxData["\<\"LVectors: {a, b} are now considered proportional.\"\>"], \
+"Print",
+ CellLabel->"During evaluation of In[13]:=",
+ CellID->1312239914]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spab", "[", 
+  RowBox[{"a", ",", "b", ",", "c"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spab", "[", 
+  RowBox[{"c", ",", "b", ",", "a"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"a", ",", "b", ",", "c", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"c", ",", "a", ",", "b", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"c", ",", "a", ",", "b", ",", "d"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spaa", "[", 
+  RowBox[{"c", ",", "d", ",", "a", ",", "b"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Spbb", "[", 
+  RowBox[{"c", ",", "d", ",", "a", ",", "b"}], "]"}]}], "Input",
+ CellLabel->"In[14]:=",
+ CellID->1151830983],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[14]=",
+ CellID->1409437214],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[15]=",
+ CellID->1577493245],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[16]=",
+ CellID->1417283024],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[17]=",
+ CellID->201903636],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[18]=",
+ CellID->1345470263],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[19]=",
+ CellID->554222685],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[20]=",
+ CellID->1776583683],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[21]=",
+ CellID->587778672],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[22]=",
+ CellID->1270194237],
+
+Cell[BoxData["0"], "Output",
+ CellLabel->"Out[23]=",
+ CellID->113436167]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

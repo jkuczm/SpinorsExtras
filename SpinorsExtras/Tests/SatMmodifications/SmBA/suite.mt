@@ -1,0 +1,9 @@
+TestSuite[{
+	"Spaa.mt"
+	,
+	"Spbb.mt"
+	,
+	"Spab.mt"
+	,
+	"Spba.mt"
+}]

@@ -1,0 +1,403 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["SpinorsExtras`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["SpinorsExtras/ref/ScaledQFactory", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["XXXX", "Keywords",
+ CellID->1164421360]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["ScaledQFactory", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"ScaledQFactory", "[", 
+   RowBox[{
+    StyleBox["name", "TI"], 
+    StyleBox[" ", "TI"], ",", 
+    StyleBox["patt", "TI"]}], 
+   StyleBox[" ", "TI"], "]"}]], "InlineFormula"],
+ " \[LineSeparator]implements Scaled",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"name", " "}], "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ "Q that tests whether given expression matches pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " or ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " multipled by scalars."
+}], "Usage",
+ CellID->982511436],
+
+Cell["XXXX", "Notes",
+ CellID->1067943069]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ScaledSpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ScaledSpinorQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ScaledLVectorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ScaledLVectorQ"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ScalarQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ScalarQ"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[TextData[{
+ "Implement function for testing whether given expression is ",
+ Cell[BoxData["MyFavorite"], "InlineFormula",
+  ShowStringCharacters->False],
+ " or ",
+ Cell[BoxData["MyFavorite"], "InlineFormula",
+  ShowStringCharacters->False],
+ " times scalar."
+}], "ExampleText",
+ CellID->1885150745],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`Package`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->487045939],
+
+Cell["Before implementation:", "ExampleText",
+ CellID->12323428],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScaledMyFavoriteQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"MyFavorite", "[", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"x", " ", 
+   RowBox[{"MyFavorite", "[", "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{
+   RowBox[{"Sp", "[", "1", "]"}], " ", 
+   RowBox[{"MyFavorite", "[", "]"}]}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1750616199],
+
+Cell[BoxData[
+ RowBox[{"ScaledMyFavoriteQ", "[", "x", "]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->179556450],
+
+Cell[BoxData[
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"MyFavorite", "[", "]"}], "]"}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1484743577],
+
+Cell[BoxData[
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"x", " ", 
+   RowBox[{"MyFavorite", "[", "]"}]}], "]"}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1879271337],
+
+Cell[BoxData[
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{
+   RowBox[{"MyFavorite", "[", "]"}], " ", "1"}], "]"}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1187321169]
+}, Open  ]],
+
+Cell[TextData[{
+ "Implement ",
+ Cell[BoxData["ScaledMyFavoriteQ"], "InlineFormula",
+  ShowStringCharacters->False],
+ ":"
+}], "ExampleText",
+ CellID->734429353],
+
+Cell[BoxData[
+ RowBox[{"ScaledQFactory", "[", 
+  RowBox[{"\"\<MyFavorite\>\"", ",", "_MyFavorite"}], "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1015501262],
+
+Cell["After implementation:", "ExampleText",
+ CellID->105853065],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"ScaledMyFavoriteQ", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"MyFavorite", "[", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{"x", " ", 
+   RowBox[{"MyFavorite", "[", "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ScaledMyFavoriteQ", "[", 
+  RowBox[{
+   RowBox[{"Sp", "[", "1", "]"}], " ", 
+   RowBox[{"MyFavorite", "[", "]"}]}], "]"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->1933970903],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[7]=",
+ CellID->154309562],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[8]=",
+ CellID->826569425],
+
+Cell[BoxData["True"], "Output",
+ CellLabel->"Out[9]=",
+ CellID->530040444],
+
+Cell[BoxData["False"], "Output",
+ CellLabel->"Out[10]=",
+ CellID->878353348]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2061341341],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1757724783],
+
+Cell[BoxData[
+ InterpretationBox[Cell["XXXX", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->1295379749]
+}, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

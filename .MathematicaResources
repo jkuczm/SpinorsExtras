@@ -1,0 +1,12 @@
+Resources[
+    Version[1],
+    Sources[
+        Directory["~"]
+    ],
+    ExecutionBuildCommand["None"],
+    Paclet[
+        DocumentationBuildFile["buildScripts/docbuild.xml"],
+        PacletFolder["SpinorsExtras"],
+        FunctionPaclet[False]
+    ]
+]

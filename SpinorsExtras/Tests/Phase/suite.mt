@@ -1,0 +1,3 @@
+TestSuite[{
+	"AppendPhase.mt"
+}]

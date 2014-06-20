@@ -1,0 +1,2310 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->484129431],
+
+Cell["SpinorsExtras`MassiveUtilities`", "Categorization",
+ CellLabel->"Context",
+ CellID->1716377992],
+
+Cell["SpinorsExtras/ref/LightConeDecompose", "Categorization",
+ CellLabel->"URI",
+ CellID->126196127]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["light cone", "Keywords",
+ CellID->1164421360],
+
+Cell["decomposition", "Keywords",
+ CellID->581038274]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["LightConeDecompose", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    StyleBox["P", "TI"]}], " ", "]"}]], "InlineFormula"],
+ "\[LineSeparator]performs light cone decomposition of Lorentz vectors and \
+massive spinors, in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ ", with label ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ ". Lorentz vectors are decomposed with default reference vector and massive \
+spinors with their reference vectors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   StyleBox[
+    RowBox[{"expr", ",", "patt"}], "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]performs light cone decomposition of those Lorentz vectors \
+and massive spinors in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ " which label matches pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ". Lorentz vectors are decomposed with default reference vector and massive \
+spinors with their reference vectors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["P", "TI"], " ", "\[Rule]", 
+     StyleBox["q", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]with ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " being massless spinor. Decomposes Lorentz vectors and massive spinors, in ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ ", with label ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ ". Lorentz vectors and spinors with implicit reference vectors are \
+decomposed with reference vector ",
+ Cell[BoxData[
+  StyleBox["q", "TI"]], "InlineFormula"],
+ " and massive spinors with explicit reference vector are decomposed with \
+their reference vectors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["P", "TI"], "\[Rule]", 
+     StyleBox["Q", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"Q", " "}], "TI"]], "InlineFormula"],
+ " being massive LVector. Decomposition where Lorentz vectors and spinors \
+with implicit reference vectors are decomposed with reference vector being \
+vector associated with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"Q", " "}], "TI"]], "InlineFormula"],
+ " coming from simultaneous decomposition with ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"P", " "}], "TI"]], "InlineFormula"],
+ ". Massive spinors with explicit reference vectors are decomposed with their \
+reference vectors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{
+     StyleBox["patt", "TI"], "\[Rule]", 
+     StyleBox["x", "TI"]}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]decomposes all Lorentz vectors and massive spinors of which \
+label matches pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ". Lorentz vectors and spinors with implicit reference vectors are \
+decomposed with reference vector inferred from ",
+ Cell[BoxData[
+  StyleBox["x", "TI"]], "InlineFormula"],
+ " and massive spinors with explicit reference vectors are decomposed with \
+their reference vectors.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    StyleBox[
+     RowBox[{"patt", "\[RuleDelayed]", "replacement"}], "TI"]}], 
+   StyleBox[" ", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]Decomposition with reference vector inferred from ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacement", " "}], "TI"]], "InlineFormula"],
+ ". ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ " can have named patterns inside and ",
+ Cell[BoxData[
+  StyleBox[
+   RowBox[{"replacement", " "}], "TI"]], "InlineFormula"],
+ " can use variables matched by those named patterns.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       StyleBox["p1", "TI"], "\[Rule]", 
+       StyleBox["x1", "TI"]}], ",", 
+      StyleBox["p2", "TI"], ",", 
+      RowBox[{
+       StyleBox["p3", "TI"], "\[Rule]", 
+       StyleBox["x3", "TI"]}], ",", "..."}], "}"}]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]performs decompositions using all given patterns and rules.\
+\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         StyleBox["p11", "TI"], "\[Rule]", 
+         StyleBox["x11", "TI"]}], ",", 
+        StyleBox["p12", "TI"], ",", "..."}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         StyleBox["p21", "TI"], "\[Rule]", 
+         StyleBox["x21", "TI"]}], ",", "..."}], "}"}], ",", "..."}], "}"}]}], 
+   "]"}]], "InlineFormula"],
+ "\[LineSeparator]returns a ",
+ Cell[BoxData[
+  ButtonBox["List",
+   BaseStyle->"Link"]], "InlineFormula"],
+ ", each element of this list is a result of decomposition using subsequent \
+list of patterns and rules.\n",
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"LightConeDecompose", "[", 
+   StyleBox["expr", "TI"], "]"}]], "InlineFormula"],
+ "\[LineSeparator]Decomposes Lorentz vectors and massive spinors with all \
+labels. Lorentz vectors are decomposed with default reference vector and \
+massive spinors with their reference vectors."
+}], "Usage"],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo"], "\"\<ForceRefChange\>\"", 
+    ButtonBox["False",
+     BaseStyle->"Link"], Cell[TextData[{
+     "whether ",
+     Cell[BoxData[
+      ButtonBox["SpM",
+       BaseStyle->"Link",
+       ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineFormula"],
+     " with explicit reference spinors should have their reference spinors \
+changed to one used by ",
+     Cell[BoxData["LightConeDecompose"], "InlineFormula"]
+    }], "TableText"]}
+  }]], "3ColumnTableMod"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->
+  "paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "RelatedDemonstrations",
+ CellID->1285121743]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpRef",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpRef"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpAssoc",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpAssoc"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["SpM",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell["Decomposition with default reference vector:", "ExampleText",
+ CellID->427585760],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1460825651],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "L"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->372465491],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "L"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`L}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->21979979]
+}, Open  ]],
+
+Cell["LVector decomposition:", "ExampleText",
+ CellID->571545523],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Sm", "[", "P", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", "P"}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->22761238],
+
+Cell[BoxData[
+ RowBox[{"Sm", "[", "P", "]"}]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->211299538],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Sm", "[", 
+   SuperscriptBox["P", "\[Flat]"], "]"}], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{"P", ",", "P"}], "]"}], " ", 
+    RowBox[{"Sm", "[", 
+     SubscriptBox["q", "P"], "]"}]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox["P", "\[Flat]"], ",", 
+      SubscriptBox["q", "P"]}], "]"}]}]]}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->2030169109]
+}, Open  ]],
+
+Cell["Massive spinor decomposition:", "ExampleText",
+ CellID->1480068594],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spab", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"L", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", "P"}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->2066884932],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], "P"}], "|", 
+   RowBox[{
+    SubscriptBox["", "+"], "L"}], "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1350267406],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox["P", "\[Flat]"], "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "L"}], "]"}],
+   TraditionalForm], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", "P"], "|", 
+      RowBox[{
+       SubscriptBox["", "+"], "L"}], "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SubscriptBox["q", "P"], "|", 
+     SuperscriptBox["P", "\[Flat]"], "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1244982312]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1588043465],
+
+Cell["Decomposition with given massless reference vector:", "ExampleText",
+ CellID->1285149250],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->850876252],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "L"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[8]:=",
+ CellID->1064083701],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "L"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`L}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[8]:=",
+ CellID->1885524717],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[8]:=",
+ CellID->602736145]
+}, Open  ]]
+}, Open  ]],
+
+Cell["LVector decomposition:", "ExampleText",
+ CellID->418139926],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"MP", "[", 
+  RowBox[{"P", ",", "L"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"P", "\[Rule]", "q"}]}], "]"}]}], "Input",
+ CellLabel->"In[14]:=",
+ CellID->696582666],
+
+Cell[BoxData[
+ RowBox[{"MP", "[", 
+  RowBox[{"L", ",", "P"}], "]"}]], "Output",
+ CellLabel->"Out[14]=",
+ CellID->118471629],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"MP", "[", 
+   RowBox[{"L", ",", 
+    SuperscriptBox["P", "q"]}], "]"}], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{"L", ",", "q"}], "]"}], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"P", ",", "P"}], "]"}]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"q", ",", 
+      SuperscriptBox["P", "q"]}], "]"}]}]]}]], "Output",
+ CellLabel->"Out[15]=",
+ CellID->1835499056]
+}, Open  ]],
+
+Cell["Massive spinor decomposition:", "ExampleText",
+ CellID->2034488626],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spbb", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"-", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"L", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"P", "\[Rule]", "q"}]}], "]"}]}], "Input",
+ CellLabel->"In[16]:=",
+ CellID->735817603],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"[", 
+   RowBox[{
+    SubscriptBox["", "-"], "P"}], "|", 
+   RowBox[{
+    SubscriptBox["", "+"], "L"}], "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[16]=",
+ CellID->1842070033],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FractionBox[
+    RowBox[{
+     SqrtBox[
+      RowBox[{"MP", "[", 
+       RowBox[{"P", ",", "P"}], "]"}]], " ", 
+     FormBox[
+      RowBox[{"\[LeftAngleBracket]", "q", "|", 
+       RowBox[{
+        SubscriptBox["", "+"], "L"}], "]"}],
+      TraditionalForm]}], 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", 
+      SuperscriptBox["P", "q"], "\[RightAngleBracket]"}],
+     TraditionalForm]]}], "+", 
+  FormBox[
+   RowBox[{"[", 
+    SuperscriptBox["P", "q"], "|", 
+    RowBox[{
+     SubscriptBox["", "+"], "L"}], "]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[17]=",
+ CellID->62547937]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->621276582],
+
+Cell["Decomposition with given massive reference vector:", "ExampleText",
+ CellID->559496242],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->2005309836],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "L", ",", "Q"}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->255828161],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "L", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`L, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1329805609]
+}, Open  ]],
+
+Cell["LVector decomposition:", "ExampleText",
+ CellID->1505249982],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spba", "[", 
+  RowBox[{"1", ",", "P", ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"P", "\[Rule]", "Q"}]}], "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->854582656],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "2", "|", "P", "|", "1", "]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[3]=",
+ CellID->1082885272],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "2", "|", 
+    SuperscriptBox["P", "Q"], "|", "1", "]"}],
+   TraditionalForm], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{"P", ",", "P"}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "2", "|", 
+      SuperscriptBox["Q", "P"], "|", "1", "]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox["P", "Q"], ",", 
+      SuperscriptBox["Q", "P"]}], "]"}]}]]}]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->1474815801]
+}, Open  ]],
+
+Cell["Massive spinor decomposition:", "ExampleText",
+ CellID->1604177257],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"L", ",", 
+     RowBox[{"-", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"P", "\[Rule]", "Q"}]}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->560443272],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "-"], "L"}], "|", 
+   RowBox[{
+    SubscriptBox["", "+"], "P"}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->953193782],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "-"], "L"}], "|", 
+    SuperscriptBox["P", "Q"], "\[RightAngleBracket]"}],
+   TraditionalForm], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "-"], "L"}], "|", 
+      SuperscriptBox["Q", "P"], "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox["Q", "P"], "|", 
+     SuperscriptBox["P", "Q"], "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1898138794]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell["\<\
+Decompose all labels matching given pattern, with default reference vectors:\
+\>", "ExampleText",
+ CellID->1146795390],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1039245352],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"]}], "]"}]], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1466133179],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     SubscriptBox["P", "2"], ",", 
+     SubscriptBox["P", "3"], ",", 
+     SubscriptBox["P", "4"]}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{
+    Subscript[$CellContext`P, 1], 
+    Subscript[$CellContext`P, 2], 
+    Subscript[$CellContext`P, 3], 
+    Subscript[$CellContext`P, 4]}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1048097]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "4"], ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{"%", ",", 
+    SubscriptBox["P", 
+     RowBox[{"_", "?", "OddQ"}]]}], "]"}], "//", "Expand"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->211319136],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], 
+    SubscriptBox["P", "1"]}], "|", 
+   SubscriptBox["P", "2"], "|", 
+   SubscriptBox["P", "3"], "|", 
+   RowBox[{
+    SubscriptBox["", "-"], 
+    SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->1668388947],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox[
+     SubscriptBox["P", "1"], "\[Flat]"], "|", 
+    SubscriptBox["P", "2"], "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "3"], "\[Flat]"], "|", 
+    RowBox[{
+     SubscriptBox["", "-"], 
+     SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "\[Flat]"], "|", 
+      SubscriptBox["P", "2"], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]], "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]]}], "]"}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "1"]], "|", 
+      SubscriptBox["P", "2"], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SubscriptBox["q", 
+      SubscriptBox["P", "1"]], "|", 
+     SuperscriptBox[
+      SubscriptBox["P", "1"], "\[Flat]"], "]"}],
+    TraditionalForm]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "1"]], "|", 
+      SubscriptBox["P", "2"], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]], "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "1"]], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "\[Flat]"], "]"}],
+     TraditionalForm]}]]}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->1666306847]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1922938364],
+
+Cell["\<\
+Decompose all labels matching given pattern, with given reference vector:\
+\>", "ExampleText",
+ CellID->1567072457],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1811869769],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->174746329],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     SubscriptBox["P", "2"], ",", 
+     SubscriptBox["P", "3"], ",", 
+     SubscriptBox["P", "4"]}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{
+    Subscript[$CellContext`P, 1], 
+    Subscript[$CellContext`P, 2], 
+    Subscript[$CellContext`P, 3], 
+    Subscript[$CellContext`P, 4]}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->572887338],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->891428938]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "4"], ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{"%", ",", 
+    RowBox[{
+     SubscriptBox["P", 
+      RowBox[{"_", "?", "OddQ"}]], "\[Rule]", "q"}]}], "]"}], "//", 
+  "Expand"}]}], "Input",
+ CellLabel->"In[4]:=",
+ CellID->535877969],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], 
+    SubscriptBox["P", "1"]}], "|", 
+   SubscriptBox["P", "2"], "|", 
+   SubscriptBox["P", "3"], "|", 
+   RowBox[{
+    SubscriptBox["", "-"], 
+    SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[4]=",
+ CellID->72961126],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "q"], "|", 
+      SubscriptBox["P", "2"], "|", "q", "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"q", ",", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "q"]}], "]"}]}]], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox[
+     SubscriptBox["P", "1"], "q"], "|", 
+    SubscriptBox["P", "2"], "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "3"], "q"], "|", 
+    RowBox[{
+     SubscriptBox["", "-"], 
+     SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+   TraditionalForm], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", "q", "|", 
+      SubscriptBox["P", "2"], "|", "q", "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"q", ",", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "q"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "q"], "|", "q", "]"}],
+     TraditionalForm]}]], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"[", "q", "|", 
+      SubscriptBox["P", "2"], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "q"], "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox[
+      SubscriptBox["P", "1"], "q"], "|", "q", "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->954489995]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->415482573],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["RuleDelayed",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " with named patterns can be used:"
+}], "ExampleText",
+ CellID->834474956],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[6]:=",
+ CellID->1296623946],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"]}], "]"}]], "Input",
+ CellLabel->"In[7]:=",
+ CellID->84204283],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     SubscriptBox["P", "2"], ",", 
+     SubscriptBox["P", "3"], ",", 
+     SubscriptBox["P", "4"]}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{
+    Subscript[$CellContext`P, 1], 
+    Subscript[$CellContext`P, 2], 
+    Subscript[$CellContext`P, 3], 
+    Subscript[$CellContext`P, 4]}, " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[7]:=",
+ CellID->1629611250]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{
+     SubscriptBox["P", "4"], ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{"%", ",", 
+    RowBox[{
+     SubscriptBox["P", 
+      RowBox[{"i_", "?", "OddQ"}]], "\[RuleDelayed]", 
+     RowBox[{"Sp", "[", "i", "]"}]}]}], "]"}], "//", "Expand"}]}], "Input",
+ CellLabel->"In[10]:=",
+ CellID->1791163993],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], 
+    SubscriptBox["P", "1"]}], "|", 
+   SubscriptBox["P", "2"], "|", 
+   SubscriptBox["P", "3"], "|", 
+   RowBox[{
+    SubscriptBox["", "-"], 
+    SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[10]=",
+ CellID->354244356],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "1"], "|", 
+      SubscriptBox["P", "2"], "|", "3", "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"3", ",", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "3"]}], "]"}]}]], "+", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox[
+     SubscriptBox["P", "1"], "1"], "|", 
+    SubscriptBox["P", "2"], "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "3"], "3"], "|", 
+    RowBox[{
+     SubscriptBox["", "-"], 
+     SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+   TraditionalForm], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", "1", "|", 
+      SubscriptBox["P", "2"], "|", "3", "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"3", ",", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "1"], "|", "1", "]"}],
+     TraditionalForm]}]], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{
+       SubscriptBox["P", "1"], ",", 
+       SubscriptBox["P", "1"]}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"[", "1", "|", 
+      SubscriptBox["P", "2"], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "3"], "|", 
+      RowBox[{
+       SubscriptBox["", "-"], 
+       SubscriptBox["P", "4"]}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox[
+      SubscriptBox["P", "1"], "1"], "|", "1", "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[11]=",
+ CellID->1621125979]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->828134022],
+
+Cell["List of rules, patterns and labels can be used:", "ExampleText",
+ CellID->201122541],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[13]:=",
+ CellID->669104977],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"], ",", "Q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[20]:=",
+ CellID->1212538091],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     SubscriptBox["P", "2"], ",", 
+     SubscriptBox["P", "3"], ",", 
+     SubscriptBox["P", "4"], ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{
+    Subscript[$CellContext`P, 1], 
+    Subscript[$CellContext`P, 2], 
+    Subscript[$CellContext`P, 3], 
+    Subscript[$CellContext`P, 4], $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->1060626524],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[20]:=",
+ CellID->1005997481]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"1", ",", 
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"], ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LightConeDecompose", "[", 
+   RowBox[{"%", ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["P", "1"], "\[Rule]", "1"}], ",", 
+      RowBox[{
+       SubscriptBox["P", "2"], "|", 
+       SubscriptBox["P", "3"]}], ",", 
+      RowBox[{
+       SubscriptBox["P", "3"], "\[Rule]", "Q"}]}], "}"}]}], "]"}], "//", 
+  "Expand"}]}], "Input",
+ CellLabel->"In[24]:=",
+ CellID->2060719012],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", 
+   SubscriptBox["P", "1"], "|", 
+   SubscriptBox["P", "2"], "|", 
+   SubscriptBox["P", "3"], "|", 
+   SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[24]=",
+ CellID->2104109862],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", "1", "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "1"], "1"], "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "2"], "\[Flat]"], "|", 
+    SuperscriptBox[
+     SubscriptBox["P", "3"], "\[Flat]"], "|", 
+    SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+   TraditionalForm], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "1"], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "2"], "\[Flat]"], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]], "|", 
+      SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]]}], "]"}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "2"], ",", 
+      SubscriptBox["P", "2"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "1"], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "2"]], "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], "|", 
+      SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "2"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "2"]]}], "]"}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "2"], ",", 
+      SubscriptBox["P", "2"]}], "]"}], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SubscriptBox["P", "3"], ",", 
+      SubscriptBox["P", "3"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "1", "|", 
+      SuperscriptBox[
+       SubscriptBox["P", "1"], "1"], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "2"]], "|", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]], "|", 
+      SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   RowBox[{"4", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "2"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "2"]]}], "]"}], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox[
+       SubscriptBox["P", "3"], "\[Flat]"], ",", 
+      SubscriptBox["q", 
+       SubscriptBox["P", "3"]]}], "]"}]}]]}]], "Output",
+ CellLabel->"Out[25]=",
+ CellID->163043262]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->506862189],
+
+Cell[TextData[{
+ "List of lists of rules can be used, ",
+ Cell[BoxData["LightConeDecompose"], "InlineFormula"],
+ " will return list or results:"
+}], "ExampleText",
+ CellID->1916300259],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[26]:=",
+ CellID->55031983],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"], ",", "Q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[27]:=",
+ CellID->2007065762],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["P", "1"], ",", 
+     SubscriptBox["P", "2"], ",", 
+     SubscriptBox["P", "3"], ",", 
+     SubscriptBox["P", "4"], ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{
+    Subscript[$CellContext`P, 1], 
+    Subscript[$CellContext`P, 2], 
+    Subscript[$CellContext`P, 3], 
+    Subscript[$CellContext`P, 4], $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[27]:=",
+ CellID->1089477013],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[27]:=",
+ CellID->1731828535]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{"1", ",", 
+   SubscriptBox["P", "1"], ",", 
+   SubscriptBox["P", "2"], ",", 
+   SubscriptBox["P", "3"], ",", 
+   SubscriptBox["P", "4"], ",", "2"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"LightConeDecompose", "[", 
+    RowBox[{"%", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          SubscriptBox["P", "1"], "\[Rule]", "1"}], ",", 
+         RowBox[{
+          SubscriptBox["P", "2"], "|", 
+          SubscriptBox["P", "3"]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         SubscriptBox["P", "3"], "\[Rule]", "Q"}], "}"}]}], "}"}]}], "]"}], "//",
+    "Expand"}], "//", "TableForm"}]}], "Input",
+ CellLabel->"In[33]:=",
+ CellID->807473661],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", "1", "|", 
+   SubscriptBox["P", "1"], "|", 
+   SubscriptBox["P", "2"], "|", 
+   SubscriptBox["P", "3"], "|", 
+   SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[33]=",
+ CellID->567819260],
+
+Cell[BoxData[
+ TagBox[
+  TagBox[GridBox[{
+     {
+      RowBox[{
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "1", "|", 
+         SuperscriptBox[
+          SubscriptBox["P", "1"], "1"], "|", 
+         SuperscriptBox[
+          SubscriptBox["P", "2"], "\[Flat]"], "|", 
+         SuperscriptBox[
+          SubscriptBox["P", "3"], "\[Flat]"], "|", 
+         SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+        TraditionalForm], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SubscriptBox["P", "3"], ",", 
+           SubscriptBox["P", "3"]}], "]"}], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "1", "|", 
+           SuperscriptBox[
+            SubscriptBox["P", "1"], "1"], "|", 
+           SuperscriptBox[
+            SubscriptBox["P", "2"], "\[Flat]"], "|", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "3"]], "|", 
+           SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+          TraditionalForm]}], 
+        RowBox[{"2", " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["P", "3"], "\[Flat]"], ",", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "3"]]}], "]"}]}]], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SubscriptBox["P", "2"], ",", 
+           SubscriptBox["P", "2"]}], "]"}], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "1", "|", 
+           SuperscriptBox[
+            SubscriptBox["P", "1"], "1"], "|", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "2"]], "|", 
+           SuperscriptBox[
+            SubscriptBox["P", "3"], "\[Flat]"], "|", 
+           SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+          TraditionalForm]}], 
+        RowBox[{"2", " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["P", "2"], "\[Flat]"], ",", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "2"]]}], "]"}]}]], "+", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SubscriptBox["P", "2"], ",", 
+           SubscriptBox["P", "2"]}], "]"}], " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SubscriptBox["P", "3"], ",", 
+           SubscriptBox["P", "3"]}], "]"}], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "1", "|", 
+           SuperscriptBox[
+            SubscriptBox["P", "1"], "1"], "|", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "2"]], "|", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "3"]], "|", 
+           SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+          TraditionalForm]}], 
+        RowBox[{"4", " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["P", "2"], "\[Flat]"], ",", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "2"]]}], "]"}], " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SuperscriptBox[
+            SubscriptBox["P", "3"], "\[Flat]"], ",", 
+           SubscriptBox["q", 
+            SubscriptBox["P", "3"]]}], "]"}]}]]}]},
+     {
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SubscriptBox["P", "3"], ",", 
+           SubscriptBox["P", "3"]}], "]"}], " ", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "1", "|", 
+           SubscriptBox["P", "1"], "|", 
+           SubscriptBox["P", "2"], "|", 
+           SuperscriptBox["Q", 
+            SubscriptBox["P", "3"]], "|", 
+           SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+          TraditionalForm]}], 
+        RowBox[{"2", " ", 
+         RowBox[{"MP", "[", 
+          RowBox[{
+           SuperscriptBox["Q", 
+            SubscriptBox["P", "3"]], ",", 
+           SuperscriptBox[
+            SubscriptBox["P", "3"], "Q"]}], "]"}]}]], "+", 
+       FormBox[
+        RowBox[{"\[LeftAngleBracket]", "1", "|", 
+         SubscriptBox["P", "1"], "|", 
+         SubscriptBox["P", "2"], "|", 
+         SuperscriptBox[
+          SubscriptBox["P", "3"], "Q"], "|", 
+         SubscriptBox["P", "4"], "|", "2", "\[RightAngleBracket]"}],
+        TraditionalForm]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.5599999999999999]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}],
+   Column],
+  Function[BoxForm`e$, 
+   TableForm[BoxForm`e$]]]], "Output",
+ CellLabel->"Out[34]//TableForm=",
+ CellID->544262658]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1482960458],
+
+Cell["Decompose all massive objects:", "ExampleText",
+ CellID->831890605],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1701849469],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q", ",", "L"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", "q", "]"}]}], "Input",
+ CellLabel->"In[3]:=",
+ CellID->971010996],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q", ",", "L"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q, $CellContext`L}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->144049737],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", "q", "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q}, " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[3]:=",
+ CellID->1748139365]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spab", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"-", "1"}]}], "]"}], ",", "Q", ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"L", ",", 
+     RowBox[{"+", "1"}], ",", "q"}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LightConeDecompose", "[", "%", "]"}], "//", "Expand"}]}], "Input",
+ CellLabel->"In[7]:=",
+ CellID->48879808],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "-"], "P"}], "|", "Q", "|", 
+   RowBox[{
+    SubsuperscriptBox["", "+", "q"], "L"}], "]"}], TraditionalForm]], "Output",
+ CellLabel->"Out[7]=",
+ CellID->1520189701],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox["P", "\[Flat]"], "|", 
+    SuperscriptBox["Q", "\[Flat]"], "|", 
+    SuperscriptBox["L", "q"], "]"}],
+   TraditionalForm], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{"MP", "[", 
+     RowBox[{"Q", ",", "Q"}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      SuperscriptBox["P", "\[Flat]"], "|", 
+      SubscriptBox["q", "Q"], "|", 
+      SuperscriptBox["L", "q"], "]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox["Q", "\[Flat]"], ",", 
+      SubscriptBox["q", "Q"]}], "]"}]}]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"L", ",", "L"}], "]"}]], " ", 
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", 
+      SuperscriptBox["Q", "\[Flat]"], "|", 
+      SubscriptBox["q", "P"], "]"}],
+     TraditionalForm]}], 
+   RowBox[{
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", 
+      SuperscriptBox["L", "q"], "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", "P"], "|", 
+      SuperscriptBox["P", "\[Flat]"], "]"}],
+     TraditionalForm]}]], "+", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"L", ",", "L"}], "]"}]], " ", 
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{"Q", ",", "Q"}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", 
+      SubscriptBox["q", "Q"], "|", 
+      SubscriptBox["q", "P"], "]"}],
+     TraditionalForm]}], 
+   RowBox[{"2", " ", 
+    RowBox[{"MP", "[", 
+     RowBox[{
+      SuperscriptBox["Q", "\[Flat]"], ",", 
+      SubscriptBox["q", "Q"]}], "]"}], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", "q", "|", 
+      SuperscriptBox["L", "q"], "\[RightAngleBracket]"}],
+     TraditionalForm], " ", 
+    FormBox[
+     RowBox[{"[", 
+      SubscriptBox["q", "P"], "|", 
+      SuperscriptBox["P", "\[Flat]"], "]"}],
+     TraditionalForm]}]]}]], "Output",
+ CellLabel->"Out[8]=",
+ CellID->133053079]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["ForceRefChange", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[TextData[{
+ "With \"ForceRefChange\" set to ",
+ Cell[BoxData[
+  ButtonBox["False",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " (default value) if massive spinor has explicit reference vector this \
+vector is used for it's decomposition:"
+}], "ExampleText",
+ CellID->1715838032],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->788674970],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"q1", ",", "q2"}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->872460898],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1004141025],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q1", ",", "q2"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q1, $CellContext`q2}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->2126146656]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}], ",", "q1"}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"P", "\[Rule]", "q2"}], "}"}], ",", 
+   RowBox[{"\"\<ForceRefChange\>\"", "\[Rule]", "False"}]}], "]"}]}], "Input",
+ 
+ CellLabel->"In[18]:=",
+ CellID->369926059],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "-"], "Q"}], "|", 
+    RowBox[{
+     SubsuperscriptBox["", "+", "q1"], "P"}], "\[RightAngleBracket]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[18]=",
+ CellID->843811682],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      SubscriptBox["", "-"], "Q"}], "|", 
+     SuperscriptBox["P", "q1"], "\[RightAngleBracket]"}],
+    TraditionalForm]}], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "-"], "Q"}], "|", "q1", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox["P", "q1"], "|", "q1", "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[19]=",
+ CellID->407727203]
+}, Open  ]],
+
+Cell[TextData[{
+ "Massive spinors with implicit reference vectors are decomposed with \
+reference vector used by ",
+ Cell[BoxData["LightConeDecompose"], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->174282542],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}]}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"P", "\[Rule]", "q2"}], "}"}], ",", 
+   RowBox[{"\"\<ForceRefChange\>\"", "\[Rule]", "False"}]}], "]"}]}], "Input",
+ 
+ CellLabel->"In[20]:=",
+ CellID->122844518],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[LeftAngleBracket]", 
+   RowBox[{
+    SubscriptBox["", "+"], "P"}], "|", 
+   RowBox[{
+    SubscriptBox["", "-"], "Q"}], "\[RightAngleBracket]"}], 
+  TraditionalForm]], "Output",
+ CellLabel->"Out[20]=",
+ CellID->478748204],
+
+Cell[BoxData[
+ RowBox[{
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    SuperscriptBox["P", "q2"], "|", 
+    RowBox[{
+     SubscriptBox["", "-"], "Q"}], "\[RightAngleBracket]"}],
+   TraditionalForm], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"[", "q2", "|", 
+      RowBox[{
+       SubscriptBox["", "-"], "Q"}], "\[RightAngleBracket]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox["P", "q2"], "|", "q2", "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[21]=",
+ CellID->1918597113]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1022994496],
+
+Cell[TextData[{
+ "With \"ForceRefChange\" set to ",
+ Cell[BoxData[
+  ButtonBox["True",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " all spinors are decomposed with reference vector used by ",
+ Cell[BoxData["LightConeDecompose"], "InlineFormula"],
+ ":"
+}], "ExampleText",
+ CellID->239826287],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[1]:=",
+ CellID->1755089758],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"DeclareLVector", "[", 
+  RowBox[{"P", ",", "Q"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"DeclareSpinor", "[", 
+  RowBox[{"q1", ",", "q2"}], "]"}]}], "Input",
+ CellLabel->"In[2]:=",
+ CellID->1679864969],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"P", ",", "Q"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of Lorentz vectors\"\>"}],
+  SequenceForm[{$CellContext`P, $CellContext`Q}, 
+   " added to the list of Lorentz vectors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1301107592],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"q1", ",", "q2"}], "}"}], 
+   "\[InvisibleSpace]", "\<\" added to the list of spinors\"\>"}],
+  SequenceForm[{$CellContext`q1, $CellContext`q2}, 
+   " added to the list of spinors"],
+  Editable->False]], "Print",
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1266220026]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Spaa", "[", 
+  RowBox[{
+   RowBox[{"SpM", "[", 
+    RowBox[{"P", ",", 
+     RowBox[{"+", "1"}], ",", "q1"}], "]"}], ",", 
+   RowBox[{"SpM", "[", 
+    RowBox[{"Q", ",", 
+     RowBox[{"-", "1"}]}], "]"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"LightConeDecompose", "[", 
+  RowBox[{"%", ",", 
+   RowBox[{"{", 
+    RowBox[{"P", "\[Rule]", "q2"}], "}"}], ",", 
+   RowBox[{"\"\<ForceRefChange\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+ CellLabel->"In[5]:=",
+ CellID->335497109],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FormBox[
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     SubscriptBox["", "-"], "Q"}], "|", 
+    RowBox[{
+     SubsuperscriptBox["", "+", "q1"], "P"}], "\[RightAngleBracket]"}],
+   TraditionalForm]}]], "Output",
+ CellLabel->"Out[5]=",
+ CellID->859316815],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", 
+   FormBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      SubscriptBox["", "-"], "Q"}], "|", 
+     SuperscriptBox["P", "q2"], "\[RightAngleBracket]"}],
+    TraditionalForm]}], "-", 
+  FractionBox[
+   RowBox[{
+    SqrtBox[
+     RowBox[{"MP", "[", 
+      RowBox[{"P", ",", "P"}], "]"}]], " ", 
+    FormBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       SubscriptBox["", "-"], "Q"}], "|", "q2", "]"}],
+     TraditionalForm]}], 
+   FormBox[
+    RowBox[{"[", 
+     SuperscriptBox["P", "q2"], "|", "q2", "]"}],
+    TraditionalForm]]}]], "Output",
+ CellLabel->"Out[6]=",
+ CellID->743026073]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{892, 770},
+WindowMargins->{{Automatic, 204}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

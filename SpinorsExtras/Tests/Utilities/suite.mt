@@ -1,0 +1,19 @@
+TestSuite[{
+	"PlusMinusOneQ.mt"
+	,
+	"DeclarePlusMinusOne.mt"
+	,
+	"UndeclarePlusMinusOne.mt"
+	,
+	"MassiveLVectorQ.mt"
+	,
+	"ReplaceLVector.mt"
+	,
+	"ReplaceBSpinor.mt"
+	,
+	"ReplaceASpinor.mt"
+	,
+	"ReplaceSpinor.mt"
+	,
+	"ExternalMomentaPartitions.mt"
+}]

@@ -1,0 +1,520 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras Package", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->2075584313],
+
+Cell["SpinorsExtras`Phase`", "Categorization",
+ CellLabel->"Context",
+ CellID->777490772],
+
+Cell["SpinorsExtras/ref/AppendPhase", "Categorization",
+ CellLabel->"URI",
+ CellID->1922576638]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->477174294],
+
+Cell["phase convention", "Keywords",
+ CellID->1164421360],
+
+Cell["PhaseConvention", "Keywords",
+ CellID->1689977499]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->1872225408],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->1562036412],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->158391909],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->1360575930],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->793782254]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->670882175],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->8391405],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->3610269],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->401364205],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->350204745],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->732958810],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->222905350],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["AppendPhase", "ObjectName",
+ CellID->1224892054],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo"],
+ Cell[BoxData[
+  RowBox[{"AppendPhase", "[", 
+   RowBox[{
+    StyleBox["expr", "TI"], ",", " ", 
+    StyleBox["patt", "TI"]}], "]"}]], "InlineFormula"],
+ "\[LineSeparator]multiplies each subexpression of ",
+ Cell[BoxData[
+  StyleBox["expr", "TI"]], "InlineFormula"],
+ ", that match pattern ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula"],
+ ", with a ",
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+ "."
+}], "Usage"],
+
+Cell["The following options can be given: ", "Notes"],
+
+Cell[BoxData[GridBox[{
+   {Cell["   ", "ModInfo"], "\"\<PhaseConvention\>\"", 
+    ButtonBox["Automatic",
+     BaseStyle->"Link"], Cell[TextData[Cell[BoxData[Cell[TextData[{
+      "name of convention that will be passed as first argument of appended ",
+      
+      Cell[BoxData[
+       ButtonBox["Phase",
+        BaseStyle->"Link",
+        ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"]
+     }], "TableText"]], "3ColumnTableMod"]], "TableText"]}
+  }]], "3ColumnTableMod"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "TutorialsSection",
+ CellID->250839057],
+
+Cell["XXXX", "Tutorials",
+ CellID->341631938]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Demonstrations", "RelatedDemonstrationsSection",
+ CellID->1268215905],
+
+Cell["XXXX", "RelatedDemonstrations",
+ CellID->1129518860]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Links", "RelatedLinksSection",
+ CellID->1584193535],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->1038487239]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["See Also", "SeeAlsoSection",
+ CellID->1255426704],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+ " \[EmptyVerySmallSquare] ",
+ Cell[BoxData[
+  ButtonBox["ExpandPolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandPolVec"]], "InlineFormula"]
+}], "SeeAlso",
+ CellID->929782353]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "MoreAboutSection",
+ CellID->38303248],
+
+Cell["XXXX", "MoreAbout",
+ CellID->1665078683]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox["Examples", "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->880084151],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellID->419547208],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"expr", "=", 
+  RowBox[{
+   RowBox[{"CLa", "[", "1", "]"}], ".", 
+   RowBox[{"La", "[", "2", "]"}]}]}]], "Input",
+ CellLabel->"In[12]:=",
+ CellID->592562241],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Output",
+ CellLabel->"Out[12]=",
+ CellID->1842457721]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AppendPhase", "[", 
+  RowBox[{"expr", ",", "_La", ",", 
+   RowBox[{
+   "\"\<PhaseConvention\>\"", "\[Rule]", "\"\<MyPhaseConvention\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[13]:=",
+ CellID->1167584451],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CLa", "[", "1", "]"}], ".", 
+   RowBox[{"La", "[", "2", "]"}]}], " ", 
+  RowBox[{"Phase", "[", 
+   RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+    RowBox[{"La", "[", "2", "]"}]}], "]"}]}]], "Output",
+ CellLabel->"Out[13]=",
+ CellID->163158837]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AppendPhase", "[", 
+  RowBox[{"expr", ",", "_CLa", ",", 
+   RowBox[{
+   "\"\<PhaseConvention\>\"", "\[Rule]", "\"\<MyPhaseConvention\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[14]:=",
+ CellID->1156857816],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CLa", "[", "1", "]"}], ".", 
+   RowBox[{"La", "[", "2", "]"}]}], " ", 
+  RowBox[{"Phase", "[", 
+   RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+    RowBox[{"CLa", "[", "1", "]"}]}], "]"}]}]], "Output",
+ CellLabel->"Out[14]=",
+ CellID->1877102824]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AppendPhase", "[", 
+  RowBox[{"expr", ",", 
+   RowBox[{"_La", "|", "_CLa"}], ",", 
+   RowBox[{
+   "\"\<PhaseConvention\>\"", "\[Rule]", "\"\<MyPhaseConvention\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[19]:=",
+ CellID->437741062],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CLa", "[", "1", "]"}], ".", 
+   RowBox[{"La", "[", "2", "]"}]}], " ", 
+  RowBox[{"Phase", "[", 
+   RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+    RowBox[{"CLa", "[", "1", "]"}]}], "]"}], " ", 
+  RowBox[{"Phase", "[", 
+   RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+    RowBox[{"La", "[", "2", "]"}]}], "]"}]}]], "Output",
+ CellLabel->"Out[19]=",
+ CellID->1783837777]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More Examples", "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->1854448968],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Scope", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1293636265],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Generalizations & Extensions", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1020263627],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["Options", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["PhaseConvention", "ExampleSubsection"],
+  $Line = 0; Null]], "ExampleSubsection"],
+
+Cell[TextData[{
+ "With \"PhaseConvention\" set to ",
+ Cell[BoxData[
+  ButtonBox["Automatic",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " (default value) using ",
+ Cell[BoxData["AppendPhase"], "InlineFormula"],
+ " does not change given expression, since ",
+ Cell[BoxData[
+  ButtonBox["Automatic",
+   BaseStyle->"Link"]], "InlineFormula"],
+ " ",
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+ " is define to be ",
+ Cell[BoxData["1"], "InlineFormula"],
+ " for all expressions:"
+}], "ExampleText",
+ CellID->1715838032],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[15]:=",
+ CellID->788674970],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Input",
+ CellLabel->"In[23]:=",
+ CellID->1682259325],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Output",
+ CellLabel->"Out[23]=",
+ CellID->789949389]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AppendPhase", "[", 
+  RowBox[{"%", ",", "_La", ",", 
+   RowBox[{"\"\<PhaseConvention\>\"", "\[Rule]", "Automatic"}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[28]:=",
+ CellID->2035914951],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Output",
+ CellLabel->"Out[28]=",
+ CellID->56565436]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell["\t", "ExampleDelimiter"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellID->1506267403],
+
+Cell[TextData[{
+ "With \"PhaseConvention\" set to anything else than ",
+ Cell[BoxData[
+  ButtonBox["Automatic",
+   BaseStyle->"Link"]], "InlineFormula"],
+ ", ",
+ Cell[BoxData["AppendPhase"], "InlineFormula"],
+ " multiplies matched expressions with ",
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineFormula"],
+ " for given convention:"
+}], "ExampleText",
+ CellID->1026934843],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ CellLabel->"In[20]:=",
+ CellID->1675902777],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Input",
+ CellLabel->"In[25]:=",
+ CellID->490370464],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CLa", "[", "1", "]"}], ".", 
+  RowBox[{"La", "[", "2", "]"}]}]], "Output",
+ CellLabel->"Out[25]=",
+ CellID->1316719249]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"AppendPhase", "[", 
+  RowBox[{"%", ",", "_La", ",", 
+   RowBox[{
+   "\"\<PhaseConvention\>\"", "\[Rule]", "\"\<MyPhaseConvention\>\""}]}], 
+  "]"}]], "Input",
+ CellLabel->"In[26]:=",
+ CellID->1197379257],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"CLa", "[", "1", "]"}], ".", 
+   RowBox[{"La", "[", "2", "]"}]}], " ", 
+  RowBox[{"Phase", "[", 
+   RowBox[{"\<\"MyPhaseConvention\"\>", ",", 
+    RowBox[{"La", "[", "2", "]"}]}], "]"}]}]], "Output",
+ CellLabel->"Out[26]=",
+ CellID->475867230]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Applications", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->258228157],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Properties & Relations", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->2123667759],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Possible Issues", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1305812373],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Interactive Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->1653164318],
+
+Cell[BoxData[
+ InterpretationBox[Cell["Neat Examples", "ExampleSection"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->589267740]
+}, Open  ]]
+},
+WindowSize->{700, 770},
+WindowMargins->{{195, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+CellContext->"Global`",
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

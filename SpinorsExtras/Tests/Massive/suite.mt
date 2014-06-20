@@ -1,0 +1,21 @@
+TestSuite[{
+	"SpAssoc.mt"
+	,
+	"SpM.mt"
+	,
+	"MassiveSpinorQ.mt"
+	,
+	"AnySpinorQ.mt"
+	,
+	"Spaa.mt"
+	,
+	"Spbb.mt"
+	,
+	"Spab.mt"
+	,
+	"Spba.mt"
+	,
+	"Spxy_SpM_refVec.mt"
+	,
+	"DeclareSpinorMomentum.mt"
+}]

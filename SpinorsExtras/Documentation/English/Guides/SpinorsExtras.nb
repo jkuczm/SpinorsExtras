@@ -1,0 +1,678 @@
+Notebook[{
+Cell[TextData[{
+ "New in: ",
+ Cell["0.0", "HistoryData",
+  CellTags->"New"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete"],
+ " | Excised in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Excised"]
+}], "History",
+ CellID->1247902091],
+
+Cell[CellGroupData[{
+
+Cell["Categorization", "CategorizationSection",
+ CellID->1122911449],
+
+Cell["Guide", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->686433507],
+
+Cell["SpinorsExtras", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->605800465],
+
+Cell["SpinorsExtras`", "Categorization",
+ CellLabel->"Context",
+ CellID->468444828],
+
+Cell["SpinorsExtras/guide/SpinorsExtras", "Categorization",
+ CellLabel->"URI"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->1427428552],
+
+Cell["XXXX", "Keywords",
+ CellID->1251852827]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Details", "DetailsSection",
+ CellID->307771771],
+
+Cell["XXXX", "Details",
+ CellLabel->"Lead",
+ CellID->795394057],
+
+Cell["XXXX", "Details",
+ CellLabel->"Developers",
+ CellID->350963985],
+
+Cell["XXXX", "Details",
+ CellLabel->"Authors",
+ CellID->802101],
+
+Cell["XXXX", "Details",
+ CellLabel->"Feature Name",
+ CellID->509823116],
+
+Cell["XXXX", "Details",
+ CellLabel->"QA",
+ CellID->199884516],
+
+Cell["XXXX", "Details",
+ CellLabel->"DA",
+ CellID->463951815],
+
+Cell["XXXX", "Details",
+ CellLabel->"Docs",
+ CellID->8237523],
+
+Cell["XXXX", "Details",
+ CellLabel->"Features Page Notes",
+ CellID->813936640],
+
+Cell["XXXX", "Details",
+ CellLabel->"Comments",
+ CellID->240026365]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["SpinorsExtras", "GuideTitle",
+ CellID->942062912],
+
+Cell["\<\
+An overview of all public symbols introduced by SpinorsExtras package.\
+\>", "GuideAbstract",
+ CellID->2001916300]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Reference vectors and spinors", "GuideFunctionsSection",
+ CellTags->"Ref",
+ CellID->637046919],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpRef",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpRef"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Labels default reference spinor for given lorentz vector."
+}], "GuideText",
+ CellID->625625839],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["RefInvariantQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/RefInvariantQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Tests whether expression is invariant with respect to changes of reference \
+spinors."
+}], "GuideText",
+ CellID->1359289893],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["RefSimplify",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/RefSimplify"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Finds simplest form of expression by inserting possible reference spinors."
+}], "GuideText",
+ CellID->466363227],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExplicitRef",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExplicitRef"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Changes implicit reference vectors, in given expressions, to \
+",
+ "explicit ",
+ " reference vectors."
+}], "GuideText",
+ CellID->369540706],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ImplicitRef",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ImplicitRef"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Changes explicit reference vectors, in given expressions, to \
+",
+ "implicit",
+ "  reference vectors."
+}], "GuideText",
+ CellID->1727962905]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Massive vectors and spinors", "GuideFunctionsSection",
+ CellTags->"Massive",
+ CellID->1637911951],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpM",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpM"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Labels spinor for given massive momentum."
+}], "GuideText",
+ CellID->1221869693],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpAssoc",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpAssoc"]], "InlineGuideFunction"],
+ " \[LongDash] Labels vector associated, ",
+ "by light cone decomposition,",
+ " with massive momentum."
+}], "GuideText",
+ CellID->718190056],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["LightConeDecompose",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LightConeDecompose"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Performs light cone decomposition of vectors and spinors."
+}], "GuideText",
+ CellID->1947510594],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["MassiveSpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/MassiveSpinorQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Tests whether given expression is interpretable as massive \
+spinor."
+}], "GuideText",
+ CellID->795113620],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["MassiveLVectorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/MassiveLVectorQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Tests whether given expression is interpretable as massive \
+LVector."
+}], "GuideText",
+ CellID->773913457]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Composite vectors", "GuideFunctionsSection",
+ CellTags->"Composite",
+ CellID->2082911707],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["LvBA",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LvBA"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Labels vector composed of two independent spinors with different labels."
+}], "GuideText",
+ CellID->1151565734]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Polarization vectors", "GuideFunctionsSection",
+ CellTags->"Pol",
+ CellID->1202474653],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Labels polarization vector for given momentum, polarization and reference \
+vector."
+}], "GuideText",
+ CellID->1185164174],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExpandPolVec",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandPolVec"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Expresses polarization vectors by momentum and reference vectors."
+}], "GuideText",
+ CellID->101358937],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePossiblePol"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Sets given symbols to be treated as vector boson \
+polarization."
+}], "GuideText",
+ CellID->717228035],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["UndeclarePossiblePol",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePossiblePol"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Removes given symbols from list of ",
+ "vector boson polarizations",
+ "."
+}], "GuideText",
+ CellID->328125485],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PossiblePolQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PossiblePolQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Tests whether given expression is interpretable as vector \
+boson polarization."
+}], "GuideText",
+ CellID->458894032]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Utilities", "GuideFunctionsSection",
+ CellTags->"Utilities",
+ CellID->1866139230],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ReplaceLVector",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceLVector"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Replaces given Lorentz vector in given expression."
+}], "GuideText",
+ CellID->203374175],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ReplaceBSpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceBSpinor"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Replaces given massless or massive B spinor in given expression."
+}], "GuideText",
+ CellID->1980581541],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ReplaceASpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ReplaceASpinor"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Replaces given massless or massive A spinor in given expression."
+}], "GuideText",
+ CellID->147106611],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExpandMPToSpinors",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandMPToSpinors"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Replaces ",
+ "Minkowski",
+ " products by spinor products."
+}], "GuideText",
+ CellID->1463276848],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExpandSToMPs",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandSToMPs"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Replaces s invariants by Minkowski products."
+}], "GuideText",
+ CellID->1997734232],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclarePlusMinusOne"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Sets given symbols to be treated as \[PlusMinus]1."
+}], "GuideText",
+ CellID->1136509273],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["UndeclarePlusMinusOne",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/UndeclarePlusMinusOne"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Removes given symbols from list of expressions ",
+ "treated",
+ " as \[PlusMinus]1."
+}], "GuideText",
+ CellID->8833082],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["PlusMinusOneQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/PlusMinusOneQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Tests whether given expression is interpretable as ",
+ "\[PlusMinus]1",
+ "."
+}], "GuideText",
+ CellID->1108616988],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["AnySpinorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/AnySpinorQ"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Tests whether given expression is interpretable as massless or massive \
+spinor."
+}], "GuideText",
+ CellID->132945599]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Proportional spinors and vectors", "GuideFunctionsSection",
+ CellTags->"Proportional",
+ CellID->931350017],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclareBSpinorProportional",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareBSpinorProportional"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Declares that B spinors with given labels are proportional."
+}], "GuideText",
+ CellID->35380236],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclareASpinorProportional",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareASpinorProportional"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Declares that A spinors with given labels are proportional."
+}], "GuideText",
+ CellID->20619885],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclareLVectorProportional",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareLVectorProportional"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Declares that LVectors with given labels are proportional."
+}], "GuideText",
+ CellID->680492504],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["BSpinorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/BSpinorProportionalQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Tests whether B spinors with given labels are proportional."
+}], "GuideText",
+ CellID->1307375252],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ASpinorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ASpinorProportionalQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Tests whether A spinors with given labels are proportional."
+}], "GuideText",
+ CellID->1206367247],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["LVectorProportionalQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/LVectorProportionalQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Tests whether LVectors with given labels are proportional."
+}], "GuideText",
+ CellID->955640042]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Phases management", "GuideFunctionsSection",
+ CellTags->"Phase",
+ CellID->2001832966],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["AppendPhase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/AppendPhase"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Multiplies parts of expression with additional phases."
+}], "GuideText",
+ CellID->1464233173],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["Phase",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/Phase"]], "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Represents additional phase of given expression."
+}], "GuideText",
+ CellID->1118283958]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spinor decomposition", "GuideFunctionsSection",
+ CellTags->"Decompose",
+ CellID->1889681529],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DecomposeBSpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DecomposeBSpinor"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Decomposes B spinor in given basis."
+}], "GuideText",
+ CellID->1869993586],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DecomposeASpinor",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DecomposeASpinor"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Decomposes A spinor in given basis."
+}], "GuideText",
+ CellID->1992400640]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Simple Tensors", "GuideFunctionsSection",
+ CellTags->"SimpleTensor",
+ CellID->191384282],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SimpleTensorQ",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SimpleTensorQ"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Tests whether given expression represents simple tensor."
+}], "GuideText",
+ CellID->747907827],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SimpleTensorGetBLabel",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SimpleTensorGetBLabel"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Extracts B spinor from tensor product of B and A spinors."
+}], "GuideText",
+ CellID->914745121],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SimpleTensorGetALabel",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SimpleTensorGetALabel"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] ",
+ "Extracts A spinor from tensor product of B and A spinors."
+}], "GuideText",
+ CellID->1198598140]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Numerics", "GuideFunctionsSection",
+ CellTags->"Numerics",
+ CellID->1165413658],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["DeclareSpinorRandomMomentum",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/DeclareSpinorRandomMomentum"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Generates random numerics for given spinor."
+}], "GuideText",
+ CellID->809927871],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["GenComplexMomenta",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/GenComplexMomenta"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Generates random complex momenta for spinors so that they sum \
+to zero."
+}], "GuideText",
+ CellID->4462393]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Functions from original Spinors` context with modified behavior\
+\>", "GuideFunctionsSection",
+ CellTags->"SatMModifications",
+ CellID->1414967100],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["SpOpen",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/SpOpen"]], "InlineGuideFunction"],
+ " \[LongDash] Decomposes spinor chains to products of smaller spinor \
+chains."
+}], "GuideText",
+ CellID->455222366],
+
+Cell[TextData[{
+ Cell[BoxData[
+  ButtonBox["ExpandSToSpinors",
+   BaseStyle->"Link",
+   ButtonData->"paclet:SpinorsExtras/ref/ExpandSToSpinors"]], 
+  "InlineGuideFunction"],
+ " \[LongDash] Converts s invariants to products of spinor chains."
+}], "GuideText",
+ CellID->75094675]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tutorials", "GuideTutorialsSection",
+ CellID->415694126],
+
+Cell[TextData[ButtonBox["QED with Muons",
+ BaseStyle->"Link",
+ ButtonData->"paclet:SpinorsExtras/tutorial/QEDWithMuons"]], "GuideTutorial",
+ CellID->1885805579],
+
+Cell["XXXX", "GuideTutorial",
+ CellID->828111699]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["More About", "GuideMoreAboutSection",
+ CellID->23220180],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->1567025153],
+
+Cell["XXXX", "GuideMoreAbout",
+ CellID->252299663]
+}, Open  ]],
+
+Cell["Related Links", "GuideRelatedLinksSection",
+ CellID->415694148]
+},
+WindowSize->{700, 770},
+WindowMargins->{{324, Automatic}, {Automatic, 0}},
+PrivateNotebookOptions->{"FileOutlineCache"->False},
+ShowCellTags->True,
+TrackCellChangeTimes->False,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "GuidePageStyles.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+

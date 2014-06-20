@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="DeployApplication" default="main" basedir="..">
+	<description>
+		This file builds documentation notebooks if necessary
+		and creates two archive files:
+		* with application alone,
+		* with application and dependencies.
+	</description>
+	
+
+	<!--
+		To use eclipse.convertPath choose: Run AS > Ant Build...
+		in JRE tab select "Run in the same JRE as the workspace".
+	-->
+	<eclipse.convertPath resourcePath="SpinorsExtrasDependencies"
+		property="dependenciesPath"/>
+	
+	<import file="${WWBCommonPath}/init.xml"/>
+	
+	
+	<target name="cleanArchiveWithDependencies"
+		description="delete existing archive with dependencies file">
+		
+		<delete file="${archiveFileWithDependencies}"/>
+		
+	</target>
+	
+	
+	<target name="createArchiveWithDependencies"
+		description="create archive file containing build application release directory and all local dependencies">
+		
+		<zip destfile="${archiveFileWithDependencies}">
+			<resources refid="archiveFileSet"/>
+			<fileset dir="${dependenciesPath}" excludes="*"/>
+		</zip>
+		
+	</target>
+	
+	
+	<target name="main">
+		<antcall target="cleanArchive"/>
+		<antcall target="cleanArchiveWithDependencies"/>
+		<antcall target="cleanAppRelease"/>
+		
+		<antcall target="conditionalDocbuild"/>
+		<antcall target="appbuild"/>
+
+		<antcall target="createArchive"/>
+		<antcall target="createArchiveWithDependencies"/>
+	</target>
+	
+</project>

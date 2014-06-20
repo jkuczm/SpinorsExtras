@@ -1,0 +1,11 @@
+TestSuite[{
+	"PossiblePolQ.mt"
+	,
+	"DeclarePossiblePol.mt"
+	,
+	"UndeclarePossiblePol.mt"
+	,
+	"PolVec.mt"
+	,
+	"ExpandPolVec.mt"
+}]
