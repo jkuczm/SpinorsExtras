@@ -206,7 +206,7 @@ Cell[BoxData[
  CellID->880084151],
 
 Cell[TextData[{
- "Integers are wraped with ",
+ "Integers are wrapped with ",
  Cell[BoxData[
   ButtonBox["Sp",
    BaseStyle->"Link",

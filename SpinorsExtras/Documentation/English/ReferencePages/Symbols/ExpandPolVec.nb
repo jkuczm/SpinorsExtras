@@ -35,7 +35,7 @@ Cell["SpinorsExtras`Pol`", "Categorization",
 Cell["SpinorsExtras/ref/ExpandPolVec", "Categorization",
  CellLabel->"URI",
  CellID->191925867]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -133,7 +133,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with occurences of polarization vectors ",
+ " with occurrences of polarization vectors ",
  Cell[BoxData[
   RowBox[{
    ButtonBox["PolVec",
@@ -168,7 +168,7 @@ with momentum ",
       StyleBox["pol", "TI"], 
       StyleBox[",", "TI"], 
       StyleBox["q", "TI"]}], "]"}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]decomposes occurences of ",
+ "\[LineSeparator]decomposes occurrences of ",
  Cell[BoxData[
   RowBox[{
    ButtonBox["PolVec",
@@ -192,7 +192,7 @@ with momentum ",
   RowBox[{"ExpandPolVec", "[", 
    StyleBox[
     RowBox[{"expr", ",", "patt"}], "TI"], "]"}]], "InlineFormula"],
- "\[LineSeparator]decomposes those occurences of polarization vectors, in ",
+ "\[LineSeparator]decomposes those occurrences of polarization vectors, in ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
  ", which match pattern ",
@@ -784,7 +784,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["Automatic",
    BaseStyle->"Link"]], "InlineFormula"],
- ", each expanded polarization vetor is multiplied with ",
+ ", each expanded polarization vector is multiplied with ",
  Cell[BoxData[
   ButtonBox["Phase",
    BaseStyle->"Link",

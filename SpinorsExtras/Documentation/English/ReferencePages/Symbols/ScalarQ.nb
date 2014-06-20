@@ -677,8 +677,8 @@ Cell[BoxData[
  CellID->174446771],
 
 Cell["\<\
-Any occurence of Spinor, LVector or SMatrix outside of scalar or spinor \
-product makes expression a nonscalar:\
+Any occurrence of Spinor, LVector or SMatrix outside of scalar or spinor \
+product makes expression a non-scalar:\
 \>", "ExampleText",
  CellID->861954371],
 
@@ -813,7 +813,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 261}, {Automatic, 0}},
+WindowMargins->{{Automatic, 255}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

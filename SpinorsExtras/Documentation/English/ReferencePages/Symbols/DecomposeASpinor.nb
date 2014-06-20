@@ -132,7 +132,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " with all ocurences of spinor |",
+ " with all occurrences of spinor |",
  Cell[BoxData[
   StyleBox["a", "TI"]], "InlineFormula",
   ShowStringCharacters->False],

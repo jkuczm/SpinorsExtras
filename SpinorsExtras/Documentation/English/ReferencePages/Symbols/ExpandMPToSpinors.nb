@@ -124,7 +124,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with minkowski products (",
+ " with Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",
@@ -141,7 +141,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with minkowski products (",
+ " with Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",
@@ -157,7 +157,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all minkowski products (",
+ " with all Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",
@@ -257,8 +257,9 @@ Cell[BoxData[
   $Line = 0; Null]], "PrimaryExamplesSection",
  CellID->880084151],
 
-Cell["Expand minkowski products of given massless spinor label:", \
-"ExampleText",
+Cell["\<\
+Expand Minkowski products of given massless spinor label:\
+\>", "ExampleText",
  CellID->512370754],
 
 Cell[BoxData[
@@ -327,7 +328,9 @@ Cell[BoxData[
   $Line = 0; Null]], "ExampleDelimiter",
  CellID->2042637775],
 
-Cell["Expand minkowski products of given LVector label:", "ExampleText",
+Cell["\<\
+Expand Minkowski products of given LVector label:\
+\>", "ExampleText",
  CellID->1700070232],
 
 Cell[BoxData[
@@ -405,8 +408,9 @@ Cell[BoxData[
   $Line = 0; Null]], "ExampleDelimiter",
  CellID->1221265840],
 
-Cell["Expand minkowski products of labels matching given pattern:", \
-"ExampleText",
+Cell["\<\
+Expand Minkowski products of labels matching given pattern:\
+\>", "ExampleText",
  CellID->433310790],
 
 Cell[BoxData[
@@ -482,7 +486,7 @@ Cell[BoxData[
   $Line = 0; Null]], "ExampleDelimiter",
  CellID->1578737533],
 
-Cell["Expand all minkowski products:", "ExampleText",
+Cell["Expand all Minkowski products:", "ExampleText",
  CellID->1749464733],
 
 Cell[BoxData[
@@ -588,7 +592,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["True",
    BaseStyle->"Link"]], "InlineFormula"],
- " (default value) minkowski products (",
+ " (default value) Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",
@@ -679,7 +683,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["False",
    BaseStyle->"Link"]], "InlineFormula"],
- " minkowski products (",
+ " Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",
@@ -1028,7 +1032,7 @@ option is set to ",
  Cell[BoxData[
   ButtonBox["False",
    BaseStyle->"Link"]], "InlineFormula"],
- " no expantion is performed:"
+ " no expansion is performed:"
 }], "ExampleText",
  CellID->2045278071],
 

@@ -16,10 +16,10 @@ for integer x returns Sp[x] otherwise returns x."
 SpinorizeIntegerList::usage =
 "\
 SpinorizeIntegerList[list] \
-returns list with all occurences of integers replaced by Sp[i].\
+returns list with all occurrences of integers replaced by Sp[i].\
 
 SpinorizeIntegerList[a, b, c, ...] \
-returns list {a, b, c} with all occurences of intigers replaced by Sp[i]."
+returns list {a, b, c} with all occurrences of integers replaced by Sp[i]."
 
 
 SpinorInterpretableQ::usage =
@@ -47,7 +47,7 @@ ScaledQFactory::usage =
 "\
 ScaledQFactory[\"name\", patt] \
 implements Scaled<name>Q that tests whether given expression matches pattern \
-patt or patt multipled by scalars."
+patt or patt multiplied by scalars."
 
 
 ScaledSpinorQ::usage =
@@ -233,7 +233,7 @@ ScalarPattern = _Spaa | _Spbb | _Spab | _Spba | _s | _MP | _MP2
 
 
 (*
-	Replace each occurence of scalar quantity with unique symbol to avoid
+	Replace each occurrence of scalar quantity with unique symbol to avoid
 	accidental reduction of coefficients next to non-scalar.
 *)
 ScalarQ[x_] := FreeQ[x //. ScalarPattern :> Unique[], _?SMatrixQ]

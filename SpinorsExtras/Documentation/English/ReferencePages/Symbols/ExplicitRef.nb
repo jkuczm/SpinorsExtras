@@ -124,7 +124,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " where all occurences of ",
+ " where all occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -536,8 +536,7 @@ Cell[BoxData[
  CellID->1293636265],
 
 Cell[TextData[{
- "Add explicit reference vectors to ",
- "all occurences of ",
+ "Add explicit reference vectors to all occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -674,7 +673,7 @@ Cell[BoxData[
  CellID->41462811],
 
 Cell[TextData[{
- "Add explicit reference vectors to occurences of ",
+ "Add explicit reference vectors to occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -890,7 +889,7 @@ Cell[BoxData[
  CellID->1145155664],
 
 Cell[TextData[{
- "Add explicit reference vectors to occurences of ",
+ "Add explicit reference vectors to occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",

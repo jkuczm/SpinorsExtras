@@ -536,7 +536,7 @@ Cell[TextData[{
  " is not LVector, second is not interpretable as ",
  Cell[BoxData[
   RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
- " or third is not massles Spinor",
+ " or third is not massless Spinor",
  ", expression is not interpreted as massive spinor",
  ":"
 }], "ExampleText",
@@ -635,7 +635,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 328}, {Automatic, 0}},
+WindowMargins->{{Automatic, 322}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

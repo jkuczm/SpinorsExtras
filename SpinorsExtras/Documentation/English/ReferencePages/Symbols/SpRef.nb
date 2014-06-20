@@ -35,7 +35,7 @@ Cell["SpinorsExtras`Ref`", "Categorization",
 Cell["SpinorsExtras/ref/SpRef", "Categorization",
  CellLabel->"URI",
  CellID->302932227]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -366,7 +366,7 @@ Cell[TextData[{
  Cell[BoxData[
   RowBox[{"SpRef", "[", 
    StyleBox["P", "TI"], "]"}]], "InlineFormula"],
- " is always interpreted as massles Spinor:"
+ " is always interpreted as massless Spinor:"
 }], "ExampleText",
  CellID->529855805],
 
@@ -534,8 +534,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareSpinorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(q\\_Q\\), SpRef[Q]]\\)\[NoBreak] is \
 possible after declaring values for \[NoBreak]\\!\\(Q\\)\[NoBreak].\"\>"}]], \
 "Message", "MSG",
@@ -655,7 +654,7 @@ Cell[TextData[{
  CellID->1386076492],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->1541376740],
 

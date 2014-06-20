@@ -125,7 +125,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " where all occurences of ",
+ " where all occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -140,7 +140,7 @@ Cell[TextData[{
   ButtonBox["PolVec",
    BaseStyle->"Link",
    ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
- " with explicit default reference vectors heve those vectors removed.\n",
+ " with explicit default reference vectors have those vectors removed.\n",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"ImplicitRef", "[", 
@@ -546,7 +546,7 @@ Cell[BoxData[
  CellID->1293636265],
 
 Cell[TextData[{
- "Remove explicit default reference vectors from all occurences of ",
+ "Remove explicit default reference vectors from all occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -717,8 +717,7 @@ Cell[BoxData[
  CellID->41462811],
 
 Cell[TextData[{
- "Remove explicit default reference vectors from",
- " occurences of ",
+ "Remove explicit default reference vectors from occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -996,8 +995,7 @@ Cell[BoxData[
  CellID->1145155664],
 
 Cell[TextData[{
- "Remove explicit default reference vectors from",
- " occurences of ",
+ "Remove explicit default reference vectors from occurrences of ",
  Cell[BoxData[
   ButtonBox["SpAssoc",
    BaseStyle->"Link",
@@ -1409,7 +1407,7 @@ Cell[BoxData[{
   RowBox[{"P", ",", "1"}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"ImplicitRef", "[", 
   RowBox[{"%", ",", 
-   RowBox[{"\"\<HideNonDefault\>\"", "\[Rule]", "True"}]}], " ", 
+   RowBox[{"\<\"HideNonDefault\"\>", "\[Rule]", "True"}]}], " ", 
   "]"}]}], "Input",
  CellLabel->"In[3]:=",
  CellID->568552033],
@@ -1433,7 +1431,7 @@ Cell[BoxData[{
    RowBox[{"\[PlusMinus]", "1"}], ",", "2"}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"ImplicitRef", "[", 
   RowBox[{"%", ",", 
-   RowBox[{"\"\<HideNonDefault\>\"", "\[Rule]", "True"}]}], " ", 
+   RowBox[{"\<\"HideNonDefault\"\>", "\[Rule]", "True"}]}], " ", 
   "]"}]}], "Input",
  CellLabel->"In[5]:=",
  CellID->657746663],
@@ -1459,7 +1457,7 @@ Cell[BoxData[{
    RowBox[{"\[PlusMinus]", "1"}], ",", "3"}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"ImplicitRef", "[", 
   RowBox[{"%", ",", 
-   RowBox[{"\"\<HideNonDefault\>\"", "\[Rule]", "True"}]}], " ", 
+   RowBox[{"\<\"HideNonDefault\"\>", "\[Rule]", "True"}]}], " ", 
   "]"}]}], "Input",
  CellLabel->"In[7]:=",
  CellID->1091941965],
@@ -1510,7 +1508,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 252}, {Automatic, 0}},
+WindowMargins->{{Automatic, 246}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

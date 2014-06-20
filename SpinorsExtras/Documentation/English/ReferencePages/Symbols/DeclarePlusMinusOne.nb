@@ -329,7 +329,7 @@ Cell[TextData[{
  CellID->1593738283],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->885553258],
 
@@ -646,7 +646,7 @@ Cell[TextData[{
    RowBox[{
     StyleBox["P", "TI"], ",", 
     StyleBox["pol", "TI"]}], "]"}]], "InlineFormula"],
- " represents massles spinor:"
+ " represents massless spinor:"
 }], "ExampleText",
  CellID->87781149],
 
@@ -877,7 +877,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{791, 770},
-WindowMargins->{{Automatic, 149}, {Automatic, 0}},
+WindowMargins->{{333, Automatic}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

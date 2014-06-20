@@ -10,21 +10,21 @@ BeginPackage["SpinorsExtras`MassiveUtilities`", {"Spinors`"}]
 ExpandMPToSpinors::usage =
 "\
 ExpandMPToSpinors[expr, a] \
-returns expr with minkowski products (MP) containing label a replaced by \
+returns expr with Minkowski products (MP) containing label a replaced by \
 spinor products.\
 
 ExpandMPToSpinors[expr, patt] \
-returns expr with minkowski products (MP) containing labels matching patt \
+returns expr with Minkowski products (MP) containing labels matching patt \
 replaced by spinor products.\
 
 ExpandMPToSpinors[expr] \
-returns expr with all minkowski products (MP) replaced by spinor products."
+returns expr with all Minkowski products (MP) replaced by spinor products."
 
 
 ExpandSToMPs::usage =
 "\
 ExpandSToMPs[expr] \
-returns expr with invariants s[P, Q, ...] replaced by minkowski products (MP)."
+returns expr with invariants s[P, Q, ...] replaced by Minkowski products (MP)."
 
 
 LightConeDecompose::usage =
@@ -336,7 +336,7 @@ MasslesRefFromRef[ref_?SpinorQ, _] := ref
 
 (*
 	For massive refenece vector,
-	use associated vector coming from simultaneus decomposition with P.
+	use associated vector coming from simultaneous decomposition with P.
 *)
 MasslesRefFromRef[ref_, P_] := SpAssoc[ref, P]
 

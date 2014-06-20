@@ -123,7 +123,7 @@ Cell[TextData[{
  "\[LineSeparator]removes ",
  Cell[BoxData[
   StyleBox["x", "TI"]], "InlineFormula"],
- " from list of symbolic representations of posible vector boson \
+ " from list of symbolic representations of possible vector boson \
 polarizations.\n",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
@@ -138,7 +138,7 @@ polarizations.\n",
  ", ",
  Cell[BoxData[
   StyleBox["y", "TI"]], "InlineFormula"],
- ", ... from list of symbolic representations of posible vector boson \
+ ", ... from list of symbolic representations of possible vector boson \
 polarizations."
 }], "Usage"],
 
@@ -229,13 +229,13 @@ Cell[BoxData[
  CellID->880084151],
 
 Cell["\<\
-Remove one symbol from list of posible vector boson polarizations:\
+Remove one symbol from list of possible vector boson polarizations:\
 \>", "ExampleText",
  CellID->1433605585],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
- CellLabel->"In[9]:=",
+ CellLabel->"In[1]:=",
  CellID->1944434619],
 
 Cell[CellGroupData[{
@@ -243,7 +243,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"DeclarePossiblePol", "[", 
   RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
- CellLabel->"In[16]:=",
+ CellLabel->"In[2]:=",
  CellID->1993778067],
 
 Cell[BoxData[
@@ -251,13 +251,13 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
-   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" added to the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
-   " added to the list of posible vector boson polarizations"],
+   " added to the list of possible vector boson polarizations"],
   Editable->False]], "Print",
- CellLabel->"During evaluation of In[16]:=",
- CellID->957959219]
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->1063856570]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -266,40 +266,40 @@ Cell[BoxData[{
  RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
- CellLabel->"In[17]:=",
+ CellLabel->"In[3]:=",
  CellID->2109503315],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[17]=",
- CellID->1051245805],
+ CellLabel->"Out[3]=",
+ CellID->1779891867],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[18]=",
- CellID->1830104572],
+ CellLabel->"Out[4]=",
+ CellID->639563350],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[19]=",
- CellID->332852690]
+ CellLabel->"Out[5]=",
+ CellID->1870069752]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"UndeclarePossiblePol", "[", "y", "]"}]], "Input",
- CellLabel->"In[20]:=",
+ CellLabel->"In[6]:=",
  CellID->1222171504],
 
 Cell[BoxData[
  InterpretationBox[
   RowBox[{
    RowBox[{"{", "y", "}"}], 
-   "\[InvisibleSpace]", "\<\" removed from the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" removed from the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`y}, 
-   " removed from the list of posible vector boson polarizations"],
+   " removed from the list of possible vector boson polarizations"],
   Editable->False]], "Print",
- CellLabel->"During evaluation of In[20]:=",
- CellID->858266226]
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1125334696]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -308,20 +308,20 @@ Cell[BoxData[{
  RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
- CellLabel->"In[21]:=",
+ CellLabel->"In[7]:=",
  CellID->9804828],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[21]=",
- CellID->1078001547],
+ CellLabel->"Out[7]=",
+ CellID->1605197750],
 
 Cell[BoxData["False"], "Output",
- CellLabel->"Out[22]=",
- CellID->729813014],
+ CellLabel->"Out[8]=",
+ CellID->1045998029],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[23]=",
- CellID->1891529060]
+ CellLabel->"Out[9]=",
+ CellID->977321679]
 }, Open  ]]
 }, Open  ]],
 
@@ -339,13 +339,13 @@ Cell[BoxData[
  CellID->1293636265],
 
 Cell["\<\
-Remove many symbols from list of posible vector boson polarizations:\
+Remove many symbols from list of possible vector boson polarizations:\
 \>", "ExampleText",
  CellID->1799807896],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
- CellLabel->"In[24]:=",
+ CellLabel->"In[1]:=",
  CellID->1226703305],
 
 Cell[CellGroupData[{
@@ -353,7 +353,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"DeclarePossiblePol", "[", 
   RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
- CellLabel->"In[25]:=",
+ CellLabel->"In[2]:=",
  CellID->69175621],
 
 Cell[BoxData[
@@ -361,13 +361,13 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
-   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" added to the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
-   " added to the list of posible vector boson polarizations"],
+   " added to the list of possible vector boson polarizations"],
   Editable->False]], "Print",
- CellLabel->"During evaluation of In[25]:=",
- CellID->1335148247]
+ CellLabel->"During evaluation of In[2]:=",
+ CellID->220999664]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -376,20 +376,20 @@ Cell[BoxData[{
  RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
- CellLabel->"In[26]:=",
+ CellLabel->"In[3]:=",
  CellID->934067719],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[26]=",
- CellID->968423576],
+ CellLabel->"Out[3]=",
+ CellID->2085810937],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[27]=",
- CellID->906760030],
+ CellLabel->"Out[4]=",
+ CellID->1790072391],
 
 Cell[BoxData["True"], "Output",
- CellLabel->"Out[28]=",
- CellID->1304188669]
+ CellLabel->"Out[5]=",
+ CellID->1261615364]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -397,7 +397,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"UndeclarePossiblePol", "[", 
   RowBox[{"x", ",", "y", ",", "z"}], "]"}]], "Input",
- CellLabel->"In[29]:=",
+ CellLabel->"In[6]:=",
  CellID->408302185],
 
 Cell[BoxData[
@@ -405,13 +405,13 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"{", 
     RowBox[{"x", ",", "y", ",", "z"}], "}"}], 
-   "\[InvisibleSpace]", "\<\" removed from the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" removed from the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`x, $CellContext`y, $CellContext`z}, 
-   " removed from the list of posible vector boson polarizations"],
+   " removed from the list of possible vector boson polarizations"],
   Editable->False]], "Print",
- CellLabel->"During evaluation of In[29]:=",
- CellID->47095088]
+ CellLabel->"During evaluation of In[6]:=",
+ CellID->1108060001]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -420,20 +420,20 @@ Cell[BoxData[{
  RowBox[{"PossiblePolQ", "[", "x", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "y", "]"}], "\[IndentingNewLine]", 
  RowBox[{"PossiblePolQ", "[", "z", "]"}]}], "Input",
- CellLabel->"In[30]:=",
+ CellLabel->"In[7]:=",
  CellID->2130665425],
 
 Cell[BoxData["False"], "Output",
- CellLabel->"Out[30]=",
- CellID->527128798],
+ CellLabel->"Out[7]=",
+ CellID->288659209],
 
 Cell[BoxData["False"], "Output",
- CellLabel->"Out[31]=",
- CellID->1757090328],
+ CellLabel->"Out[8]=",
+ CellID->85556051],
 
 Cell[BoxData["False"], "Output",
- CellLabel->"Out[32]=",
- CellID->195316317]
+ CellLabel->"Out[9]=",
+ CellID->480244503]
 }, Open  ]]
 }, Open  ]],
 

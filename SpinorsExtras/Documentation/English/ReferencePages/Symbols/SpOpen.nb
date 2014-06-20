@@ -35,7 +35,7 @@ Cell["Spinors`", "Categorization",
 Cell["SpinorsExtras/ref/SpOpen", "Categorization",
  CellLabel->"URI",
  CellID->164038276]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -131,7 +131,7 @@ applying: k-slashed = |k>[k| + |k]<k|.\n",
    RowBox[{
     StyleBox["x", "TI"], ",", 
     StyleBox["a", "TI"]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]does the same selectively, at the occurence of ",
+ "\[LineSeparator]does the same selectively, at the occurrence of ",
  Cell[BoxData[
   StyleBox["a", "TI"]], "InlineFormula"],
  "-slashed.\n",
@@ -141,8 +141,8 @@ applying: k-slashed = |k>[k| + |k]<k|.\n",
    RowBox[{
     StyleBox["x", "TI"], ",", 
     StyleBox["patt", "TI"]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]does the same selectively, at the occurence of any massless \
-Spinor that matches pattern ",
+ "\[LineSeparator]does the same selectively, at the occurrence of any \
+massless Spinor that matches pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  "."
@@ -273,7 +273,7 @@ Cell[BoxData[
   $Line = 0; Null]], "ExampleDelimiter",
  CellID->688993725],
 
-Cell["Decompose spinor chain at occurence of one label:", "ExampleText",
+Cell["Decompose spinor chain at occurrence of one label:", "ExampleText",
  CellID->1600790559],
 
 Cell[BoxData[
@@ -323,7 +323,7 @@ Cell[BoxData[
  CellID->400383970],
 
 Cell["\<\
-Decompose spinor chain at occurence of labes matching patternl:\
+Decompose spinor chain at occurrence of labels matching pattern:\
 \>", "ExampleText",
  CellID->1575081753],
 

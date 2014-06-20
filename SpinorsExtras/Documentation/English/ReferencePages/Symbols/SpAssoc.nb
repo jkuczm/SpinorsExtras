@@ -35,7 +35,7 @@ Cell["SpinorsExtras`Massive`", "Categorization",
 Cell["SpinorsExtras/ref/SpAssoc", "Categorization",
  CellLabel->"URI",
  CellID->1713895207]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -188,7 +188,7 @@ Cell[TextData[{
  " being LVector and ",
  Cell[BoxData[
   StyleBox["q", "TI"]], "InlineFormula"],
- " being massles Spinor labels ",
+ " being massless Spinor labels ",
  "lightlike ",
  "four-vector ",
  Cell[BoxData[
@@ -220,7 +220,7 @@ Cell[TextData[{
  " being massive LVector labels lightlike four-vector ",
  Cell[BoxData[
   SuperscriptBox["P", "Q"]], "InlineFormula"],
- " obtained by \"simultaneus\" lightcone decomposition of ",
+ " obtained by \"simultaneous\" lightcone decomposition of ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"P", " "}], "TI"]], "InlineFormula"],
@@ -587,7 +587,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox[
    RowBox[{"P", " "}], "TI"]], "InlineFormula"],
- " being LVector, is interpreted as massles Spinor:"
+ " being LVector, is interpreted as massless Spinor:"
 }], "ExampleText",
  CellID->529855805],
 
@@ -670,7 +670,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox[
    RowBox[{"Q", " "}], "TI"]], "InlineFormula"],
- " being LVectors, is interpreted as massles Spinor:"
+ " being LVectors, is interpreted as massless Spinor:"
 }], "ExampleText",
  CellID->27330892],
 
@@ -1126,7 +1126,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox[
    RowBox[{"Q", " "}], "TI"]], "InlineFormula"],
- " being LVectosr with declared numerical components, can be declared by \
+ " being LVectors with declared numerical components, can be declared by \
 using ",
  Cell[BoxData[
   ButtonBox["DeclareSpinorMomentum",
@@ -1245,11 +1245,11 @@ Cell[BoxData[
       RowBox[{"0.2560862434184307`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
    "\[InvisibleSpace]", "\<\".\"\>"}],
   SequenceForm["Momentum for spinor ", 
-   SpinorsExtras`Massive`SpAssoc[$CellContext`P, $CellContext`Q], 
-   " set to ", {Complex[0.32623390398701424`, 0.507052834459896], Complex[
-   0.316535178125684, 0.5646509020657273], Complex[
-   0.3414065434333301, -0.25140556395443125`], Complex[0.28317591554666144`, 
-   0.2560862434184307]}, "."],
+   SpinorsExtras`Massive`SpAssoc[$CellContext`P, $CellContext`Q], " set to ", {
+    Complex[0.32623390398701424`, 0.507052834459896], 
+    Complex[0.316535178125684, 0.5646509020657273], 
+    Complex[0.3414065434333301, -0.25140556395443125`], 
+    Complex[0.28317591554666144`, 0.2560862434184307]}, "."],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[4]:=",
  CellID->622378264]
@@ -1302,11 +1302,11 @@ Cell[BoxData[
       RowBox[{"0.044658857178702244`", " ", "\[ImaginaryI]"}]}]}], "}"}], 
    "\[InvisibleSpace]", "\<\".\"\>"}],
   SequenceForm["Momentum for spinor ", 
-   SpinorsExtras`Massive`SpAssoc[$CellContext`Q, $CellContext`P], 
-   " set to ", {Complex[0.4676010983296659, -0.19938810523145167`], Complex[
-   0.48809387845105073`, -0.24416636609416412`], Complex[0.11922584741209565`,
-    0.3369941522020727], Complex[0.3187811478951208, -0.044658857178702244`]},
-    "."],
+   SpinorsExtras`Massive`SpAssoc[$CellContext`Q, $CellContext`P], " set to ", {
+    Complex[0.4676010983296659, -0.19938810523145167`], 
+    Complex[0.48809387845105073`, -0.24416636609416412`], 
+    Complex[0.11922584741209565`, 0.3369941522020727], 
+    Complex[0.3187811478951208, -0.044658857178702244`]}, "."],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[5]:=",
  CellID->1841905140]
@@ -1414,8 +1414,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareSpinorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(P\\^Q\\), SpAssoc[P, Q]]\\)\[NoBreak] \
 is possible after declaring values for \[NoBreak]\\!\\({P, Q}\\)\[NoBreak].\"\
 \>"}]], "Message", "MSG",
@@ -1471,8 +1470,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareSpinorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(P\\^Q\\), SpAssoc[P, Q]]\\)\[NoBreak] \
 is possible after declaring values for \
 \[NoBreak]\\!\\({Q}\\)\[NoBreak].\"\>"}]], "Message", "MSG",

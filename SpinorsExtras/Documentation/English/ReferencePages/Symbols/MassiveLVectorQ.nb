@@ -303,7 +303,9 @@ Cell[BoxData[
   $Line = 0; Null]], "ExampleDelimiter",
  CellID->1209900808],
 
-Cell["Massles spinor is not interpreted as massive LVector:", "ExampleText",
+Cell["\<\
+Massless spinor is not interpreted as massive LVector:\
+\>", "ExampleText",
  CellID->76804102],
 
 Cell[CellGroupData[{
@@ -423,7 +425,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 246}, {Automatic, 0}},
+WindowMargins->{{Automatic, 240}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

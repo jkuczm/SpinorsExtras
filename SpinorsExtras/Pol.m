@@ -10,21 +10,21 @@ BeginPackage["SpinorsExtras`Pol`", {"Spinors`"}]
 DeclarePossiblePol::usage =
 "\
 DeclarePossiblePol[x] \
-declares x as symbolic representation of posible vector boson polarizations.\
+declares x as symbolic representation of possible vector boson polarizations.\
 
 DeclarePossiblePol[x, y, ...] \
-declares x, y, ... as symbolic representations of posible vector boson \
+declares x, y, ... as symbolic representations of possible vector boson \
 polarizations."
 
 
 UndeclarePossiblePol::usage =
 "\
 UndeclarePossiblePol[x] \
-removes x from list of symbolic representations of posible vector boson \
+removes x from list of symbolic representations of possible vector boson \
 polarizations.\
 
 UndeclarePossiblePol[x, y, ...] \
-removes x, y, ... from list of symbolic representations of posible vector \
+removes x, y, ... from list of symbolic representations of possible vector \
 boson polarizations."
 
 
@@ -51,15 +51,15 @@ four-vectors."
 ExpandPolVec::usage =
 "\
 ExpandPolVec[expr, PolVec[P, pol]] \
-returns expr with occurences of polarization vectors PolVec[P, pol] replaced \
+returns expr with occurrences of polarization vectors PolVec[P, pol] replaced \
 by proper, for given polarization pol, combinations of four-vectors, slashed \
 matrices and spinors associated with momentum P and default reference vector.\
 
 ExpandPolVec[expr, PolVec[P, pol, q]] \
-decomposes occurences of PolVec[P, pol, q], in expr, using reference vector q.\
+decomposes occurrences of PolVec[P, pol, q], in expr, using reference vector q.\
 
 ExpandPolVec[expr, patt] \
-decomposes those occurences of polarization vectors, in expr, which match \
+decomposes those occurrences of polarization vectors, in expr, which match \
 pattern patt.\
 
 ExpandPolVec[expr] \
@@ -96,7 +96,7 @@ DeclareUndeclareQFactory[
 	"PossiblePol",
 	(* Everything interpretable as +/-1 is also possible polarization. *)
 	{_?PlusMinusOneQ, 0, "S"},
-	"posible vector boson polarizations"
+	"possible vector boson polarizations"
 ]
 
 
@@ -105,7 +105,7 @@ DeclareUndeclareQFactory[
 
 
 PolVec::forbidden0Pol =
-"In `1` first argument `2` is massles so `3` polarization does not exist."
+"In `1` first argument `2` is massless so `3` polarization does not exist."
 
 
 QuietSpinorPrint[

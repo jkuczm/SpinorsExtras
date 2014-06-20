@@ -153,7 +153,7 @@ Cell[TextData[{
        StyleBox["a", "TI"], ",", 
        StyleBox["b", "TI"], ",", 
        StyleBox["\[Ellipsis]", "TR"]}], "}"}]}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"patt", " "}], "TI"]], "InlineFormula",
@@ -172,7 +172,7 @@ Cell[TextData[{
        StyleBox["a", "TI"], ",", 
        StyleBox["b", "TI"], ",", 
        StyleBox["\[Ellipsis]", "TR"]}], "}"}]}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"patt", " "}], "TI"]], "InlineFormula",
@@ -182,7 +182,8 @@ Cell[TextData[{
   StyleBox[
    RowBox[{"patt", " "}], "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " can contain named subpatterns that can be used on RHS of \[RuleDelayed].\n",
+ " can contain named sub-patterns that can be used on RHS of \[RuleDelayed].\n\
+",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"RefInvariantQ", "[", 
@@ -200,7 +201,7 @@ Cell[TextData[{
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["patt", "TI"]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"patt", " "}], "TI"]], "InlineFormula",
@@ -759,7 +760,7 @@ Cell[BoxData[{
    RowBox[{"q", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"2", ",", "3"}], "}"}]}], ",", 
-   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "False"}]}], "]"}]}], "Input",
+   RowBox[{"\<\"Verbose\"\>", "\[Rule]", "False"}]}], "]"}]}], "Input",
  CellLabel->"In[4]:=",
  CellID->671760568],
 
@@ -793,7 +794,7 @@ of reference vectors are not present in expression warnings are printed:"
  CellID->475989729],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->1686259649],
 
@@ -896,7 +897,7 @@ Cell[BoxData[{
    RowBox[{"q", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"2", ",", "3"}], "}"}]}], ",", 
-   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+   RowBox[{"\<\"Verbose\"\>", "\[Rule]", "True"}]}], "]"}]}], "Input",
  CellLabel->"In[4]:=",
  CellID->432661358],
 

@@ -34,7 +34,7 @@ Cell["SpinorsExtras`", "Categorization",
 
 Cell["SpinorsExtras/ref/LvBA", "Categorization",
  CellLabel->"URI"]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -978,7 +978,7 @@ Cell[BoxData[
 Cell[TextData[{
  Cell[BoxData["LvBA"], "InlineFormula",
   ShowStringCharacters->False],
- "s are replaced by combinations of argument spinors inside minkowski \
+ "s are replaced by combinations of argument spinors inside Minkowski \
 products and s invariants:"
 }], "ExampleText",
  CellID->685413160],
@@ -1824,7 +1824,7 @@ Cell[TextData[{
     StyleBox["b", "TI"], ",", 
     StyleBox["a", "TI"]}], "]"}]], "InlineFormula",
   ShowStringCharacters->False],
- " is interpreted as massles Spinor when ",
+ " is interpreted as massless Spinor when ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"b", " "}], "TI"]], "InlineFormula",
@@ -1933,7 +1933,7 @@ Cell[TextData[{
     StyleBox["b", "TI"], ",", 
     StyleBox["a", "TI"]}], "]"}]], "InlineFormula",
   ShowStringCharacters->False],
- " is not interpreted as massles Spinor:"
+ " is not interpreted as massless Spinor:"
 }], "ExampleText",
  CellID->1150685032],
 
@@ -2013,7 +2013,7 @@ Cell[TextData[{
     StyleBox["b", "TI"], ",", 
     StyleBox["a", "TI"]}], "]"}]], "InlineFormula",
   ShowStringCharacters->False],
- " is not interpreted as massles Spinor:"
+ " is not interpreted as massless Spinor:"
 }], "ExampleText",
  CellID->102694079],
 
@@ -2466,8 +2466,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareLVectorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Eta] \
 \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \
 InterpretationBox[RowBox[List[SubsuperscriptBox[\\\"\\\", \\\"+\\\", \
@@ -2554,8 +2553,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareLVectorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Eta] \
 \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \
 InterpretationBox[RowBox[List[SubsuperscriptBox[\\\"\\\", \\\"+\\\", \
@@ -2848,8 +2846,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareSpinorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Eta] \
 \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"b\\\", \
 \\\"a\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), LvBA[b, a]]\\)\[NoBreak] is \
@@ -2903,8 +2900,7 @@ Cell[BoxData[
  RowBox[{
   StyleBox[
    RowBox[{"DeclareSpinorMomentum", "::", "firstDeclare"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Declaration of default value for \
+  ":", " ", "\<\"Declaration of default value for \
 \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Eta] \
 \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"b\\\", \
 \\\"a\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), LvBA[b, a]]\\)\[NoBreak] is \
@@ -2938,7 +2934,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 246}, {Automatic, 0}},
+WindowMargins->{{Automatic, 240}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

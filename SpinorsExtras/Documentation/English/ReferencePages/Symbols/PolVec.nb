@@ -35,7 +35,7 @@ Cell["SpinorsExtras`Pol`", "Categorization",
 Cell["SpinorsExtras/ref/PolVec", "Categorization",
  CellLabel->"URI",
  CellID->757107021]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -627,7 +627,7 @@ Cell[TextData[{
  "When first argument of ",
  Cell[BoxData["PolVec"], "InlineFormula"],
  " is not LVector, second is not interpretable as possible polarization or \
-third is not massles Spinor notation is not changed:"
+third is not massless Spinor notation is not changed:"
 }], "ExampleText",
  CellID->574967913],
 
@@ -711,7 +711,7 @@ Cell[BoxData[
   SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[2]:=",
- CellID->258118003],
+ CellID->1247725055],
 
 Cell[BoxData[
  InterpretationBox[
@@ -721,7 +721,7 @@ Cell[BoxData[
   SequenceForm[{$CellContext`q}, " added to the list of spinors"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[2]:=",
- CellID->742709884]
+ CellID->1144933690]
 }, Open  ]]
 }, Open  ]],
 
@@ -736,13 +736,13 @@ Cell[BoxData[
  InterpretationBox[
   RowBox[{
    RowBox[{"{", "y", "}"}], 
-   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" added to the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`y}, 
-   " added to the list of posible vector boson polarizations"],
+   " added to the list of possible vector boson polarizations"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[4]:=",
- CellID->641020848]
+ CellID->1159511928]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -762,7 +762,7 @@ Cell[BoxData[
    RowBox[{"(", "P", ")"}]}],
   SpinorsExtras`Pol`PolVec[$CellContext`P, $CellContext`y]]], "Output",
  CellLabel->"Out[5]=",
- CellID->418170774],
+ CellID->277395203],
 
 Cell[BoxData[
  InterpretationBox[
@@ -774,7 +774,7 @@ Cell[BoxData[
   SpinorsExtras`Pol`PolVec[$CellContext`P, $CellContext`y, $CellContext`q]]], \
 "Output",
  CellLabel->"Out[6]=",
- CellID->1929208863]
+ CellID->1356689547]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -1039,7 +1039,7 @@ Cell[TextData[{
  Cell[BoxData["PolVec"], "InlineFormula"],
  " is not LVector, second is not interpretable as ",
  "possible polarization",
- " or third is not massles Spinor, then ",
+ " or third is not massless Spinor, then ",
  Cell[BoxData["PolVec"], "InlineFormula"],
  " is not interpreted as LVector:"
 }], "ExampleText",
@@ -1120,7 +1120,7 @@ Cell[BoxData[
   SequenceForm[{$CellContext`P}, " added to the list of Lorentz vectors"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[2]:=",
- CellID->141145298],
+ CellID->696040683],
 
 Cell[BoxData[
  InterpretationBox[
@@ -1130,7 +1130,7 @@ Cell[BoxData[
   SequenceForm[{$CellContext`q}, " added to the list of spinors"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[2]:=",
- CellID->1899779342]
+ CellID->656195993]
 }, Open  ]]
 }, Open  ]],
 
@@ -1145,13 +1145,13 @@ Cell[BoxData[
  InterpretationBox[
   RowBox[{
    RowBox[{"{", "y", "}"}], 
-   "\[InvisibleSpace]", "\<\" added to the list of posible vector boson \
+   "\[InvisibleSpace]", "\<\" added to the list of possible vector boson \
 polarizations\"\>"}],
   SequenceForm[{$CellContext`y}, 
-   " added to the list of posible vector boson polarizations"],
+   " added to the list of possible vector boson polarizations"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[4]:=",
- CellID->923077413]
+ CellID->320724023]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1168,11 +1168,11 @@ Cell[BoxData[{
 
 Cell[BoxData["True"], "Output",
  CellLabel->"Out[5]=",
- CellID->936514098],
+ CellID->1731468047],
 
 Cell[BoxData["True"], "Output",
  CellLabel->"Out[6]=",
- CellID->1312752246]
+ CellID->758115408]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -1408,7 +1408,7 @@ Cell[TextData[{
  " is not LVector, second is not interpretable as ",
  Cell[BoxData[
   RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
- " or third is not massles Spinor, then ",
+ " or third is not massless Spinor, then ",
  Cell[BoxData["PolVec"], "InlineFormula"],
  " is not interpreted as ",
  "massless Spinor",
@@ -1591,7 +1591,7 @@ Cell[BoxData[
    " added to the list of spinors"],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[2]:=",
- CellID->168187129]
+ CellID->1092430992]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1605,18 +1605,17 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], ":", 
+  " ", "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \
 \\(\\((a)\\)\\)\\), PolVec[a, 0]]\\)\[NoBreak] first argument \
-\[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \[NoBreak]\\!\\(0\\)\[NoBreak] \
+\[NoBreak]\\!\\(a\\)\[NoBreak] is massless so \[NoBreak]\\!\\(0\\)\[NoBreak] \
 polarization does not exist.\"\>"}]], "Message", "MSG",
  CellLabel->"During evaluation of In[3]:=",
- CellID->1891205479],
+ CellID->828755662],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[3]=",
- CellID->219161246]
+ CellID->158523847]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1630,20 +1629,19 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \
-\\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"a\\\", \
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], ":", 
+  " ", "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^0 \\(\\((\
+\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"a\\\", \
 \\\"q\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), PolVec[a, 0, q]]\\)\
-\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \
+\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is massless so \
 \[NoBreak]\\!\\(0\\)\[NoBreak] polarization does not exist.\"\>"}]], \
 "Message", "MSG",
  CellLabel->"During evaluation of In[4]:=",
- CellID->1510363805],
+ CellID->994230709],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[4]=",
- CellID->1811389032]
+ CellID->1574104754]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1657,18 +1655,17 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\
-\"S\\\" \\(\\((a)\\)\\)\\), PolVec[a, \\\"S\\\"]]\\)\[NoBreak] first argument \
-\[NoBreak]\\!\\(a\\)\[NoBreak] is massles so \[NoBreak]\\!\\(\\\"S\\\"\\)\
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], ":", 
+  " ", "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\"S\\\" \
+\\(\\((a)\\)\\)\\), PolVec[a, \\\"S\\\"]]\\)\[NoBreak] first argument \
+\[NoBreak]\\!\\(a\\)\[NoBreak] is massless so \[NoBreak]\\!\\(\\\"S\\\"\\)\
 \[NoBreak] polarization does not exist.\"\>"}]], "Message", "MSG",
  CellLabel->"During evaluation of In[5]:=",
- CellID->116673274],
+ CellID->1397366122],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[5]=",
- CellID->1788857209]
+ CellID->1007873229]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1682,20 +1679,19 @@ Cell[BoxData[
 Cell[BoxData[
  RowBox[{
   StyleBox[
-   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\
-\"S\\\" \\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \
-\\\"a\\\", \\\"q\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), PolVec[a, \
-\\\"S\\\", q]]\\)\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is \
-massles so \[NoBreak]\\!\\(\\\"S\\\"\\)\[NoBreak] polarization does not \
-exist.\"\>"}]], "Message", "MSG",
+   RowBox[{"PolVec", "::", "forbidden0Pol"}], "MessageName"], ":", 
+  " ", "\<\"In \[NoBreak]\\!\\(\\*InterpretationBox[\\(\[Epsilon]\\^\\\"S\\\" \
+\\(\\((\\*TemplateBox[List[\\\",\\\", \\\"\\\\\\\",\\\\\\\"\\\", \\\"a\\\", \
+\\\"q\\\"], \\\"RowWithSeparators\\\"])\\)\\)\\), PolVec[a, \\\"S\\\", q]]\\)\
+\[NoBreak] first argument \[NoBreak]\\!\\(a\\)\[NoBreak] is massless so \
+\[NoBreak]\\!\\(\\\"S\\\"\\)\[NoBreak] polarization does not exist.\"\>"}]], \
+"Message", "MSG",
  CellLabel->"During evaluation of In[6]:=",
- CellID->406353928],
+ CellID->1471303633],
 
 Cell[BoxData["$Failed"], "Output",
  CellLabel->"Out[6]=",
- CellID->364751480]
+ CellID->971431592]
 }, Open  ]]
 }, Open  ]],
 

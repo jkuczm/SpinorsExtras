@@ -15,10 +15,10 @@ decomposes spinor products in x containing slashed matrices into products of \
 smaller spinor products, by applying: k-slashed = |k>[k| + |k]<k|.\
 
 SpOpen[x, a] \
-does the same selectively, at the occurence of a-slashed.\
+does the same selectively, at the occurrence of a-slashed.\
 
 SpOpen[x, patt] \
-does the same selectively, at the occurence of any massless Spinor that \
+does the same selectively, at the occurrence of any massless Spinor that \
 matches pattern patt."
 
 

@@ -35,7 +35,7 @@ Cell["SpinorsExtras`Massive`", "Categorization",
 Cell["SpinorsExtras/ref/SpM", "Categorization",
  CellLabel->"URI",
  CellID->1520268676]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -594,7 +594,7 @@ Cell[TextData[{
  " is not LVector, second is not interpretable as ",
  Cell[BoxData[
   RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
- " or third is not massles Spinor notation is not changed:"
+ " or third is not massless Spinor notation is not changed:"
 }], "ExampleText",
  CellID->574967913],
 

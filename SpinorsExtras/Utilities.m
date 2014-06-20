@@ -61,7 +61,7 @@ ReplaceLVector[expr, {{P1 -> Q1, ...}, {P2 -> Q2, ...}, ...] \
 returns a List, each element of this list is a result of replacement using \
 subsequent list of rules.
 
-ReplaceLVector behaves as builtin ReplaceAll function but replaces only \
+ReplaceLVector behaves as built-in ReplaceAll function but replaces only \
 expressions that are found in places where they can be interpreted as objects \
 proportional to four-vector. So e.g. label inside spinor chain (representing \
 slashed matrix) can be replaced, but label at the end of spinor chain \
@@ -72,11 +72,11 @@ will never be replaced."
 ReplaceBSpinor::usage =
 "\
 ReplaceBSpinor[expr, x -> r] \
-returns expr with massless or masive B spinors, labeled by x, replaced by r, \
-r can be linear combination of massless or masive spinors.\
+returns expr with massless or massive B spinors, labeled by x, replaced by r, \
+r can be linear combination of massless or massive spinors.\
 
 ReplaceBSpinor[expr, x -> {b, a}] \
-replaces massless or masive B spinor x at beginning of spinor chain with \
+replaces massless or massive B spinor x at beginning of spinor chain with \
 difference of B spinor b and A spinor a. B spinor x at end of spinor chain \
 will be replaced by sum of B spinor b and A spinor a. b can be linear \
 combinations of labels they will be interpreted as linear combinations of B \
@@ -84,17 +84,17 @@ spinors, analogously a can be linear combinations of labels and they will be \
 interpreted as linear combinations of A spinors.\
 
 ReplaceBSpinor[expr, patt -> r] \
-returns expr with all massless or masive B spinors that match pattern patt \
+returns expr with all massless or massive B spinors that match pattern patt \
 replaced by r.\
 
 ReplaceBSpinor[expr, patt -> {b, a}] \
-returns expr with all massless or masive B spinors, at beginning of spinor \
+returns expr with all massless or massive B spinors, at beginning of spinor \
 chain, that match pattern patt replaced by difference of B spinor b and A \
 spinor a. B spinors at end of spinor chain, that match pattern patt, will be \
 replaced by sum of B spinor b and A spinor a.\
 
 ReplaceBSpinor[expr, patt :> replacement] \
-returns expr with all massless or masive B spinors that match pattern patt \
+returns expr with all massless or massive B spinors that match pattern patt \
 replaced by replacement. patt can have named patterns inside and replacement \
 can use variables matched by those named patterns.\
 
@@ -112,7 +112,7 @@ ReplaceBSpinor[expr, {{x1 -> r1, ...}, {x2 -> {b2, a2}, ...}, ...] \
 returns a List, each element of this list is a result of replacement using \
 subsequent list of rules.
 
-ReplaceBSpinor behaves as builtin ReplaceAll function but replaces only \
+ReplaceBSpinor behaves as built-in ReplaceAll function but replaces only \
 expressions that are found in places where they can be interpreted as \
 massless or massive B spinors."
 
@@ -120,11 +120,11 @@ massless or massive B spinors."
 ReplaceASpinor::usage =
 "\
 ReplaceASpinor[expr, x -> r] \
-returns expr with massless or masive A spinors, labeled by x, replaced by r, \
-r can be linear combination of massless or masive spinors.\
+returns expr with massless or massive A spinors, labeled by x, replaced by r, \
+r can be linear combination of massless or massive spinors.\
 
 ReplaceASpinor[expr, x -> {a, b}] \
-replaces massless or masive A spinor x at beginning of spinor chain with \
+replaces massless or massive A spinor x at beginning of spinor chain with \
 difference of A spinor a and B spinor b. A spinor x at end of spinor chain \
 will be replaced by sum of A spinor a and B spinor b. b can be linear \
 combinations of labels they will be interpreted as linear combinations of \
@@ -132,17 +132,17 @@ B spinors, analogously a can be linear combinations of labels and they will \
 be interpreted as linear combinations of A spinors.\
 
 ReplaceASpinor[expr, patt -> r] \
-returns expr with all massless or masive A spinors that match pattern patt \
+returns expr with all massless or massive A spinors that match pattern patt \
 replaced by r.\
 
 ReplaceASpinor[expr, patt -> {a, b}] \
-returns expr with all massless or masive A spinors, at beginning of spinor \
+returns expr with all massless or massive A spinors, at beginning of spinor \
 chain, that match pattern patt replaced by difference of A spinor a and B \
 spinor b. A spinors at end of spinor chain, that match pattern patt, will be \
 replaced by sum of A spinor a and B spinor b.\
 
 ReplaceASpinor[expr, patt :> replacement] \
-returns expr with all massless or masive A spinors that match pattern patt \
+returns expr with all massless or massive A spinors that match pattern patt \
 replaced by replacement. patt can have named patterns inside and replacement \
 can use variables matched by those named patterns.\
 
@@ -160,7 +160,7 @@ ReplaceASpinor[expr, {{x1 -> r1, ...}, {x2 -> {a2, b2}, ...}, ...] \
 returns a List, each element of this list is a result of replacement using \
 subsequent list of rules.
 
-ReplaceASpinor behaves as builtin ReplaceAll function but replaces only \
+ReplaceASpinor behaves as built-in ReplaceAll function but replaces only \
 expressions that are found in places where they can be interpreted as \
 massless or massive A spinors."
 
@@ -168,23 +168,23 @@ massless or massive A spinors."
 ReplaceSpinor::usage =
 "\
 ReplaceSpinor[expr, x -> r] \
-returns expr with massless or masive spinors x replaced by r, r can be linear \
-combination of massless or masive spinors.\
+returns expr with massless or massive spinors x replaced by r, r can be linear \
+combination of massless or massive spinors.\
 
 ReplaceSpinor[expr, x -> {b, a}] \
 replaces B spinor x with b and A spinor x with a, a and b can be linear \
-combinations of massless or masive spinors.\
+combinations of massless or massive spinors.\
 
 ReplaceSpinor[expr, patt -> r] \
-returns expr with all massless or masive spinors that match pattern patt \
+returns expr with all massless or massive spinors that match pattern patt \
 replaced by r.\
 
 ReplaceSpinor[expr, patt -> {b, a}] \
-returns expr with all massless or masive B spinors that match pattern patt \
+returns expr with all massless or massive B spinors that match pattern patt \
 replaced by b and all A spinors that match patt with a.\
 
 ReplaceSpinor[expr, patt :> replacement] \
-returns expr with all massless or masive spinors that match pattern patt \
+returns expr with all massless or massive spinors that match pattern patt \
 replaced by replacement. patt can have named patterns inside and replacement \
 can use variables matched by those named patterns.\
 
@@ -200,7 +200,7 @@ ReplaceSpinor[expr, {{x1 -> r1, ...}, {x2 -> {b2, a2}, ...}, ...] \
 returns a List, each element of this list is a result of replacement using \
 subsequent list of rules.
 
-ReplaceSpinor behaves as builtin ReplaceAll function but replaces only \
+ReplaceSpinor behaves as built-in ReplaceAll function but replaces only \
 expressions that are found in places where they can be interpreted as objects \
 that scale as square root of four-vector."
 
@@ -278,8 +278,8 @@ ReplaceLVector[expr_, rules:{(_Rule | _RuleDelayed)..}] :=
 			Replaced expression can occur multiple times inside Spxy, s, or MP,
 			so PeplaceRepeated (//.) is used. To avoid circular replacemets,
 			e.g. for P -> -P, this replacement is separated ito two steps:
-			first all expressions to be replaced are wraped with tmpWrapper,
-			then all wraped expressions are replaced using ReplaceAll (/.).
+			first all expressions to be replaced are wrapped with tmpWrapper,
+			then all wrapped expressions are replaced using ReplaceAll (/.).
 		*)
 		expr //. Flatten[
 			{

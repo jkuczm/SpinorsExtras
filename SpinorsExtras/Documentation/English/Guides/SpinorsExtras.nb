@@ -109,8 +109,7 @@ Cell[TextData[{
   ButtonBox["SpRef",
    BaseStyle->"Link",
    ButtonData->"paclet:SpinorsExtras/ref/SpRef"]], "InlineGuideFunction"],
- " \[LongDash] ",
- "Labels default reference spinor for given lorentz vector."
+ " \[LongDash] Labels default reference spinor for given Lorentz vector."
 }], "GuideText",
  CellID->625625839],
 

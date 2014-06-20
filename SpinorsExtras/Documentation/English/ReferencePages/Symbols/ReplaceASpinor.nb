@@ -127,7 +127,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with massless or masive A spinors, labeled by ",
+ " with massless or massive A spinors, labeled by ",
  Cell[BoxData[
   StyleBox["x", "TI"]], "InlineFormula"],
  ", replaced by ",
@@ -136,7 +136,7 @@ Cell[TextData[{
  ", ",
  Cell[BoxData[
   StyleBox["r", "TI"]], "InlineFormula"],
- " can be linear combination of massless or masive spinors.\n",
+ " can be linear combination of massless or massive spinors.\n",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"ReplaceASpinor", "[", 
@@ -147,7 +147,7 @@ Cell[TextData[{
      RowBox[{"{", 
       StyleBox[
        RowBox[{"a", ",", "b"}], "TI"], "}"}]}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces massless or masive A spinor ",
+ "\[LineSeparator]replaces massless or massive A spinor ",
  Cell[BoxData[
   StyleBox["x", "TI"]], "InlineFormula"],
  " at beginning of spinor chain with difference of A spinor ",
@@ -188,7 +188,7 @@ linear combinations of A spinors.\n",
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive A spinors that match pattern ",
+ " with all massless or massive A spinors that match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  " replaced by ",
@@ -209,7 +209,7 @@ linear combinations of A spinors.\n",
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive A spinors, at beginning of spinor chain, that \
+ " with all massless or massive A spinors, at beginning of spinor chain, that \
 match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
@@ -243,7 +243,7 @@ match pattern ",
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive A spinors that match pattern ",
+ " with all massless or massive A spinors that match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  " replaced by ",
@@ -374,7 +374,7 @@ Cell[TextData[{
   ButtonBox["ReplaceASpinor",
    BaseStyle->"Link",
    ButtonData->"paclet:SpinorsExtras/ref/ReplaceASpinor"]], "InlineFormula"],
- " behaves as builtin ",
+ " behaves as built-in ",
  Cell[BoxData[
   ButtonBox["ReplaceAll",
    BaseStyle->"Link"]], "InlineFormula"],
@@ -584,7 +584,7 @@ Cell[BoxData[
  CellID->527741998],
 
 Cell["\<\
-Occurences of replaced label that don't scale as square root of four-vector \
+Occurrences of replaced label that don't scale as square root of four-vector \
 are not changed:\
 \>", "ExampleText",
  CellID->409975463],
@@ -886,7 +886,7 @@ Cell[TextData[{
  CellID->305713516],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[2]:=",
  CellID->182488126],
 
@@ -1080,7 +1080,7 @@ Cell["List of rules can be used:", "ExampleText",
  CellID->201122541],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[8]:=",
  CellID->1064992176],
 
@@ -1223,7 +1223,7 @@ Cell[TextData[{
  CellID->1916300259],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[13]:=",
  CellID->416371927],
 
@@ -1388,7 +1388,7 @@ or massive A spinor:\
  CellID->1604873341],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[18]:=",
  CellID->1775071775],
 

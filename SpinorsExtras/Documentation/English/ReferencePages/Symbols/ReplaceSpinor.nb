@@ -125,7 +125,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with massless or masive spinors ",
+ " with massless or massive spinors ",
  Cell[BoxData[
   StyleBox["x", "TI"]], "InlineFormula"],
  " replaced by ",
@@ -134,7 +134,7 @@ Cell[TextData[{
  ", ",
  Cell[BoxData[
   StyleBox["r", "TI"]], "InlineFormula"],
- " can be linear combination of massless or masive spinors.\n",
+ " can be linear combination of massless or massive spinors.\n",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"ReplaceSpinor", "[", 
@@ -168,7 +168,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox[
    RowBox[{"b", " "}], "TI"]], "InlineFormula"],
- " can be linear combinations of massless or masive spinors.\n",
+ " can be linear combinations of massless or massive spinors.\n",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"ReplaceSpinor", "[", 
@@ -180,7 +180,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive spinors that match pattern ",
+ " with all massless or massive spinors that match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  " replaced by ",
@@ -200,14 +200,18 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive B spinors that match pattern ",
+ " with all massless or massive B spinors that match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  " replaced by ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"b", " "}], "TI"]], "InlineFormula"],
- " and all A spinors that match patt with ",
+ " and all A spinors that match ",
+ Cell[BoxData[
+  StyleBox["patt", "TI"]], "InlineFormula",
+  ShowStringCharacters->False],
+ " with ",
  Cell[BoxData[
   StyleBox["a", "TI"]], "InlineFormula"],
  ".\n",
@@ -221,7 +225,7 @@ Cell[TextData[{
  "\[LineSeparator]returns ",
  Cell[BoxData[
   StyleBox["expr", "TI"]], "InlineFormula"],
- " with all massless or masive spinors that match pattern ",
+ " with all massless or massive spinors that match pattern ",
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula"],
  " replaced by ",
@@ -315,9 +319,7 @@ list of rules."
 
 Cell[TextData[{
  Cell[BoxData["ReplaceSpinor"], "InlineFormula"],
- " behaves ",
- "similar to",
- " builtin ",
+ " behaves similar to built-in ",
  Cell[BoxData[
   ButtonBox["ReplaceAll",
    BaseStyle->"Link"]], "InlineFormula"],
@@ -405,7 +407,7 @@ Cell[BoxData[
  CellID->880084151],
 
 Cell["\<\
-Occurences of replaced label that represent object that scales as as square \
+Occurrences of replaced label that represent object that scales as square \
 root of four-vector are replaced:\
 \>", "ExampleText",
  CellID->255613305],
@@ -473,7 +475,7 @@ Cell[BoxData[
  CellID->527741998],
 
 Cell["\<\
-Occurences of replaced label that don't scale as square root of four-vector \
+Occurrences of replaced label that don't scale as square root of four-vector \
 are not replaced:\
 \>", "ExampleText",
  CellID->409975463],
@@ -583,7 +585,7 @@ Cell[BoxData[
  CellID->610251512],
 
 Cell["\<\
-Labels representing massive objects can be used, but only occurences \
+Labels representing massive objects can be used, but only occurrences \
 representing objects scaling as square root of four-vector will be replaced:\
 \>", "ExampleText",
  CellID->1901596012],
@@ -1294,7 +1296,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{700, 770},
-WindowMargins->{{Automatic, 246}, {Automatic, 0}},
+WindowMargins->{{Automatic, 240}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

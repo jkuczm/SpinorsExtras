@@ -445,7 +445,7 @@ Cell[TextData[{
   ButtonBox["PolVec",
    BaseStyle->"Link",
    ButtonData->"paclet:SpinorsExtras/ref/PolVec"]], "InlineFormula"],
- ") for given polarization represents massles Spinor:"
+ ") for given polarization represents massless Spinor:"
 }], "ExampleText",
  CellID->815878429],
 
@@ -531,7 +531,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{708, 770},
-WindowMargins->{{Automatic, 238}, {Automatic, 0}},
+WindowMargins->{{Automatic, 232}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

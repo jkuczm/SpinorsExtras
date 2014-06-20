@@ -222,7 +222,7 @@ list of rules."
 
 Cell[TextData[{
  Cell[BoxData["ReplaceLVector"], "InlineFormula"],
- " behaves similar to builtin ",
+ " behaves similar to built-in ",
  Cell[BoxData[
   ButtonBox["ReplaceAll",
    BaseStyle->"Link"]], "InlineFormula"],
@@ -308,7 +308,7 @@ Cell[BoxData[
  CellID->880084151],
 
 Cell["\<\
-Occurences of replaced label that represent object that scales as integer \
+Occurrences of replaced label that represent object that scales as integer \
 power of four-vector are replaced:\
 \>", "ExampleText",
  CellID->255613305],
@@ -397,7 +397,7 @@ Cell[BoxData[
  CellID->527741998],
 
 Cell["\<\
-Occurences of replaced label that scale as non-integer power of four-vector \
+Occurrences of replaced label that scale as non-integer power of four-vector \
 (e.g. spinor which scales as square root) are not replaced:\
 \>", "ExampleText",
  CellID->409975463],
@@ -463,7 +463,7 @@ Cell[BoxData[
  CellID->610251512],
 
 Cell["\<\
-Labels representing massless objects can be used, but only occurences \
+Labels representing massless objects can be used, but only occurrences \
 representing objects scaling as integer power of four-vector will be replaced:\
 \>", "ExampleText",
  CellID->1901596012],
@@ -901,7 +901,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{689, 770},
-WindowMargins->{{Automatic, 243}, {Automatic, 0}},
+WindowMargins->{{Automatic, 237}, {Automatic, 0}},
 PrivateNotebookOptions->{"FileOutlineCache"->False},
 CellContext->"Global`",
 TrackCellChangeTimes->False,

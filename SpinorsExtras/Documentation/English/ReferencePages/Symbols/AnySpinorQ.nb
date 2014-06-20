@@ -293,7 +293,7 @@ Cell["Massless Spinors are interpreted as \"any\" spinors:", "ExampleText",
  CellID->1080863992],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->1338188488],
 
@@ -576,7 +576,7 @@ Cell[TextData[{
  " is not LVector, second is not interpretable as ",
  Cell[BoxData[
   RowBox[{"\[PlusMinus]", "1"}]], "InlineFormula"],
- " or third is not massles Spinor, expression is not interpreted as ",
+ " or third is not massless Spinor, expression is not interpreted as ",
  "\"any\"",
  " spinor:"
 }], "ExampleText",

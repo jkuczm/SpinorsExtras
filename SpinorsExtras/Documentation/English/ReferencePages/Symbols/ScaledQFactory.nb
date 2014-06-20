@@ -136,7 +136,7 @@ Cell[TextData[{
  Cell[BoxData[
   StyleBox["patt", "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " multipled by scalars."
+ " multiplied by scalars."
 }], "Usage",
  CellID->982511436],
 

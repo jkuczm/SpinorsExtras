@@ -1,6 +1,6 @@
 # Spinors Extras
 
-Mathematica implementation of massive Spinor-Helicity formalism.
+Mathematica implementation of massive spinor-helicity formalism.
 
 [![latest release](http://img.shields.io/github/release/jkuczm/SpinorsExtras.svg)](https://github.com/jkuczm/SpinorsExtras/releases/latest)
 [![semantic versioning](http://jkuczm.github.io/media/images/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)

@@ -35,7 +35,7 @@ Cell["SpinorsExtras`MassiveUtilities`", "Categorization",
 Cell["SpinorsExtras/ref/ExpandSToMPs", "Categorization",
  CellLabel->"URI",
  CellID->1472582508]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -131,7 +131,7 @@ Cell[TextData[{
     StyleBox["P", "TI"], ",", 
     StyleBox["Q", "TI"], 
     StyleBox[",", "TI"], "..."}], "]"}]], "InlineFormula"],
- " replaced by minkowski products (",
+ " replaced by Minkowski products (",
  Cell[BoxData[
   ButtonBox["MP",
    BaseStyle->"Link",

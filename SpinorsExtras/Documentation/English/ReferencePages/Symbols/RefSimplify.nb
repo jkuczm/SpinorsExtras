@@ -171,7 +171,7 @@ replacing, in ",
     RowBox[{
      StyleBox["refPatt", "TI"], "\[Rule]", 
      StyleBox["...", "TI"]}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
@@ -185,7 +185,7 @@ replacing, in ",
     RowBox[{
      StyleBox["refPatt", "TI"], "\[RuleDelayed]", 
      StyleBox["...", "TI"]}]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
@@ -195,7 +195,8 @@ replacing, in ",
   StyleBox[
    RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
   ShowStringCharacters->False],
- " can contain named subpatterns that can be used on RHS of \[RuleDelayed].\n",
+ " can contain named sub-patterns that can be used on RHS of \[RuleDelayed].\n\
+",
  Cell["   ", "ModInfo"],
  Cell[BoxData[
   RowBox[{"RefSimplify", "[", 
@@ -217,7 +218,7 @@ replacing, in ",
    RowBox[{
     StyleBox["expr", "TI"], ",", 
     StyleBox["refPatt", "TI"]}], "]"}]], "InlineFormula"],
- "\[LineSeparator]replaces all occurences of labels that match ",
+ "\[LineSeparator]replaces all occurrences of labels that match ",
  Cell[BoxData[
   StyleBox[
    RowBox[{"refPatt", " "}], "TI"]], "InlineFormula",
@@ -705,17 +706,18 @@ Cell[BoxData[
       TraditionalForm]]}]}],
   SequenceForm[
   "", 68, ": ", {SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`b}, 
-   ": ", -Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
-     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`b] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+   ": ", ((-1)/
+    Spinors`Spaa[$CellContext`b, $CellContext`d]) ($CellContext`m^2 (
+      Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`b])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -750,7 +752,11 @@ Cell[BoxData[
         FormBox[
          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
          TraditionalForm]], "-", 
-       FractionBox[
+       RowBox[{
+        FractionBox["1", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+          TraditionalForm]], 
         RowBox[{
          RowBox[{"(", 
           RowBox[{
@@ -779,24 +785,21 @@ Cell[BoxData[
           TraditionalForm], " ", 
          FormBox[
           RowBox[{"[", "d", "|", "c", "]"}],
-          TraditionalForm]}], 
-        FormBox[
-         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
-         TraditionalForm]]}], ")"}]}]}]}],
+          TraditionalForm]}]}]}], ")"}]}]}]}],
   SequenceForm[
   "", 71, ": ", {SpinorsExtras`Ref`SpRef[$CellContext`x] -> $CellContext`c}, 
-   ": ", -Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
-    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`c] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+   ": ", ((-1)/Spinors`Spaa[$CellContext`c, $CellContext`d]) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + ($CellContext`m^2/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`c])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -887,18 +890,19 @@ Cell[BoxData[
   SequenceForm[
   "", 68, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`b]}, ": ", -
-   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
-     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`b] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`b]}, 
+   ": ", ((-1)/
+    Spinors`Spaa[$CellContext`b, $CellContext`d]) ($CellContext`m^2 (
+      Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`b])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -936,7 +940,11 @@ Cell[BoxData[
         FormBox[
          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
          TraditionalForm]], "-", 
-       FractionBox[
+       RowBox[{
+        FractionBox["1", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+          TraditionalForm]], 
         RowBox[{
          RowBox[{"(", 
           RowBox[{
@@ -965,26 +973,23 @@ Cell[BoxData[
           TraditionalForm], " ", 
          FormBox[
           RowBox[{"[", "d", "|", "c", "]"}],
-          TraditionalForm]}], 
-        FormBox[
-         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
-         TraditionalForm]]}], ")"}]}]}]}],
+          TraditionalForm]}]}]}], ")"}]}]}]}],
   SequenceForm[
   "", 71, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`c]}, ": ", -
-   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
-    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`c] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`d, $CellContext`c]}, 
+   ": ", ((-1)/Spinors`Spaa[$CellContext`c, $CellContext`d]) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + ($CellContext`m^2/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`c])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -1070,7 +1075,11 @@ Cell[BoxData[
         FormBox[
          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
          TraditionalForm]], "-", 
-       FractionBox[
+       RowBox[{
+        FractionBox["1", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+          TraditionalForm]], 
         RowBox[{
          RowBox[{"(", 
           RowBox[{
@@ -1099,26 +1108,23 @@ Cell[BoxData[
           TraditionalForm], " ", 
          FormBox[
           RowBox[{"[", "d", "|", "c", "]"}],
-          TraditionalForm]}], 
-        FormBox[
-         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
-         TraditionalForm]]}], ")"}]}]}]}],
+          TraditionalForm]}]}]}], ")"}]}]}]}],
   SequenceForm[
   "", 71, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`b, $CellContext`c]}, ": ", -
-   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
-    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`c] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`b, $CellContext`c]}, 
+   ": ", ((-1)/Spinors`Spaa[$CellContext`c, $CellContext`d]) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + ($CellContext`m^2/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`c])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -1234,18 +1240,19 @@ Cell[BoxData[
   SequenceForm[
   "", 68, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`c, $CellContext`b]}, ": ", -
-   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
-     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`b] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`c, $CellContext`b]}, 
+   ": ", ((-1)/
+    Spinors`Spaa[$CellContext`b, $CellContext`d]) ($CellContext`m^2 (
+      Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`b])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -1361,18 +1368,19 @@ Cell[BoxData[
   SequenceForm[
   "", 68, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`b]}, ": ", -
-   Spinors`Spaa[$CellContext`b, $CellContext`d]^(-1) ($CellContext`m^2 
-     Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`b] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`b]}, 
+   ": ", ((-1)/
+    Spinors`Spaa[$CellContext`b, $CellContext`d]) ($CellContext`m^2 (
+      Spinors`Spab[$CellContext`b, $CellContext`a, $CellContext`d]/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`b])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -1410,7 +1418,11 @@ Cell[BoxData[
         FormBox[
          RowBox[{"\[LeftAngleBracket]", "c", "|", "a", "|", "b", "]"}],
          TraditionalForm]], "-", 
-       FractionBox[
+       RowBox[{
+        FractionBox["1", 
+         FormBox[
+          RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
+          TraditionalForm]], 
         RowBox[{
          RowBox[{"(", 
           RowBox[{
@@ -1439,26 +1451,23 @@ Cell[BoxData[
           TraditionalForm], " ", 
          FormBox[
           RowBox[{"[", "d", "|", "c", "]"}],
-          TraditionalForm]}], 
-        FormBox[
-         RowBox[{"\[LeftAngleBracket]", "a", "|", "c", "|", "b", "]"}],
-         TraditionalForm]]}], ")"}]}]}]}],
+          TraditionalForm]}]}]}], ")"}]}]}]}],
   SequenceForm[
   "", 71, ": ", {
    SpinorsExtras`Ref`SpRef[$CellContext`x] -> 
-    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`c]}, ": ", -
-   Spinors`Spaa[$CellContext`c, $CellContext`d]^(-1) (
-    Spinors`Spaa[$CellContext`b, $CellContext`c] + $CellContext`m^2 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]^(-1) 
-     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - (
-     Rational[1, 2] $CellContext`m^2 (-4 + 
-       Spinors`MP[$CellContext`a, $CellContext`b]/
-        Spinors`MP[$CellContext`a, $CellContext`c] + 
-       2 Spinors`MP[$CellContext`a, $CellContext`b]^(-1) 
-        Spinors`MP[$CellContext`a, $CellContext`c]) + 
-     Spinors`MP[$CellContext`b, $CellContext`c]) 
-    Spinors`Spaa[$CellContext`a, $CellContext`c] 
-    Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]^(-1) 
+    SpinorsExtras`Composite`LvBA[$CellContext`a, $CellContext`c]}, 
+   ": ", ((-1)/Spinors`Spaa[$CellContext`c, $CellContext`d]) (
+    Spinors`Spaa[$CellContext`b, $CellContext`c] + ($CellContext`m^2/
+      Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`b]) 
+     Spinors`Spab[$CellContext`c, $CellContext`a, $CellContext`d] - ((((
+         Rational[1, 2] $CellContext`m^2) (-4 + 
+         Spinors`MP[$CellContext`a, $CellContext`b]/
+          Spinors`MP[$CellContext`a, $CellContext`c] + (2/
+           Spinors`MP[$CellContext`a, $CellContext`b]) 
+          Spinors`MP[$CellContext`a, $CellContext`c]) + 
+       Spinors`MP[$CellContext`b, $CellContext`c]) 
+      Spinors`Spaa[$CellContext`a, $CellContext`c])/
+     Spinors`Spab[$CellContext`a, $CellContext`c, $CellContext`b]) 
     Spinors`Spbb[$CellContext`d, $CellContext`c])],
   Editable->False]], "Print",
  CellLabel->"During evaluation of In[3]:=",
@@ -1525,7 +1534,7 @@ spinors are checked:"
  CellID->1715838032],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->788674970],
 
@@ -1572,8 +1581,8 @@ Cell[BoxData[{
    RowBox[{"q", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"1", ",", "3"}], "}"}]}], ",", 
-   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "True"}], ",", 
-   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+   RowBox[{"\<\"IndependentSpinors\"\>", "\[Rule]", "True"}], ",", 
+   RowBox[{"\<\"Verbose\"\>", "\[Rule]", "True"}]}], "]"}]}], "Input",
  CellLabel->"In[3]:=",
  CellID->538996797],
 
@@ -1625,11 +1634,11 @@ Cell[BoxData[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",
@@ -1655,11 +1664,11 @@ Cell[BoxData[
      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[3]] Spinors`Spaa[
-      Spinors`Sp[2], 
-      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]/Spinors`Spaa[
+     Spinors`Sp[2], 
+     Spinors`Sp[3]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -1703,17 +1712,17 @@ Cell[BoxData[
       TraditionalForm]]}]}],
   SequenceForm["", 37, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
       Spinors`Sp[1], 
-      Spinors`Sp[3]]}, ": ", Spinors`Spaa[
-      Spinors`Sp[1], 
-      Spinors`Sp[2]] Spinors`Spbb[
-       Spinors`Sp[2], 
-       Spinors`Sp[1]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3]]}, ": ", (Spinors`Spaa[
+       Spinors`Sp[1], 
+       Spinors`Sp[2]]/Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]) Spinors`Spbb[
       Spinors`Sp[3], 
-      Spinors`Sp[1]] + Spinors`Spaa[
-      Spinors`Sp[1], 
-      Spinors`Sp[3]] Spinors`Spaa[
-       Spinors`Sp[2], 
-       Spinors`Sp[3]]^(-1) Spinors`Spbb[
+      Spinors`Sp[1]] + (Spinors`Spaa[
+       Spinors`Sp[1], 
+       Spinors`Sp[3]]/Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]) Spinors`Spbb[
       Spinors`Sp[3], 
       Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -1761,7 +1770,7 @@ Cell[TextData[{
  CellID->630913047],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<SpinorsExtras`\>\"", "]"}]], "Input",
+ RowBox[{"Needs", "[", "\<\"SpinorsExtras`\"\>", "]"}]], "Input",
  CellLabel->"In[1]:=",
  CellID->616061577],
 
@@ -1809,8 +1818,8 @@ Cell[BoxData[{
    RowBox[{"q", "\[Rule]", 
     RowBox[{"{", 
      RowBox[{"1", ",", "3"}], "}"}]}], ",", 
-   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "False"}], ",", 
-   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]}], "Input",
+   RowBox[{"\<\"IndependentSpinors\"\>", "\[Rule]", "False"}], ",", 
+   RowBox[{"\<\"Verbose\"\>", "\[Rule]", "True"}]}], "]"}]}], "Input",
  CellLabel->"In[3]:=",
  CellID->861451901],
 
@@ -1862,11 +1871,11 @@ Cell[BoxData[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",
@@ -1892,11 +1901,11 @@ Cell[BoxData[
      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[3]] Spinors`Spaa[
-      Spinors`Sp[2], 
-      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]/Spinors`Spaa[
+     Spinors`Sp[2], 
+     Spinors`Sp[3]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -1933,8 +1942,8 @@ Cell[BoxData[
      RowBox[{"1", ",", "3", ",", 
       RowBox[{"LvBA", "[", 
        RowBox[{"3", ",", "1"}], "]"}]}], "}"}]}], ",", 
-   RowBox[{"\"\<IndependentSpinors\>\"", "\[Rule]", "False"}], ",", 
-   RowBox[{"\"\<Verbose\>\"", "\[Rule]", "True"}]}], "]"}]], "Input",
+   RowBox[{"\<\"IndependentSpinors\"\>", "\[Rule]", "False"}], ",", 
+   RowBox[{"\<\"Verbose\"\>", "\[Rule]", "True"}]}], "]"}]], "Input",
  CellLabel->"In[5]:=",
  CellID->1230159687],
 
@@ -1959,11 +1968,11 @@ Cell[BoxData[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",
@@ -1989,11 +1998,11 @@ Cell[BoxData[
      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[3]] Spinors`Spaa[
-      Spinors`Sp[2], 
-      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]/Spinors`Spaa[
+     Spinors`Sp[2], 
+     Spinors`Sp[3]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -2281,11 +2290,11 @@ Cell[BoxData[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",
@@ -2311,11 +2320,11 @@ Cell[BoxData[
      RowBox[{"\[LeftAngleBracket]", "2", "|", "3", "\[RightAngleBracket]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[3]] Spinors`Spaa[
-      Spinors`Sp[2], 
-      Spinors`Sp[3]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[3]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[3]]/Spinors`Spaa[
+     Spinors`Sp[2], 
+     Spinors`Sp[3]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -2359,17 +2368,17 @@ Cell[BoxData[
       TraditionalForm]]}]}],
   SequenceForm["", 37, ": ", {$CellContext`q -> SpinorsExtras`Composite`LvBA[
       Spinors`Sp[1], 
-      Spinors`Sp[3]]}, ": ", Spinors`Spaa[
-      Spinors`Sp[1], 
-      Spinors`Sp[2]] Spinors`Spbb[
-       Spinors`Sp[2], 
-       Spinors`Sp[1]]^(-1) Spinors`Spbb[
+      Spinors`Sp[3]]}, ": ", (Spinors`Spaa[
+       Spinors`Sp[1], 
+       Spinors`Sp[2]]/Spinors`Spbb[
+      Spinors`Sp[2], 
+      Spinors`Sp[1]]) Spinors`Spbb[
       Spinors`Sp[3], 
-      Spinors`Sp[1]] + Spinors`Spaa[
-      Spinors`Sp[1], 
-      Spinors`Sp[3]] Spinors`Spaa[
-       Spinors`Sp[2], 
-       Spinors`Sp[3]]^(-1) Spinors`Spbb[
+      Spinors`Sp[1]] + (Spinors`Spaa[
+       Spinors`Sp[1], 
+       Spinors`Sp[3]]/Spinors`Spaa[
+      Spinors`Sp[2], 
+      Spinors`Sp[3]]) Spinors`Spbb[
       Spinors`Sp[3], 
       Spinors`Sp[2]]],
   Editable->False]], "Print",
@@ -2413,9 +2422,7 @@ Cell[TextData[{
  Cell[BoxData[
   ButtonBox["True",
    BaseStyle->"Link"]], "InlineFormula"],
- ", value of \"",
- "PrintFunction",
- "\" option is usd to print results:"
+ ", value of \"PrintFunction\" option is used to print results:"
 }], "ExampleText",
  CellID->470043336],
 
@@ -2444,7 +2451,7 @@ Cell[BoxData[
 
 Cell["\<\
 by default it prints: info about result rejection, results simplicity, \
-replacement rules used to get this result, th result itself:\
+replacement rules used to get this result, and the result itself:\
 \>", "ExampleText",
  CellID->1320013911],
 
@@ -2526,11 +2533,11 @@ Cell[BoxData[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
   SequenceForm[
-  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  "", 18, ": ", {$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",
@@ -2655,11 +2662,11 @@ Cell[BoxData[
     FormBox[
      RowBox[{"[", "2", "|", "1", "]"}],
      TraditionalForm]]}],
-  SequenceForm[{$CellContext`q -> Spinors`Sp[1]}, ": ", Spinors`Spaa[
-     Spinors`Sp[1], 
-     Spinors`Sp[2]] Spinors`Spbb[
-      Spinors`Sp[2], 
-      Spinors`Sp[1]]^(-1) Spinors`Spbb[
+  SequenceForm[{$CellContext`q -> Spinors`Sp[1]}, ": ", (Spinors`Spaa[
+      Spinors`Sp[1], 
+      Spinors`Sp[2]]/Spinors`Spbb[
+     Spinors`Sp[2], 
+     Spinors`Sp[1]]) Spinors`Spbb[
      Spinors`Sp[3], 
      Spinors`Sp[1]]],
   Editable->False]], "Print",

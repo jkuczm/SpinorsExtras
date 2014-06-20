@@ -10,7 +10,7 @@ BeginPackage["SpinorsExtras`RefUtilities`", {"Spinors`"}]
 ExplicitRef::usage =
 "\
 ExplicitRef[expr] \
-returns expr where all occurences of SpAssoc, SpM and PolVec with implicit \
+returns expr where all occurrences of SpAssoc, SpM and PolVec with implicit \
 reference vectors have added explicit default reference vectors.\
 
 ExplicitRef[expr, P] \
@@ -24,8 +24,8 @@ patt."
 ImplicitRef::usage =
 "\
 ImplicitRef[expr] \
-returns expr where all occurences of SpAssoc, SpM and PolVec with explicit \
-default reference vectors heve those vectors removed.\
+returns expr where all occurrences of SpAssoc, SpM and PolVec with explicit \
+default reference vectors have those vectors removed.\
 
 ImplicitRef[expr, P] \
 removes reference vectors only from SpAssoc, SpM and PolVec with label P.\
@@ -45,18 +45,18 @@ returns result of comparison between numerical values of expr with ref \
 replaced by a, b, ... (those spinors should have declared numerical values).\
 
 RefInvariantQ[expr, patt -> {a, b, ...}] \
-replaces all occurences of labels that match patt.\
+replaces all occurrences of labels that match patt.\
 
 RefInvariantQ[expr, patt :> {a, b, ...}] \
-replaces all occurences of labels that match patt. patt can contain named \
-subpatterns that can be used on RHS of :>.\
+replaces all occurrences of labels that match patt. patt can contain named \
+sub-patterns that can be used on RHS of :>.\
 
 RefInvariantQ[expr, ref] \
 returns comparison between numerical values of expr with ref replaced by two \
 different random spinors.\
 
 RefInvariantQ[expr, patt] \
-replaces all occurences of labels that match patt.\
+replaces all occurrences of labels that match patt.\
 
 RefInvariantQ[expr, {ref1, ref2 -> {a2, b2, ...}, ...}] \
 tests invariance with respect to reference vectors ref1, ref2, ...\
@@ -79,17 +79,17 @@ RefSimplify[expr, ref -> patt] \
 uses, for replacement, spinors found in expr that match pattern patt.\
 
 RefSimplify[expr, refPatt -> ...] \
-replaces all occurences of labels that match refPatt.\
+replaces all occurrences of labels that match refPatt.\
 
 RefSimplify[expr, refPatt :> ...] \
-replaces all occurences of labels that match refPatt. refPatt can contain \
-named subpatterns that can be used on RHS of :>.\
+replaces all occurrences of labels that match refPatt. refPatt can contain \
+named sub-patterns that can be used on RHS of :>.\
 
 RefSimplify[expr, ref] \
 uses all spinors found in expr except ref.\
 
 RefSimplify[expr, refPatt] \
-replaces all occurences of labels that match refPatt. For replacement uses \
+replaces all occurrences of labels that match refPatt. For replacement uses \
 all spinors found in expr except those that match refPatt.\
 
 RefSimplify[expr, {ref1, ref2 -> patt2, refPatt3 -> {a3, b3, ...}, ...}] \

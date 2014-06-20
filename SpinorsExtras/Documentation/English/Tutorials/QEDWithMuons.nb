@@ -264,8 +264,9 @@ Cell[BoxData[GridBox[{
      RowBox[{
       StyleBox["expr", "TI"], ",", 
       StyleBox["patt", "TI"]}], "]"}], Cell[TextData[{
-     "Performs light cone decomposition of those massive lorentz vectors and \
-spinors, in ",
+     "Performs light cone decomposition of those massive ",
+     "Lorentz",
+     " vectors and spinors, in ",
      Cell[BoxData[
       StyleBox["expr", "TI"]], "InlineFormula"],
      ", that match ",
@@ -282,7 +283,9 @@ spinors, in ",
       StyleBox["k", "TI"], "]"}], " ", "or", " ", 
      SubscriptBox["q", 
       StyleBox["k", "TI"]]}], Cell[TextData[{
-     "Labels default reference spinor for lorentz vector ",
+     "Labels default reference spinor for ",
+     "Lorentz",
+     " vector ",
      Cell[BoxData[
       StyleBox["k", "TI"]], "InlineFormula"],
      "."
@@ -333,10 +336,12 @@ spinors, in ",
      "Replaces, in ",
      Cell[BoxData[
       StyleBox["expr", "TI"]], "InlineFormula"],
-     ", lorentz vectors labeled by ",
+     ", Lorentz vectors labeled by ",
      Cell[BoxData[
       StyleBox["x", "TI"]], "InlineFormula"],
-     " with lorentz vectors labeled by ",
+     " with ",
+     "Lorentz",
+     " vectors labeled by ",
      Cell[BoxData[
       StyleBox["y", "TI"]], "InlineFormula"],
      "."
@@ -472,7 +477,7 @@ Cell[BoxData[{
        RowBox[{"k", ",", "pol"}], "]"}], ",", 
       RowBox[{"SpM", "[", 
        RowBox[{"p1", ",", "1"}], "]"}]}], "]"}]}]}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"A", "[", 
@@ -495,7 +500,7 @@ Cell[BoxData[{
        RowBox[{"k", ",", "pol"}], "]"}], ",", 
       RowBox[{"SpM", "[", 
        RowBox[{"p1", ",", "1"}], "]"}]}], "]"}]}]}], 
-  "\n"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"A", "[", 
@@ -518,7 +523,7 @@ Cell[BoxData[{
        RowBox[{"k", ",", "pol"}], "]"}], ",", 
       RowBox[{"SpM", "[", 
        RowBox[{"p1", ",", "1"}], "]"}]}], "]"}]}]}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"A", "[", 
    RowBox[{
@@ -1152,12 +1157,12 @@ wqh8VdEFT2QMmFFJKt9/HYGqs9j08ave8N//7F+RJSlO
   PlotRange->{{0., 243.}, {0., 142.}},
   PlotRangePadding->Automatic]], "Text",
  CellGroupingRules->{GroupTogetherGrouping, 10000.},
- CellTags->{"ImportedPdf", "diagrams/e+mu->e+mu.pdf"},
+ CellTags->{"ImportedPdf", "diagram_e+mu_e+mu.pdf"},
  CellID->18688044],
 
 Cell[TextData[{
- "Electrons have positive and mouns negative spin projections. Diagram \
-consists of two fermion-vector boson-fermion three point amplitudes conected \
+ "Electrons have positive and muons negative spin projections. Diagram \
+consists of two fermion-vector boson-fermion three point amplitudes connected \
 by photon line. Momentum transfer is denoted by ",
  StyleBox["k", "Input"],
  "."
@@ -1169,13 +1174,13 @@ Cell[TextData[{
  "Symbols from S@M package are linear in labels. We a priori don't know \
 whether label representing four-momentum ",
  StyleBox["-k", "Input"],
- " will appear in place where it'll be interpreted as object scaling lineary \
+ " will appear in place where it'll be interpreted as object scaling linearly \
 with four-momentum, or as object scaling as square root of four-momentum. In \
-first case it shoud be labeled by ",
+first case it should be labeled by ",
  StyleBox["-k", "Input"],
  " and in latter case by \[PlusMinus]",
  StyleBox["I k", "Input"],
- ", so we temporarly use ",
+ ", so we temporarily use ",
  StyleBox["mk", "Input"],
  " to represent it."
 }], "Text",
@@ -2327,7 +2332,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[TextData[{
- "Perform holomorfic shift of ",
+ "Perform holomorphic shift of ",
  StyleBox["p1", "Input"],
  " and ",
  StyleBox["p2", "Input"],
@@ -4245,9 +4250,9 @@ Cell[CellGroupData[{
 Cell[TextData[{
  "Test invariance of amplitude with respect to change of reference vectors of \
 external final particles (since different reference vectors correspond to \
-different, distinguishable states, amplitude is not invariant). Invarance \
-testing function needs to take into account all occurences of refetence \
-vector, so we make all occurences explicit",
+different, distinguishable states, amplitude is not invariant). Invariance \
+testing function needs to take into account all occurrences of reference \
+vector, so we make all occurrences explicit",
  StyleBox[".", "Text"]
 }], "MathCaption",
  CellID->1469635128],
