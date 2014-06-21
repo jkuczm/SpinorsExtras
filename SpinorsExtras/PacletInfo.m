@@ -4,7 +4,7 @@
 
 Paclet[
     Name -> "SpinorsExtras",
-    Version -> "1.0.0",
+    Version -> "1.0.1",
     MathematicaVersion -> "6+",
     Description -> "Mathematica implementation of massive spinor-helicity formalism.",
     Creator -> "Jakub Kuczmarski (University of Warsaw)",

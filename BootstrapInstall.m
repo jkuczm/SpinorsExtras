@@ -50,7 +50,7 @@ Module[
 		
 		Print["Installing SpinorsExtras:"];
 		Print @ ProjectInstaller`ProjectInstall @ URL[
-			"https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.0/SpinorsExtras.zip"
+			"https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.1/SpinorsExtras.zip"
 		];
 	];
 ]
