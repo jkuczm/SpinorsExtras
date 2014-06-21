@@ -195,37 +195,6 @@ TestFalse[
 ];
 
 
-(* ::Subsection:: *)
-(*Non-acceptable reference spinor in explicit list*)
-
-
-(*TestFalse[
-	{invariantExpr, SpRef[P] -> {p1, p2, p3, a}},
-	TestID -> "non-acceptable list"
-];
-
-TestFalse[
-	{invariantExpr, {SpRef[P], SpRef[Q] -> {p1, p2, p3, a}}},
-	TestID -> "random, non-acceptable list"
-];
-TestFalse[
-	{invariantExpr, {SpRef[P] -> {p1, p2, p3, a}, SpRef[Q]}},
-	TestID -> "non-acceptable list, random"
-];
-TestFalse[
-	{invariantExpr, {SpRef[P] -> {p1, p3, a}, SpRef[Q] -> {p1, p2, p3, a}}},
-	TestID -> "acceptable list, non-acceptable list"
-];
-TestFalse[
-	{invariantExpr, {SpRef[P] -> {p1, p2, p3, a}, SpRef[Q] -> {p1, p2, a}}},
-	TestID -> "non-acceptable list, acceptable list"
-];
-TestFalse[
-	{invariantExpr, {SpRef[P] -> {p1, p2, p3, a}, SpRef[Q] -> {p1, p2, p3, a}}},
-	TestID -> "non-acceptable list, non-acceptable list"
-];*)
-
-
 (* ::Section:: *)
 (*TearDown*)
 

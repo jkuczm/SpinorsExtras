@@ -127,13 +127,6 @@ Test[
 	s[P, Q] + z Spba[3, Q, P] + z/2 Spab[P, 3] Spab[P, P] + z^2/4 Spab[P, 3]^2,
 	TestID -> "BSpinorShift: s: shift massive: 2 lv"
 ];
-(*Test[
-	OptionValue[Test, ApplyToInput][s[P, Q], P, z Sp[3]] // ExpandSToSpinors,
-	OptionValue[Test, ApplyToInput][s[P, Q] // ExpandSToSpinors, P, z Sp[3]],
-	EquivalenceFunction -> (TrueQ[Equal[#1, #2] // Simplify]&),
-	TestID ->
-		"BSpinorShift: s: shift massive: 2 lv, comutation with ExpandSToSpinor"
-];*)
 
 
 (* ::Section:: *)

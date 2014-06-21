@@ -188,16 +188,6 @@ ExpandMPToSpinors[expr_, patt_, OptionsPattern[]] :=
 (*ExpandSTo (Private function)*)
 
 
-(*ExpandSTo[expr_, patt_, pairConversion_] :=
-	expr /. s[Longest[P__patt], rest___] :>
-		Plus @@ (
-			pairConversion @@@ Union[Sort /@ Permutations[{P}, {2}]]
-		)
-		+ Plus @@ (MP2 /@ {P})
-		+ ...
-		+ s[rest]*)
-
-
 ExpandSTo[x_, pairConversion_, massive_] :=
 	Module[
 		{result}
@@ -283,49 +273,6 @@ ExpandSToSpinors[x_, OptionsPattern[]] :=
 
 
 Protect[ExpandSToSpinors];
-
-
-(* ::Subsection:: *)
-(*SpOpenMassive*)
-
-
-(* TODO: 4-dim and 2-dim representations *)
-(*SpOpenMassive[
-	expr_,
-	Psp:SpM[P_?LVectorQ, t_?PlusMinusOneQ, Repeated[_?SpinorQ, {0, 1}]]
-] :=
-	expr //. {
-		(spxy:Spinors`Private`SpinProd)[
-			b_, before___?SMatrixQ, P, after___?SMatrixQ, a_
-		] :>
-			ChangeSecondToA[spxy][b, before, Psp] *
-			ChangeFirstToB[spxy][Psp, after, a]
-			
-			+ ChangeSecondToB[spxy][b, before, Psp] *
-			ChangeFirstToA[spxy][Psp, after, a]
-			- t Sqrt[MP2[P]] spxy[b, before, after, a](*,
-		Dot[a___, Sm2[P], b___] :> Dot[a, CLat[P]] Dot[CLa[P], b],
-		Dot[a___, CSm2[P], b___] :> Dot[a, La[P]] Dot[Lat[P], b]*)
-	} (*//. {
-		Dot[aa___, Sm4[P], USpa[a_?SpinorQ]] :>
-			Dot[aa, USpb[P]] Dot[UbarSpa[P], USpa[a]],
-		Dot[aa___, Sm4[P], USpb[a_?SpinorQ]] :>
-			Dot[aa, USpa[P]] Dot[UbarSpb[P], USpb[a]],
-		Dot[UbarSpb[a_?SpinorQ], Sm4[P], b___] :>
-			Dot[UbarSpb[a], USpb[P]] Dot[UbarSpa[P], b],
-		Dot[UbarSpa[a_?SpinorQ], Sm4[P], b___] :>
-			Dot[UbarSpa[a], USpa[P]] Dot[UbarSpb[P], b],
-		Dot[UbarSpa[a_?SpinorQ], sm__Sm4, Sm4[P], b___] :>
-			Switch[Length[{sm}],
-				_?OddQ, Dot[UbarSpa[a], sm, USpb[P]] Dot[UbarSpa[P], b],
-				_?EvenQ, Dot[UbarSpa[a], sm, USpa[P]] Dot[UbarSpb[P], b]
-			],
-		Dot[UbarSpb[a_?SpinorQ], sm__Sm4, Sm4[P], b___] :>
-			Switch[Length[{sm}],
-				_?OddQ, Dot[UbarSpb[a], sm, USpa[P]] Dot[UbarSpb[P], b],
-				_?EvenQ, Dot[UbarSpb[a], sm, USpb[P]] Dot[UbarSpa[P], b]
-			]
-	}*)*)
 
 
 (* ::Subsection:: *)

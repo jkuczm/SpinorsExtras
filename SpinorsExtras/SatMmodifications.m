@@ -337,138 +337,12 @@ Protect[ASpinorReplace]
 
 
 (* ::Subsection:: *)
-(*BSpinorShift*)
-
-
-(*Unprotect[BSpinorShift]
-
-(* Add possibility of shifting massive spinors. *)
-BSpinorShift[x_, P_?MassiveLVectorQ, z_] := x /. {
-	(spxy:SpinProd)[b__, P, a__] :>
-		BSpinorShift[SpOpen[spxy[b, P, a], P], P, z],
-	Spbb[P, a__, P] :> Spbb[P + z, a, P + z],
-	(spby:(Spbb|Spba))[P, a__] :> spby[P + z, a],
-	(spxb:(Spbb|Spab))[b__, P] :> spxb[b, P + z],
-	
-	Lat[P] :> Lat[P] + Lat[z],
-	CLat[P] :> CLat[P] + CLat[z],
-	USpb[P] :> USpb[P] + USpb[z],
-	UbarSpb[P] :> UbarSpb[P] + UbarSpb[z],
-	
-	MP2[P] :> MP2[P] + 1/2 Spab[P, z] Spab[P, P] + 1/4 Spab[P, z]^2,
-	MP[P, b_]|MP[b_, P] :> MP[P, b] + 1/2 Spba[z, b, P],
-	s[b___, P, a___] :>
-		s[b, P, a]
-		+ Plus @@ (Spba[z, #, P]& /@ {b, a})
-		+ 1/2 Spab[P, z] Spab[P, P]
-		+ 1/4 Spab[P, z]^2,
-	
-	SmBA[P, a_] :>  SmBA[P, a] + SmBA[z, a],
-	SmBA2[P, a_] :>  SmBA2[P, a] + SmBA2[z, a],
-	CSmBA2[P, a_] :>  CSmBA2[P, a] + CSmBA2[z, a],
-	SmBA4[P, a_] :>  SmBA4[P, a] + SmBA4[z, a],
-	
-	Sm[P] :> Sm[P] + SmBA[z, P] - 1/2 Spba[z, P],
-	(* TODO: Change Spba[P, z] to equivalent in 2-, 4-dim representation,
-		when it's implemented. *)
-	Sm2[P] -> Sm2[P] + CLat[z].CLa[P] - 1/2 Spba[z, P],
-	CSm2[P] -> CSm2[P] + La[P].Lat[z] - 1/2 Spba[z, P],
-	Sm4[P] -> Sm4[P] + SmBA4[z, P] - 1/2 Spba[z, P]
-}
-
-Protect[BSpinorShift]
-
-
-(* ::Subsection:: *)
-(*ASpinorShift*)
-
-
-Unprotect[ASpinorShift]
-
-(* Add possibility of shifting massive spinors. *)
-ASpinorShift[x_, P_?MassiveLVectorQ, z_] := x /. {
-	(spxy:SpinProd)[b__, P, a__] :>
-		ASpinorShift[SpOpen[spxy[b, P, a], P], P, z],
-	Spaa[P, a__, P] :> Spaa[P + z, a, P + z],
-	(spay:(Spaa|Spab))[P, a__] :> spay[P + z, a],
-	(spxa:(Spaa|Spba))[b__, P] :> spxa[b, P + z],
-	
-	La[P] :> La[P] + La[z],
-	CLa[P] :> CLa[P] + CLa[z],
-	USpa[P] :> USpa[P] + USpa[z],
-	UbarSpa[P] :> UbarSpa[P] + UbarSpa[z],
-	
-	MP2[P] :> MP2[P] + 1/2 Spab[z, P] Spab[P, P] + 1/4 Spab[z, P]^2,
-	MP[P, b_]|MP[b_, P] :> MP[b, P] + 1/2 Spab[z, b, P],
-	s[b___, P, a___] :>
-		s[b, P, a]
-		+ Plus @@ (Spab[z, #, P]& /@ {b, a})
-		+ 1/2 Spab[z, P] Spab[P, P]
-		+ 1/4 Spab[z, P]^2,
-	
-	SmBA[b_, P] :> SmBA[b, P] + SmBA[b, z],
-	SmBA2[b_, P] :> SmBA2[b, P] + SmBA2[b, z],
-	CSmBA2[b_, P] :> CSmBA2[b, P] + CSmBA2[b, z],
-	SmBA4[b_, P] :> SmBA4[b, P] + SmBA4[b, z],
-	
-	Sm[P] -> Sm[P] + SmBA[P, z] - 1/2 Spba[P, z],
-	(* TODO: Change Spba[P, z] to equivalent in 2-, 4-dim representation,
-		when it's implemented. *)
-	Sm2[P] -> Sm2[P] + CLat[P].CLa[z] - 1/2 Spba[P, z],
-	CSm2[P] -> CSm2[P] + La[z].Lat[P] - 1/2 Spba[P, z],
-	Sm4[P] -> Sm4[P] + SmBA4[P, z] - 1/2 Spba[P, z]
-}
-
-Protect[ASpinorShift]*)
-
-
-(* ::Subsection:: *)
 (*ShiftBA*)
 
 
 Unprotect[ShiftBA]
 
 (* Add possibility of shifts for massive spinors. *)
-
-(* TODO: Use separate function for "default" massive shift? *)
-(*ShiftBA[b_?MassiveLVectorQ, a_?SpinorInterpretableQ, z_] :=
-	ShiftBA[{b, a}, {a, SpAssoc[b, a]}, z]
-	
-ShiftBA[b_?SpinorInterpretableQ, a_?MassiveLVectorQ, z_] :=
-	ShiftBA[{b, SpAssoc[a, b]}, {a, b}, z]
-	
-ShiftBA[b_?MassiveLVectorQ, a_?MassiveLVectorQ, z_] :=
-	ShiftBA[{b, SpAssoc[a, b]}, {a, SpAssoc[b, a]}, z]
-
-ShiftBA[{b_?SpinorInterpretableQ, assocA_}, a_?LVectorQ, z_] :=
-	ShiftBA[{b, assocA}, {a, b}, z]
-	
-ShiftBA[{b_?MassiveLVectorQ, assocA_}, a_?LVectorQ, z_] :=
-	ShiftBA[{b, assocA}, {a, SpAssoc[b, a]}, z]
-
-ShiftBA[b_?LVectorQ, {a_?SpinorInterpretableQ, assocB_}, z_] :=
-	ShiftBA[{b, a}, {a, assocB}, z]
-ShiftBA[b_?LVectorQ, {a_?MassiveLVectorQ, assocB_}, z_] :=
-	ShiftBA[{b, SpAssoc[a, b]}, {a, assocB}, z]
-
-ShiftBA[
-	{b_, assocA_?SpinorInterpretableQ},
-	{a_, assocB_?SpinorInterpretableQ},
-	z_
-][x_] :=
-	Module[
-		{zz}
-		,
-		ASpinorShift[
-			BSpinorShift[
-				x,
-				Replace[b, i_Integer :> Sp[i]],
-				-zz Replace[assocA, i_Integer :> Sp[i]]
-			],
-			Replace[a, i_Integer :> Sp[i]],
-			zz Replace[assocB, i_Integer :> Sp[i]]
-		] /. zz -> z
-	]*)
 
 ShiftBA[b_?MassiveLVectorQ, a_?MassiveLVectorQ, z_][x_] :=
 	Module[
@@ -523,33 +397,6 @@ Protect[Num4V]
 
 
 Unprotect[Spaa, Spbb, Spab, Spba]
-
-
-(*ToBeExpandedExtern :=
-	_Plus | coeff__?(Not[MatchQ[#, _?LVectorQ]]&) _?LVectorQ
-
-SpinorExpand[(sp:SpinProdIntern)[p2__, coeff__ p1_?LVectorQ]] :=
-	coeff SpinorExpand[sp[p1, p2]]
-SpinorExpand[(sp:SpinProdIntern)[coeff__ p1_?LVectorQ, p2__]] :=
-	coeff SpinorExpand[sp[p1, p2]]
-
-Spaa[p:ToBeExpandedExtern, a___] :=
-	(SpinorExpand[Sptemp[p, a]] /. Sptemp -> Spaa) /; $SpinorAutoExpand
-Spab[p:ToBeExpandedExtern, a___] :=
-	(SpinorExpand[Sptemp[p, a]] /. Sptemp -> Spab) /; $SpinorAutoExpand
-Spba[p:ToBeExpandedExtern, a___] :=
-	(SpinorExpand[Sptemp[p, a]] /. Sptemp -> Spba) /; $SpinorAutoExpand
-Spbb[p:ToBeExpandedExtern, a___] :=
-	(SpinorExpand[Sptemp[p, a]] /. Sptemp -> Spbb) /; $SpinorAutoExpand
-	
-Spaa[b___, p:ToBeExpandedExtern] :=
-	(SpinorExpand[Sptemp[b, p]] /. Sptemp -> Spaa) /; $SpinorAutoExpand
-Spab[b___, p:ToBeExpandedExtern] :=
-	(SpinorExpand[Sptemp[b, p]] /. Sptemp -> Spab) /; $SpinorAutoExpand
-Spba[b___, p:ToBeExpandedExtern] :=
-	(SpinorExpand[Sptemp[b, p]] /. Sptemp -> Spba) /; $SpinorAutoExpand
-Spbb[b___, p:ToBeExpandedExtern] :=
-	(SpinorExpand[Sptemp[b, p]] /. Sptemp -> Spbb) /; $SpinorAutoExpand*)
 
 
 (*
