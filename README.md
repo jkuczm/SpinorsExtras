@@ -6,7 +6,7 @@ Mathematica implementation of massive spinor-helicity formalism.
 [![semantic versioning](http://jkuczm.github.io/media/images/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: MIT](http://jkuczm.github.io/media/images/license-MIT-blue.svg)](https://github.com/jkuczm/SpinorsExtras/blob/master/LICENSE)
 
-* [Features](#features)
+* [Overview](#overview)
 * [Installation](#installation)
     * [Automatic installation](#automatic-installation)
     * [Manual installation](#manual-installation)
@@ -19,7 +19,7 @@ Mathematica implementation of massive spinor-helicity formalism.
 
 
 
-## Features
+## Overview
 
 Implementation of massive spinor-helicity formalism in Mathematica on top of
 [S@M package](http://www.slac.stanford.edu/~maitreda/Spinors/).
@@ -44,6 +44,8 @@ amplitudes.
 For simple usage example see
 [tutorial on calculating e μ → e μ amplitude](http://www.fuw.edu.pl/~jkuczm/SpinorsExtras/reference/tutorial/QEDWithMuons.html).
 
+If you use results, obtained using this package, in a publication please cite:
+[arXiv:1406.5612](http://arxiv.org/abs/1406.5612).
 
 ## Installation
 
@@ -96,7 +98,8 @@ key.
 [Online version of documentation](http://www.fuw.edu.pl/~jkuczm/SpinorsExtras/reference/guide/SpinorsExtras.html)
 is available on project website.
 
-
+[Publication introducing package](http://arxiv.org/abs/1406.5612) is available
+on arXiv.
 
 ## Tests
 
