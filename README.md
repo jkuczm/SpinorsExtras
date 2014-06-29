@@ -10,6 +10,7 @@ Mathematica implementation of massive spinor-helicity formalism.
 * [Installation](#installation)
     * [Automatic installation](#automatic-installation)
     * [Manual installation](#manual-installation)
+* [Upgrading](#upgrading)
 * [Documentation](#documentation)
 * [Tests](#tests)
 * [Bugs and requests](#bugs-and-requests)
@@ -87,14 +88,22 @@ To load the package evaluate: ``Needs["SpinorsExtras`"]``.
    [SpinorsExtrasWithDependencies.zip](https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.1/SpinorsExtrasWithDependencies.zip)
    file.
    
-   Note that S@M package is **not** included in the zip file, you need to
-   install it separately.
+    Note that S@M package is **not** included in the zip file, you need to
+    install it separately.
 
 2. Extract downloaded `SpinorsExtrasWithDependencies.zip` to any directory
    which is on Mathematica `$Path`, e.g. to one obtained by evaluating
    `FileNameJoin[{$UserBaseDirectory,"Applications"}]`.
 
 3. To load the package evaluate: ``Needs["SpinorsExtras`"]``.
+
+
+
+## Upgrading
+
+To upgrade SpinorsExtras package to the latest released version, evaluate code
+given in [Automatic installation](#automatic-installation) section.
+It will uninstall package and its dependencies and install newest versions.
 
 
 
