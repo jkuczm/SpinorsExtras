@@ -47,6 +47,8 @@ For simple usage example see
 If you use results, obtained using this package, in a publication please cite:
 [arXiv:1406.5612](http://arxiv.org/abs/1406.5612).
 
+
+
 ## Installation
 
 Since Spinors Extras is built on top of
@@ -56,7 +58,8 @@ you need to install it first.
 
 ### Automatic installation
 
-To install Spinors Extras package automatically evaluate:
+To install Spinors Extras package automatically evaluate in Mathematica
+following code:
 ```Mathematica
 Get["https://raw.githubusercontent.com/jkuczm/SpinorsExtras/master/BootstrapInstall.m"]
 ```
@@ -72,16 +75,26 @@ Note that this will also install dependencies:
 [ProjectInstaller](https://github.com/lshifr/ProjectInstaller) package, if you
 don't have it already installed.
 
+This method will **not** install S@M package, you need to install it
+separately.
+
+To load the package evaluate: ``Needs["SpinorsExtras`"]``.
+
 
 ### Manual installation
 
 1. Download latest released
    [SpinorsExtrasWithDependencies.zip](https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.1/SpinorsExtrasWithDependencies.zip)
    file.
+   
+   Note that S@M package is **not** included in the zip file, you need to
+   install it separately.
 
 2. Extract downloaded `SpinorsExtrasWithDependencies.zip` to any directory
    which is on Mathematica `$Path`, e.g. to one obtained by evaluating
    `FileNameJoin[{$UserBaseDirectory,"Applications"}]`.
+
+3. To load the package evaluate: ``Needs["SpinorsExtras`"]``.
 
 
 
@@ -100,6 +113,8 @@ is available on project website.
 
 [Publication introducing package](http://arxiv.org/abs/1406.5612) is available
 on arXiv.
+
+
 
 ## Tests
 
