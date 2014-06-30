@@ -11,6 +11,7 @@ Mathematica implementation of massive spinor-helicity formalism.
     * [Automatic installation](#automatic-installation)
     * [Manual installation](#manual-installation)
 * [Upgrading](#upgrading)
+* [Uninstall](#uninstall)
 * [Documentation](#documentation)
 * [Tests](#tests)
 * [Bugs and requests](#bugs-and-requests)
@@ -104,6 +105,25 @@ To load the package evaluate: ``Needs["SpinorsExtras`"]``.
 To upgrade SpinorsExtras package to the latest released version, evaluate code
 given in [Automatic installation](#automatic-installation) section.
 It will uninstall package and its dependencies and install newest versions.
+
+
+
+## Uninstall
+
+To uninstall SpinorsExtras package and its dependencies remove
+`SpinorsExtras`,
+`EvaluationUtilities`,
+`MessagesUtilities`,
+`OptionsUtilities`,
+`PatternUtilities`,
+`ProtectionUtilities`,
+`StringUtilities`,
+`MUnitExtras`
+directories from installation directory.
+
+If you used [automatic installation](#automatic-installation), path to
+installation directory can be obtained by evaluating
+`FileNameJoin[{$UserBaseDirectory,"Applications"}]` in Mathematica.
 
 
 
