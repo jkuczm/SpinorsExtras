@@ -88,7 +88,7 @@ To load the package evaluate: ``Needs["SpinorsExtras`"]``.
 ### Manual installation
 
 1. Download latest released
-   [SpinorsExtrasWithDependencies.zip](https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.1/SpinorsExtrasWithDependencies.zip)
+   [SpinorsExtrasWithDependencies.zip](https://github.com/jkuczm/SpinorsExtras/releases/download/v1.0.2/SpinorsExtrasWithDependencies.zip)
    file.
    
     Note that S@M package is **not** included in the zip file, you need to
