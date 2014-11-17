@@ -1,5 +1,6 @@
 .directory
 /build
+/dependencies
 /private
 /buildScripts/build.properties
 /SpinorsExtras.zip

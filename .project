@@ -3,7 +3,6 @@
 	<name>SpinorsExtras</name>
 	<comment></comment>
 	<projects>
-		<project>SpinorsExtrasDependencies</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

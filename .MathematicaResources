@@ -1,9 +1,10 @@
 Resources[
     Version[1],
     Sources[
-        Directory["~"]
+        Directory["~"],
+        Directory["dependencies"]
     ],
-    ExecutionBuildCommand["None"],
+    ExecutionBuildCommand["\"No build command\""],
     Paclet[
         DocumentationBuildFile["buildScripts/docbuild.xml"],
         PacletFolder["SpinorsExtras"],
