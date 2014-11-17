@@ -2,9 +2,10 @@
 
 Mathematica implementation of massive spinor-helicity formalism.
 
-[![latest release](http://img.shields.io/github/release/jkuczm/SpinorsExtras.svg)](https://github.com/jkuczm/SpinorsExtras/releases/latest)
+[![latest release](http://img.shields.io/github/release/jkuczm/SpinorsExtras.svg)](https://github.com/jkuczm/SpinorsExtras/releases)
 [![semantic versioning](http://jkuczm.github.io/media/images/SemVer-2.0.0-brightgreen.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: MIT](http://jkuczm.github.io/media/images/license-MIT-blue.svg)](https://github.com/jkuczm/SpinorsExtras/blob/master/LICENSE)
+[![Mathematica 8.0 9.0 10.0](http://jkuczm.github.io/media/images/Mathematica-8.0_9.0_10.0-brightgreen.svg)](#compatibility)
 
 * [Overview](#overview)
 * [Installation](#installation)
@@ -14,6 +15,7 @@ Mathematica implementation of massive spinor-helicity formalism.
 * [Uninstall](#uninstall)
 * [Documentation](#documentation)
 * [Tests](#tests)
+* [Compatibility](#compatibility)
 * [Bugs and requests](#bugs-and-requests)
 * [Contributing](#contributing)
 * [License](#license)
@@ -149,8 +151,24 @@ on arXiv.
 
 Spinors Extras package is distributed with an extensive automated test suite
 consisting of more than four thousand tests. To run the tests one needs
-[MUnit](http://reference.wolfram.com/workbench/index.jsp?topic=/com.wolfram.eclipse.help/html/tasks/tester/tester.html)
-package that is distributed with Wolfram Workbench.
+MUnit package that is distributed with
+[Mathematica version 10](http://www.wolfram.com/mathematica/new-in-10/integrated-unit-testing/)
+and with
+[Wolfram Workbench](http://reference.wolfram.com/workbench/index.jsp?topic=/com.wolfram.eclipse.help/html/tasks/tester/tester.html).
+
+To run tests in Mathematica version 10 evaluate:
+```Mathematica
+Needs["MUnit`"]
+
+TestRun["SpinorsExtras/Tests/suite.mt"]
+```
+
+
+
+## Compatibility
+
+Each release of Spinors Extras package is tested with Mathematica versions
+8.0, 9.0 and 10.0.
 
 
 
