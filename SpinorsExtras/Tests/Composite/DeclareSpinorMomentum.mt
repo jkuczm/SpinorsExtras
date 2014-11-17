@@ -31,7 +31,7 @@ SetUpSpinorsTestEnvironment[
 
 
 SetOptions[{TestZero, Test},
-	InputWrapper -> (SetAccuracy[#, 9]&),
+	InputWrapper -> (SetAccuracy[#, 8]&),
 	EquivalenceFunction -> (TrueQ[Equal[##]]&)
 ];
 

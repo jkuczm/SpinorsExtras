@@ -44,7 +44,7 @@ SetOptions[TestCaseSymbolicNumeric,
 			to each oher.
 		*)
 		(Module[
-			{result = SetPrecision[N[#], 10]}
+			{result = SetPrecision[N[#], 8]}
 			,
 			If[MatchQ[result, _List] && Equal @@ result,
 				result = First[result]

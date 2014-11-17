@@ -33,7 +33,7 @@ SetOptions[
 ];
 
 SetOptions[TestCaseSymbolicNumeric,
-	InputWrapperN -> (SetPrecision[N[LightConeDecompose[#]], 10]&)
+	InputWrapperN -> (SetPrecision[N[LightConeDecompose[#]], 8]&)
 ];
 
 SetOptions[TestCasePatterns,
