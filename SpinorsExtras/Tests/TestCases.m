@@ -357,7 +357,10 @@ TestCasePatterns[
 		{opts, Options[TestCasePatterns]}
 		,
 		CheckRequiredOptions[TestCasePatterns, {opts}, {"Var1", "Var2"}];
-	
+		If[MemberQ[{opts}, (Rule | RuleDelayed)[TestID, _]],
+			MUnit`Package`$lexicalTestIndex--;
+		];
+		
 		With[
 			{
 				testFunction = OptionValue[Test],
@@ -961,6 +964,9 @@ TestCaseSpxyLeftInsideRight[
 			TestCaseSpxyLeftInsideRight,
 			{opts},
 			{"ReplaceBy", "Left", "Inside", "Inside2", "Right"}
+		];
+		If[MemberQ[{opts}, (Rule | RuleDelayed)[TestID, _]],
+			MUnit`Package`$lexicalTestIndex--;
 		];
 		
 		With[
