@@ -85,7 +85,8 @@ TestCaseSpxyLeftInsideRight[
 			TestID -> "Spaa: left, inside and right"},
 		{Spab[r, L, tR] Spab[r, P, tR] Spaa[r, Q, R, r],
 			TestID -> "Spaa: left, inside double and right"}
-	}
+	},
+	TestID -> "Spaa"
 ];
 TestCaseSpxyLeftInsideRight[
 	Spbb[left, L, inside, P, inside2, Q, R, right],
@@ -108,7 +109,8 @@ TestCaseSpxyLeftInsideRight[
 			TestID -> "Spbb: left, inside and right"},
 		{Spba[tR, L, r] Spba[tR, P, r] Spbb[tR, Q, R, tR],
 			TestID -> "Spbb: left, inside double and right"}
-	}
+	},
+	TestID -> "Spbb"
 ];
 TestCaseSpxyLeftInsideRight[
 	Spab[left, L, inside, P, inside2, Q, right],
@@ -131,7 +133,8 @@ TestCaseSpxyLeftInsideRight[
 			TestID -> "Spab: left, inside and right"},
 		{Spab[r, L, tR] Spab[r, P, tR] Spab[r, Q, tR],
 			TestID -> "Spab: left, inside double and right"}
-	}
+	},
+	TestID -> "Spab"
 ];
 TestCaseSpxyLeftInsideRight[
 	Spba[left, L, inside, P, inside2, Q, right],
@@ -154,7 +157,8 @@ TestCaseSpxyLeftInsideRight[
 			TestID -> "Spba: left, inside and right"},
 		{Spba[tR, L, r] Spba[tR, P, r] Spba[tR, Q, r],
 			TestID -> "Spba: left, inside double and right"}
-	}
+	},
+	TestID -> "Spba"
 ];
 
 

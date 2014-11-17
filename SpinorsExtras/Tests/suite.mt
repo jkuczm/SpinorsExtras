@@ -1,145 +1,87 @@
 TestSuite[{
-	"Package/SpinorizeInteger.mt"
-	,
-	"Package/SpinorInterpretableQ.mt"
-	,
-	"Package/LVectorInterpretableQ.mt"
-	,
-	"Package/ScalarQ.mt"
-	,
-	"Package/ScaledQFactory.mt"
-	,
-	"Package/ScaledSpinorQ.mt"
-	,
-	"Package/ScaledLVectorQ.mt"
-	,
-	"Package/GetScalarCoefficient.mt"
-	,
+	"Package/SpinorizeInteger.mt",
+	"Package/SpinorInterpretableQ.mt",
+	"Package/LVectorInterpretableQ.mt",
+	"Package/ScalarQ.mt",
+	"Package/ScaledQFactory.mt",
+	"Package/ScaledSpinorQ.mt",
+	"Package/ScaledLVectorQ.mt",
+	"Package/GetScalarCoefficient.mt",
 	"Package/DeclareUndeclareQFactory.mt"
 	,
-	"Numerics/DeclareSpinorRandomMomentum.mt"
-	,
+	"Numerics/DeclareSpinorRandomMomentum.mt",
 	"Numerics/GenComplexMomenta.mt"
 	,
-	"Proportional/DeclareProportional.mt"
-	,
+	"Proportional/DeclareProportional.mt",
 	"Proportional/ProportionalQ.mt"
 	,
-	"Utilities/PlusMinusOneQ.mt"
-	,
-	"Utilities/DeclarePlusMinusOne.mt"
-	,
-	"Utilities/UndeclarePlusMinusOne.mt"
-	,
-	"Utilities/MassiveLVectorQ.mt"
-	,
-	"Utilities/ReplaceLVector.mt"
-	,
-	"Utilities/ReplaceBSpinor.mt"
-	,
-	"Utilities/ReplaceASpinor.mt"
-	,
-	"Utilities/ReplaceSpinor.mt"
-	,
+	"Utilities/PlusMinusOneQ.mt",
+	"Utilities/DeclarePlusMinusOne.mt",
+	"Utilities/UndeclarePlusMinusOne.mt",
+	"Utilities/MassiveLVectorQ.mt",
+	"Utilities/ReplaceLVector.mt",
+	"Utilities/ReplaceBSpinor.mt",
+	"Utilities/ReplaceASpinor.mt",
+	"Utilities/ReplaceSpinor.mt",
 	"Utilities/ExternalMomentaPartitions.mt"
 	,
-	"SatMmodifications/Dot.mt"
-	,
-	"SatMmodifications/DeclareSpinorMomentum.mt"
-	,
-	"SatMmodifications/s.mt"
-	,
-	"SatMmodifications/SpOpen.mt"
-	,
-	"SatMmodifications/Num4V.mt"
-	,
-	"SatMmodifications/BSpinorReplace.mt"
-	,
-	"SatMmodifications/ASpinorReplace.mt"
-	(*,
-	"SatMmodifications/SpinorShift.mt"*)
-	,
-	"SatMmodifications/ShiftBA.mt"
-	,
-	"SatMmodifications/SmBA/Spaa.mt"
-	,
-	"SatMmodifications/SmBA/Spbb.mt"
-	,
-	"SatMmodifications/SmBA/Spab.mt"
-	,
-	"SatMmodifications/SmBA/Spba.mt"
-	,
-	"SatMmodifications/Proportionality/Spxy_LVector.mt"
-	,
-	"SatMmodifications/Proportionality/Spxy_BSpinor.mt"
-	,
+	"SatMmodifications/Dot.mt",
+	"SatMmodifications/DeclareSpinorMomentum.mt",
+	"SatMmodifications/s.mt",
+	"SatMmodifications/SpOpen.mt",
+	"SatMmodifications/Num4V.mt",
+	"SatMmodifications/BSpinorReplace.mt",
+	"SatMmodifications/ASpinorReplace.mt"(*,
+	"SatMmodifications/SpinorShift.mt"*),
+	"SatMmodifications/ShiftBA.mt",
+	"SatMmodifications/SmBA/Spaa.mt",
+	"SatMmodifications/SmBA/Spbb.mt",
+	"SatMmodifications/SmBA/Spab.mt",
+	"SatMmodifications/SmBA/Spba.mt",
+	"SatMmodifications/Proportionality/Spxy_LVector.mt",
+	"SatMmodifications/Proportionality/Spxy_BSpinor.mt",
 	"SatMmodifications/Proportionality/Spxy_ASpinor.mt"
 	,
-	"Ref/SpRef.mt"
-	,
+	"Ref/SpRef.mt",
 	"Ref/DeclareSpinorMomentum.mt"
 	,
-	"Massive/SpAssoc.mt"
-	,
-	"Massive/SpM.mt"
-	,
-	"Massive/MassiveSpinorQ.mt"
-	,
-	"Massive/AnySpinorQ.mt"
-	,
-	"Massive/Spaa.mt"
-	,
-	"Massive/Spbb.mt"
-	,
-	"Massive/Spab.mt"
-	,
-	"Massive/Spba.mt"
-	,
-	"Massive/Spxy_SpM_refVec.mt"
-	,
+	"Massive/SpAssoc.mt",
+	"Massive/SpM.mt",
+	"Massive/MassiveSpinorQ.mt",
+	"Massive/AnySpinorQ.mt",
+	"Massive/Spaa.mt",
+	"Massive/Spbb.mt",
+	"Massive/Spab.mt",
+	"Massive/Spba.mt",
+	"Massive/Spxy_SpM_refVec.mt",
 	"Massive/DeclareSpinorMomentum.mt"
 	,
-	"MassiveUtilities/ExpandMPToSpinors.mt"
-	,
-	"MassiveUtilities/ExpandSToMPs.mt"
-	,
-	"MassiveUtilities/ExpandSToSpinors.mt"
-	,
+	"MassiveUtilities/ExpandMPToSpinors.mt",
+	"MassiveUtilities/ExpandSToMPs.mt",
+	"MassiveUtilities/ExpandSToSpinors.mt",
 	"MassiveUtilities/LightConeDecompose.mt"
 	,
-	"Composite/LvBA.mt"
-	,
-	"Composite/Simplifications.mt"
-	,
-	"Composite/DeclareLVectorMomentum.mt"
-	,
+	"Composite/LvBA.mt",
+	"Composite/Simplifications.mt",
+	"Composite/DeclareLVectorMomentum.mt",
 	"Composite/DeclareSpinorMomentum.mt"
 	,
 	"Phase/AppendPhase.mt"
 	,
-	"Pol/PossiblePolQ.mt"
-	,
-	"Pol/DeclarePossiblePol.mt"
-	,
-	"Pol/UndeclarePossiblePol.mt"
-	,
-	"Pol/PolVec.mt"
-	,
+	"Pol/PossiblePolQ.mt",
+	"Pol/DeclarePossiblePol.mt",
+	"Pol/UndeclarePossiblePol.mt",
+	"Pol/PolVec.mt",
 	"Pol/ExpandPolVec.mt"
 	,
-	"RefUtilities/ExplicitRef.mt"
-	,
-	"RefUtilities/ImplicitRef.mt"
-	,
-	"RefUtilities/RefInvariantQ.mt"
-	,
+	"RefUtilities/ExplicitRef.mt",
+	"RefUtilities/ImplicitRef.mt",
+	"RefUtilities/RefInvariantQ.mt",
 	"RefUtilities/RefSimplify.mt"
 	,
-	"SimpleTensor/SimpleTensorQ.mt"
-	,
+	"SimpleTensor/SimpleTensorQ.mt",
 	"SimpleTensor/SimpleTensorGetLabel.mt"
 	,
-	"Decompose/DecomposeBSpinor.mt"
-	,
+	"Decompose/DecomposeBSpinor.mt",
 	"Decompose/DecomposeASpinor.mt"
 }]
