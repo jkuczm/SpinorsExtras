@@ -7,13 +7,6 @@
 		* with application and dependencies.
 	</description>
 	
-
-	<!--
-		To use eclipse.convertPath choose: Run AS > Ant Build...
-		in JRE tab select "Run in the same JRE as the workspace".
-	-->
-	<eclipse.convertPath resourcePath="SpinorsExtrasDependencies"
-		property="dependenciesPath"/>
 	
 	<import file="${WWBCommonPath}/init.xml"/>
 	
@@ -37,14 +30,14 @@
 	</target>
 	
 	
-	<target name="main">
+	<target name="main" depends="runTests">
 		<antcall target="cleanArchive"/>
 		<antcall target="cleanArchiveWithDependencies"/>
 		<antcall target="cleanAppRelease"/>
 		
 		<antcall target="conditionalDocbuild"/>
 		<antcall target="appbuild"/>
-
+		
 		<antcall target="createArchive"/>
 		<antcall target="createArchiveWithDependencies"/>
 	</target>
